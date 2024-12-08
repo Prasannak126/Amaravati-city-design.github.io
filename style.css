@@ -1,69 +1,251 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+/* General Styling */
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
-h1, h2, h3 {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
     color: #333;
-    text-align: center;
+    padding: 40px;
+    line-height: 1.6;
 }
 
+/* Header Styles */
 h1 {
-    margin-top: 0;
+    text-align: center;
+    font-size: 3em;
+    color: #2980b9;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
 }
 
-p, ul, table {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 15px;
+h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 4px solid #3498db;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Card-like Section Style */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 table, th, td {
     border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
     text-align: left;
 }
 
+th, td {
+    padding: 12px;
+    font-size: 1.1em;
+}
+
 th {
-    background-color: #4CAF50;
+    background-color: #2980b9;
     color: white;
 }
 
-code {
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
-blockquote {
+tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* Highlighting sections */
+.highlight {
+    background-color: #d1ecf1;
+}
+
+/* Quote Styling */
+.quote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #3498db;
+    margin: 20px 0;
+    padding: 15px 20px;
     font-style: italic;
     color: #555;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #e2e2e2;
-    border-left: 10px solid #4CAF50;
-    max-width: 800px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 40px;
+}
+
+.list-item {
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+/* Flexbox Layout for Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Colors and Backgrounds */
+.bg-blue {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 15px;
     border-radius: 5px;
+}
+
+.bg-light-blue {
+    background-color: #d1ecf1;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.bg-grey {
+    background-color: #f9f9f9;
+}
+
+.text-blue {
+    color: #2980b9;
+}
+
+.text-dark {
+    color: #34495e;
+}
+
+.text-light {
+    color: #555;
+}
+
+/* Buttons (for any potential interactive content) */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Header for sorting/searching algorithms */
+.sorting-header {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Styling for Algorithm tables */
+.algorithms-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.algorithms-table th,
+.algorithms-table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.algorithms-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.algorithms-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.algorithms-table tr:hover {
+    background-color: #d1ecf1;
+}
+
+/* Footer for additional details */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
 }
