@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Algorithm Course Overview</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <h1>Algorithm Course Overview</h1>
@@ -154,9 +155,3 @@
             <td>Compare adjacent elements and swap if needed.</td>
             <td>O(n<sup>2</sup>)</td>
             <td>Educational purposes to teach algorithm basics.</td>
-        </tr>
-        <tr>
-            <td>Selection Sort</td>
-            <td>Find the minimum and place it at the beginning.</td>
-            <td>O(n<sup>2</sup>)</td>
-            <
