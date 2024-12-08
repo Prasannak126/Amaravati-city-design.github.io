@@ -91,6 +91,7 @@ dt {
     font-weight: bold;
 }
 
+/* Blockquote styling */
 blockquote {
     font-family: 'Georgia', serif;
     font-size: 1.3em;
@@ -130,4 +131,9 @@ a:hover {
 
     h1 {
         font-size: 2.5em;
+    }
 
+    h3 {
+        font-size: 1.4em;
+    }
+}
