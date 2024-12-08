@@ -97,6 +97,14 @@
         </ul>
         <h3>Importance</h3>
         <p>Efficiency is crucial for handling large data sets or real-time systems where excessive resource consumption can lead to poor performance or failure to meet operational requirements.</p>
+        <h3>Class of Problems and Orders of Growth</h3>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
+            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
+            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
+        </ul>
     </div>
 
     <div class="section">
@@ -128,6 +136,63 @@
         </ul>
     </div>
 
+    <div class="section">
+        <h2>6. Tree vs. Graphs and Their Traversals</h2>
+        <p>Both trees and graphs are used to represent hierarchical relationships, but they differ in structure and traversal strategies:</p>
+        <ul>
+            <li><strong>Tree:</strong> A hierarchical structure with a single root node. Traversals include:
+                <ul>
+                    <li><strong>Pre-order:</strong> Visit the root, then left subtree, then right subtree.</li>
+                    <li><strong>In-order:</strong> Visit the left subtree, then the root, then the right subtree.</li>
+                    <li><strong>Post-order:</strong> Visit the left subtree, then right subtree, then the root.</li>
+                </ul>
+            </li>
+            <li><strong>Graph:</strong> A non-hierarchical structure with nodes and edges that can form cycles. Traversals include:
+                <ul>
+                    <li><strong>Depth-First Search (DFS):</strong> Explore as far down a branch as possible before backtracking.</li>
+                    <li><strong>Breadth-First Search (BFS):</strong> Explore all neighbors at the present depth before moving on to nodes at the next depth level.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Sorting and Searching Algorithms</h2>
+        <p>Sorting and searching are fundamental operations in computer science. Common algorithms include:</p>
+        <ul>
+            <li><strong>Sorting Algorithms:</strong>
+                <ul>
+                    <li><strong>Bubble Sort:</strong> Repeatedly swap adjacent elements if they are in the wrong order.</li>
+                    <li><strong>Merge Sort:</strong> Divide the array into halves, sort each half, and merge them back together.</li>
+                    <li><strong>Quick Sort:</strong> Select a pivot, partition the array into elements less than and greater than the pivot, and recursively sort each partition.</li>
+                </ul>
+            </li>
+            <li><strong>Searching Algorithms:</strong>
+                <ul>
+                    <li><strong>Linear Search:</strong> Check each element sequentially.</li>
+                    <li><strong>Binary Search:</strong> Divide the search interval in half repeatedly (requires sorted array).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Importance of Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+        <h3>Spanning Trees</h3>
+        <p>A spanning tree of a connected graph is a tree that includes all the vertices of the graph, without any cycles.</p>
+        <ul>
+            <li><strong>Kruskal's Algorithm:</strong> Finds the minimum spanning tree by adding edges in increasing order of weight.</li>
+            <li><strong>Prim's Algorithm:</strong> Grows the minimum spanning tree by starting from an arbitrary node and adding the smallest edge that connects the tree to a new vertex.</li>
+        </ul>
+        <h3>Shortest Paths</h3>
+        <p>Algorithms to find the shortest paths between nodes in a graph:</p>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong> Computes the shortest paths from a source vertex to all other vertices in a weighted graph.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Handles graphs with negative weight edges but slower than Dijkstra's.</li>
+        </ul>
+    </div>
+
 </body>
 </html>
+
 
