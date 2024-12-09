@@ -1,1 +1,1 @@
-# Amaravati-city-design.github.io
+# AMARAVATI-CITY-DESIGN.GITHUB.IO
