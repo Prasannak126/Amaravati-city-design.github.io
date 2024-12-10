@@ -78,7 +78,9 @@
 </head>
 <body>
     <header>
-        <h1>Smart City Development</h1>
+        <h1>Algorithm Course Overview</h1>
+        <h1>Amaravati Smart City Development</h1>
+         <h1>Welcome to Prateek Ariga's Webpage</h1>
         <nav>
             <a href="#industry">Industry</a>
             <a href="#transportation">Transportation</a>
@@ -159,35 +161,79 @@
             return distances;
         }
 
-        function simulateKruskal() {
-            const edges = [
-                { from: 'A', to: 'B', weight: 1 },
-                { from: 'A', to: 'C', weight: 5 },
-                { from: 'B', to: 'C', weight: 2 },
-                { from: 'B', to: 'D', weight: 4 },
-                { from: 'C', to: 'D', weight: 3 },
-            ];
-            const mst = kruskal(edges, 4);
-            document.getElementById("output").textContent = "Kruskal's Algorithm Output:\n" + JSON.stringify(mst, null, 2);
+      function simulateKruskal() {
+    const edges = [
+        { from: 'A', to: 'B', weight: 1 },
+        { from: 'A', to: 'C', weight: 5 },
+        { from: 'B', to: 'C', weight: 2 },
+        { from: 'B', to: 'D', weight: 4 },
+        { from: 'C', to: 'D', weight: 3 },
+    ];
+    const nodes = ['A', 'B', 'C', 'D'];
+
+    const mst = kruskal(edges, nodes);
+    document.getElementById("output").textContent = 
+        "Kruskal's Algorithm Output:\n" + JSON.stringify(mst, null, 2);
+}
+
+function kruskal(edges, nodes) {
+    
+    edges.sort((a, b) => a.weight - b.weight);
+
+
+    const parent = new Map();
+    const rank = new Map();
+
+   
+    const find = (node) => {
+        if (parent.get(node) !== node) {
+            parent.set(node, find(parent.get(node))); // Path compression
         }
+        return parent.get(node);
+    };
 
-        function kruskal(edges, nodes) {
-            edges.sort((a, b) => a.weight - b.weight);
-            const parent = {};
-            const find = (node) => (parent[node] === node ? node : parent[node] = find(parent[node]));
-            const union = (node1, node2) => (parent[find(node1)] = find(node2));
+    
+    const union = (node1, node2) => {
+        const root1 = find(node1);
+        const root2 = find(node2);
 
-            for (let i = 0; i < nodes; i++) parent[i] = i;
-            const mst = [];
+        if (root1 !== root2) {
+            const rank1 = rank.get(root1);
+            const rank2 = rank.get(root2);
 
-            for (let edge of edges) {
-                if (find(edge.from) !== find(edge.to)) {
-                    mst.push(edge);
-                    union(edge.from, edge.to);
-                }
+           
+            if (rank1 > rank2) {
+                parent.set(root2, root1);
+            } else if (rank1 < rank2) {
+                parent.set(root1, root2);
+            } else {
+                parent.set(root2, root1);
+                rank.set(root1, rank1 + 1);
             }
-            return mst;
         }
+    };
+
+    
+    for (const node of nodes) {
+        parent.set(node, node);
+        rank.set(node, 0);
+    }
+
+    const mst = []; 
+
+    
+    for (const edge of edges) {
+        const { from, to, weight } = edge;
+
+        if (find(from) !== find(to)) {
+            mst.push({ from, to, weight }); 
+            union(from, to); 
+        }
+    }
+
+   
+    return mst;
+}
 
         function simulateSorting() {
             const array = [7, 3, 5, 8, 2, 1];
