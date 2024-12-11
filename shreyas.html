@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG 11 Infrastructure and Business Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #f1c27d;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #f1c27d;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: #f1c27d;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #f1c27d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #f1c27d;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #f1c27d;
+            background-color: #222222;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section">
+        <h2>1. Best Target and Indicator of SDG 11 Infrastructure</h2>
+        <p><strong>Target 11.2:</strong> By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
+        <p><strong>Indicator 11.2.1:</strong> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Reflection on the Business Case Study</h2>
+
+        <h3>2.1 Types of Problems in Nature</h3>
+        <p>Many computational problems can be categorized based on how they are solved, particularly using iterative, recursive, or backtracking approaches:</p>
+        <ul>
+            <li><strong>Iteration:</strong> Involves repeating a set of instructions until a condition is met. Common in problems where you know the number of iterations ahead of time.</li>
+            <li><strong>Recursion:</strong> Occurs when a function calls itself to solve a smaller version of the problem. It's useful when the problem can naturally be divided into subproblems.</li>
+            <li><strong>Backtracking:</strong> Used for problems involving choices, where you explore all possibilities and "backtrack" when a dead-end is reached (e.g., puzzles like Sudoku, N-Queens problem).</li>
+        </ul>
+
+        <h3>2.2 Space and Time Efficiency</h3>
+        <p>Space and time efficiency refer to how efficiently an algorithm uses computer resources (memory and time) to solve a problem.</p>
+        <ul>
+            <li><strong>Time Efficiency:</strong> Measured by how fast an algorithm runs as the input size grows. It is often expressed using Big O notation (e.g., O(n), O(n²)).</li>
+            <li><strong>Space Efficiency:</strong> Refers to the amount of memory the algorithm uses during its execution. Similarly, it is also expressed in Big O notation (e.g., O(1) for constant space, O(n) for linear space).</li>
+        </ul>
+        <p><strong>Class of Problems and Orders of Growth:</strong></p>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
+            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
+            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
+        </ul>
+
+        <h3>2.3 Design Principles from Chapter 2</h3>
+        <p>Key takeaways from design principles include:</p>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve each recursively, and combine the results.</li>
+            <li><strong>Greedy Algorithms:</strong> Make the locally optimal choice at each step, hoping it leads to a globally optimal solution.</li>
+            <li><strong>Dynamic Programming:</strong> Break problems into overlapping subproblems and store solutions to avoid redundant work.</li>
+        </ul>
+
+        <h3>2.4 Hierarchical Data and Tree Data Structures</h3>
+        <p>Tree data structures are excellent for modeling hierarchical data and optimizing search and insertion operations:</p>
+        <ul>
+            <li><strong>Binary Tree:</strong> Each node has at most two children, left and right.</li>
+            <li><strong>Binary Search Tree (BST):</strong> A binary tree where the left child is smaller and the right child is larger than the parent node.</li>
+            <li><strong>AVL Tree:</strong> A self-balancing BST with height difference at most 1, ensuring O(log n) operations.</li>
+            <li><strong>2-3 Tree:</strong> A tree where each node can have two or three children.</li>
+            <li><strong>Red-Black Tree:</strong> A self-balancing BST ensuring operations remain O(log n).</li>
+            <li><strong>Heap:</strong> A tree-based data structure useful for priority queues.</li>
+            <li><strong>Trie:</strong> A specialized tree for storing strings, used in dictionary and search applications.</li>
+        </ul>
+
+        <h3>2.5 Array Query Algorithms</h3>
+        <p>These algorithms help in efficiently retrieving or updating elements in an array:</p>
+        <ul>
+            <li><strong>Prefix Sum:</strong> Preprocesses an array so the sum of any subarray can be queried in constant time.</li>
+            <li><strong>Segment Tree:</strong> A tree-based data structure for efficiently answering range queries and updates.</li>
+        </ul>
+
+        <h3>2.6 Trees vs. Graphs</h3>
+        <p>Comparison of trees and graphs, their traversal techniques, and applications:</p>
+        <ul>
+            <li><strong>Tree:</strong> A hierarchical structure with a single root node. Traversals include pre-order, in-order, and post-order.</li>
+            <li><strong>Graph:</strong> A non-hierarchical structure with nodes and edges that can form cycles. Traversals include Depth-First Search (DFS) and Breadth-First Search (BFS).</li>
+        </ul>
+
+        <h3>2.7 Sorting and Searching Algorithms</h3>
+        <p>Deliberation on sorting and searching algorithms, their techniques, and real-world connections:</p>
+        <ul>
+            <li><strong>Sorting Algorithms:</strong> Bubble Sort, Merge Sort, Quick Sort.</li>
+            <li><strong>Searching Algorithms:</strong> Linear Search, Binary Search.</li>
+        </ul>
+      </div>
+
+</body>
+</html>
