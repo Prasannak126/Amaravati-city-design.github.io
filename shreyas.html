@@ -155,14 +155,12 @@
 </body>
 </html>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDG 11 Infrastructure and Business Case Study</title>
+    <title>Course Learning Reflections</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -173,17 +171,15 @@
         }
         h1 {
             color: #2c3e50;
+            text-align: center;
         }
         h2 {
             color: #34495e;
             margin-top: 20px;
         }
         h3 {
-            color: #2c3e50;
+            color: #5d6d7e;
             margin-top: 15px;
-        }
-        p {
-            margin-bottom: 10px;
         }
         ul {
             list-style-type: disc;
@@ -192,27 +188,94 @@
         li {
             margin-bottom: 10px;
         }
-        code {
-            display: block;
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px 0;
-            color: #333;
-        }
     </style>
 </head>
 <body>
-    <h1>SDG 11 Infrastructure and Business Case Study</h1>
+    <h1>Course Learning Reflections</h1>
 
-    <h2>1. Best Target and Indicator of SDG 11 Infrastructure</h2>
-    <p><strong>Target 11.2:</strong> By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
-    <p><strong>Indicator 11.2.1:</strong> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
+    <h2>What are the kinds of problems we see in nature?</h2>
+    <p>We often encounter problems in the following categories:</p>
+    <ul>
+        <li><strong>Iteration:</strong> Problems that require repeating a process until a condition is met. For example, traversing a list of items.</li>
+        <li><strong>Recursion:</strong> Problems that can be broken down into smaller sub-problems. For instance, computing factorials or solving Tower of Hanoi.</li>
+        <li><strong>Backtracking:</strong> Problems that involve exploring all possible solutions and abandoning paths that fail. Examples include solving mazes and the N-Queens problem.</li>
+    </ul>
 
-    <h2>2. Reflection on the Business Case Study</h2>
+    <h2>What is space and time efficiency? Why are they important?</h2>
+    <p>Space and time efficiency are key concepts in algorithm design:</p>
+    <ul>
+        <li><strong>Space Efficiency:</strong> Refers to the amount of memory an algorithm uses. Optimizing space is critical for large-scale data processing or resource-constrained devices.</li>
+        <li><strong>Time Efficiency:</strong> Refers to the amount of time an algorithm takes to complete. Faster algorithms improve user experience and reduce computational costs.</li>
+    </ul>
+    <p>Classes of problems and orders of growth:</p>
+    <ul>
+        <li><strong>Constant Time (O(1)):</strong> Independent of input size. Example: Accessing an element in an array.</li>
+        <li><strong>Logarithmic Time (O(log n)):</strong> Reduces problem size at each step. Example: Binary search.</li>
+        <li><strong>Linear Time (O(n)):</strong> Grows linearly with input size. Example: Iterating over an array.</li>
+        <li><strong>Quadratic Time (O(n²)):</strong> Nested loops. Example: Bubble sort.</li>
+        <li><strong>Exponential Time (O(2ⁿ)):</strong> Grows exponentially. Example: Solving the Traveling Salesman problem.</li>
+    </ul>
 
-    <h3>2.1 Map Business Cases to SDG Targets and Indicators</h3>
-    <p>Each business case should clearly align with specific SDG 11 targets and indicators. Document these mappings and add them to your GitHub page for transparency and tracking.</p>
+    <h2>Takeaways from Design Principles (Chapter 2)</h2>
+    <ul>
+        <li>Understand the problem before designing an algorithm.</li>
+        <li>Focus on modularity and simplicity in solutions.</li>
+        <li>Optimize for both time and space constraints.</li>
+        <li>Use abstraction to reduce complexity and improve clarity.</li>
+    </ul>
 
-    <h3>2.2 Refine Business Cases Based on SDG</h3>
-    <p>Analyze and improve your business cases to better address the challenges and
+    <h2>The Hierarchical Data and Tree Data Structures</h2>
+    <p>Hierarchical data structures like trees organize data in a parent-child relationship. Different tree types solve specific problems:</p>
+    <ul>
+        <li><strong>Tree:</strong> General-purpose hierarchical structure. Example: File systems.</li>
+        <li><strong>Binary Search Tree (BST):</strong> Allows quick search, insert, and delete operations.</li>
+        <li><strong>AVL Tree:</strong> Self-balancing BST to maintain performance.</li>
+        <li><strong>2-3 Tree:</strong> Guarantees balanced structure, commonly used in databases.</li>
+        <li><strong>Red-Black Tree:</strong> Ensures balance with color-based rules, used in maps and sets.</li>
+        <li><strong>Heap:</strong> Used in priority queues and efficient sorting.</li>
+        <li><strong>Trie:</strong> Efficiently stores and retrieves strings, used in autocomplete features.</li>
+    </ul>
+
+    <h2>The Need for Array Query Algorithms</h2>
+    <p>Array query algorithms optimize tasks like searching, sorting, and range queries:</p>
+    <ul>
+        <li>Improves performance in data retrieval and updates.</li>
+        <li>Examples: Binary search, segment trees, and Fenwick trees.</li>
+    </ul>
+
+    <h2>Trees vs. Graphs</h2>
+    <p>Key differences between trees and graphs:</p>
+    <ul>
+        <li><strong>Trees:</strong> Connected and acyclic. Applications: Hierarchies, decision-making processes.</li>
+        <li><strong>Graphs:</strong> May have cycles and are more general. Applications: Social networks, transportation networks.</li>
+    </ul>
+    <p>Traversal techniques:</p>
+    <ul>
+        <li>Tree Traversal: Preorder, Inorder, Postorder.</li>
+        <li>Graph Traversal: Depth-First Search (DFS), Breadth-First Search (BFS).</li>
+    </ul>
+
+    <h2>Sorting and Searching Algorithms</h2>
+    <p>Sorting and searching algorithms are fundamental in data processing:</p>
+    <ul>
+        <li><strong>Sorting:</strong> Organizes data for efficient access. Examples: Merge sort, Quick sort.</li>
+        <li><strong>Searching:</strong> Finds data efficiently. Examples: Binary search.</li>
+    </ul>
+
+    <h2>Graph Algorithms</h2>
+    <p>Graph algorithms address connectivity and optimization problems:</p>
+    <ul>
+        <li><strong>Spanning Trees:</strong> Minimum spanning trees (e.g., Kruskal’s algorithm) optimize connectivity.</li>
+        <li><strong>Shortest Path Algorithms:</strong> Dijkstra’s and Bellman-Ford algorithms find optimal routes.</li>
+    </ul>
+
+    <h2>Algorithm Design Techniques</h2>
+    <p>Studied algorithm design techniques include:</p>
+    <ul>
+        <li>Divide and Conquer.</li>
+        <li>Dynamic Programming.</li>
+        <li>Greedy Algorithms.</li>
+        <li>Backtracking and Branch-and-Bound.</li>
+    </ul>
+</body>
+</html>
