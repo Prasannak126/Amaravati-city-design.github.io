@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #121212;
+            background-color: #121212; /* Black background */
             color: #e0e0e0;
             margin: 0;
             padding: 20px;
@@ -16,66 +16,48 @@
             line-height: 1.6;
         }
 
-        h2 {
-            font-size: 2.5em;
-            color: #f1c27d;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 1.8em;
-            color: #f1c27d;
-            margin-top: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 10px;
-        }
-
-        ul li {
-            margin: 5px 0;
-            font-size: 1.2em;
-        }
-
-        strong {
+        h1, h2, h3 {
             color: #f1c27d;
         }
 
-        .section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #f1c27d;
+        /* Home link */
+        .home-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: 600;
         }
 
-        a:hover {
-            color: #ffffff;
+        .home-link:hover {
+            background-color: #0056b3;
         }
 
-        p {
-            font-size: 1.1em;
-            line-height: 1.8;
+        .business-cases-icon {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
         }
 
-        blockquote {
-            font-size: 1.5em;
-            font-style: italic;
-            color: #f1c27d;
-            margin: 20px 0;
-            padding: 20px;
-            border-left: 5px solid #f1c27d;
-            background-color: #222222;
+        .business-cases-icon:hover {
+            background-color: #218838;
         }
     </style>
 </head>
+<body>
+    <a href="business-cases.html" class="business-cases-icon">Business Cases</a>
   <header>
     <a href="https://prasannak126.github.io/Amaravati-city-design.github.io/" class="home-icon"><i class="fas fa-home"></i></a>
     <h1>Algorithm Course Overview</h1>
@@ -269,15 +251,29 @@
         </ul>
     </div>
 </body>
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasanna P Kothari</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Business Cases</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Styling for the Home link */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Black background */
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #f1c27d;
+        }
+
+        /* Home link */
         .home-link {
             position: fixed;
             top: 20px;
@@ -289,31 +285,14 @@
             font-weight: bold;
             border-radius: 5px;
             text-decoration: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .home-link:hover {
             background-color: #0056b3;
         }
-        
-        /* Styling for header */
-        header {
-            text-align: center;
+
+        .business-cases-content {
             margin-top: 60px;
-        }
-
-        h1 {
-            font-size: 36px;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-top: 30px;
-        }
-
-        h3 {
-            font-size: 24px;
-            margin-top: 20px;
         }
 
         section {
@@ -321,52 +300,33 @@
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #f9f9f9;
+            background-color: #1e1e1e;
         }
 
         ul {
             list-style-type: disc;
             padding-left: 20px;
         }
-        
-        .home-icon {
-            font-size: 24px;
-            color: #007bff;
-            text-decoration: none;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-        
-        .home-icon:hover {
-            color: #0056b3;
-        }
     </style>
 </head>
 <body>
-    <!-- Home link with a text "Home" that redirects to the homepage -->
-    <a href="https://prasannak126.github.io/Amaravati-city-design.github.io/" class="home-link">
-        Home
-    </a>
+    <a href="index.html" class="home-link">Home</a>
 
-    <!-- Header for Business Cases section -->
     <header>
-        <a href="https://prasannak126.github.io/Amaravati-city-design.github.io/" class="home-icon"><i class="fas fa-home"></i></a>
         <h1>Business Cases</h1>
     </header>
 
-    <!-- Business Cases Content -->
-    <section>
+    <section class="business-cases-content">
         <h2>Tourism (Mapping to SDG 8.9 and 12.b)</h2>
         <h3>Targets</h3>
         <ul>
-            <li>To promote sustainable tourism that creates jobs and promotes local culture and products.</li>
-            <li>Develop and implement tools to monitor sustainable development impacts for sustainable tourism.</li>
+            <li>Promote sustainable tourism that creates jobs and promotes local culture.</li>
+            <li>Develop and implement tools to monitor the impacts of sustainable tourism.</li>
         </ul>
         <h3>Indicators</h3>
         <ul>
-            <li>Tourism direct GDP as a proportion of total GDP and in growth rate, which will further lead to economic growth of a country.</li>
-            <li>Implementation of standard accounting tools to monitor the economic and environmental aspects of tourism sustainability.</li>
+            <li>Tourism direct GDP as a proportion of total GDP.</li>
+            <li>Implementation of tools to monitor economic and environmental aspects of tourism sustainability.</li>
         </ul>
     </section>
 
@@ -374,73 +334,21 @@
         <h2>Agriculture (Mapping to SDG 2.1, 12.2, and 15.3)</h2>
         <h3>Targets</h3>
         <ul>
-            <li>To end hunger and ensure access by all people, in particular the poor and people in vulnerable situations, including infants, to safe, nutritious, and sufficient food all year round by better agricultural growth.</li>
-            <li>To achieve sustainable management and efficient use of natural resources for agriculture.</li>
-            <li>Combat desertification, land degradation, soil erosion, and restore degraded land and soil, including land affected by desertification, drought, and floods.</li>
+            <li>End hunger and ensure access to nutritious food for all.</li>
+            <li>Achieve sustainable management of natural resources in agriculture.</li>
+            <li>Combat desertification, land degradation, and restore degraded land.</li>
         </ul>
         <h3>Indicators</h3>
         <ul>
             <li>Prevalence of undernourishment.</li>
-            <li>Land use change.</li>
-            <li>Land degradation neutrality status.</li>
+            <li>Land use change and degradation status.</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Benefits</h2>
-        <h3>Social Benefits</h3>
-        <ul>
-            <li>Community Empowerment: Both sectors can empower local communities by creating jobs, improving livelihoods, and preserving cultural heritage.</li>
-            <li>Social Inclusion: Tourism and agriculture can provide opportunities for marginalized groups, such as women and youth, to participate in the economy and society.</li>
-            <li>Cultural Preservation: Tourism can help to preserve cultural traditions, languages, and arts, while agriculture can support traditional knowledge and practices.</li>
-        </ul>
-        <h3>Economic Benefits</h3>
-        <ul>
-            <li>Job Creation: Both sectors are significant job creators, particularly in rural areas.</li>
-            <li>Revenue Generation: Tourism and agriculture can generate significant revenue for local, regional, and national economies.</li>
-            <li>Economic Diversification: By diversifying economies, these sectors can reduce dependence on single industries and increase resilience.</li>
-        </ul>
-        <h3>Environmental Benefits</h3>
-        <ul>
-            <li>Sustainable Resource Management: Both sectors can promote sustainable resource management practices, such as water conservation, soil conservation, and biodiversity protection.</li>
-            <li>Climate Change Mitigation: Sustainable tourism and agriculture can contribute to climate change mitigation by reducing greenhouse gas emissions and promoting carbon sequestration.</li>
-            <li>Ecosystem Preservation: By supporting eco-tourism and sustainable agriculture, we can protect ecosystems and biodiversity.</li>
-        </ul>
-    </section>
+    <!-- More content sections go here -->
 
-    <section>
-        <h2>Refining Business Cases on SDGs</h2>
-        <h3>Tourism</h3>
-        <ul>
-            <li>Eco-tourism: Leverage natural assets like lakes and parks for sustainable activities.</li>
-            <li>Cultural Tourism: Promote local heritage and traditions through guided tours and festivals.</li>
-            <li>Wellness Tourism: Offer wellness retreats and yoga programs at the meditation center.</li>
-            <li>Responsible Tourism: Partner with local businesses, reduce waste, and promote sustainable transportation.</li>
-        </ul>
-        <h3>Agriculture</h3>
-        <ul>
-            <li>Sustainable Farming: Adopt organic practices, precision agriculture, and agroforestry.</li>
-            <li>Food Security and Nutrition: Prioritize local food systems, nutrient-rich crops, and waste reduction.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Relating Business Cases to Algorithms</h2>
-        <h3>Tourism</h3>
-        <p><strong>Kruskal's Algorithm:</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In tourism, it can help in:</p>
-        <ul>
-            <li>Designing optimal networks for transportation, communication, or energy infrastructure in tourist destinations.</li>
-            <li>Allocating resources to different tourist attractions or regions based on connectivity and cost.</li>
-        </ul>
-        <h3>Agriculture</h3>
-        <p><strong>Kruskal's Algorithm:</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In agriculture, it can help in:</p>
-        <ul>
-            <li>Designing efficient irrigation networks to minimize water loss and maximize crop yield.</li>
-            <li>Planning the optimal layout of power lines to supply electricity to rural areas.</li>
-        </ul>
-    </section>
 </body>
 </html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 
