@@ -3,157 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SDG 11 Infrastructure and Business Case Study</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>SDG 9: Industry, Innovation, and Infrastructure</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #121212;
-            color: #e0e0e0;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 20px;
         }
-
+        h1 {
+            color: #2c3e50;
+        }
         h2 {
-            font-size: 2.5em;
-            color: #f1c27d;
-            margin-bottom: 20px;
+            color: #2980b9;
         }
-
-        h3 {
-            font-size: 1.8em;
-            color: #f1c27d;
-            margin-top: 30px;
-        }
-
         ul {
-            list-style-type: none;
-            padding: 0;
-            margin-top: 10px;
+            margin: 10px 0;
+            padding-left: 20px;
         }
-
-        ul li {
-            margin: 5px 0;
-            font-size: 1.2em;
-        }
-
-        strong {
-            color: #f1c27d;
-        }
-
-        .section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #1e1e1e;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #f1c27d;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            color: #ffffff;
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.8;
-        }
-
-        blockquote {
-            font-size: 1.5em;
-            font-style: italic;
-            color: #f1c27d;
-            margin: 20px 0;
-            padding: 20px;
-            border-left: 5px solid #f1c27d;
-            background-color: #222222;
+        li {
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-
-    <div class="section">
-        <h2>1. Best Target and Indicator of SDG 11 Infrastructure</h2>
-        <p><strong>Target 11.2:</strong> By 2030, provide access to safe, affordable, accessible, and sustainable transport systems for all, improving road safety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations, women, children, persons with disabilities, and older persons.</p>
-        <p><strong>Indicator 11.2.1:</strong> Proportion of population that has convenient access to public transport, by sex, age, and persons with disabilities.</p>
-    </div>
-
-    <div class="section">
-        <h2>2. Reflection on the Business Case Study</h2>
-
-        <h3>2.1 Types of Problems in Nature</h3>
-        <p>Many computational problems can be categorized based on how they are solved, particularly using iterative, recursive, or backtracking approaches:</p>
-        <ul>
-            <li><strong>Iteration:</strong> Involves repeating a set of instructions until a condition is met. Common in problems where you know the number of iterations ahead of time.</li>
-            <li><strong>Recursion:</strong> Occurs when a function calls itself to solve a smaller version of the problem. It's useful when the problem can naturally be divided into subproblems.</li>
-            <li><strong>Backtracking:</strong> Used for problems involving choices, where you explore all possibilities and "backtrack" when a dead-end is reached (e.g., puzzles like Sudoku, N-Queens problem).</li>
-        </ul>
-
-        <h3>2.2 Space and Time Efficiency</h3>
-        <p>Space and time efficiency refer to how efficiently an algorithm uses computer resources (memory and time) to solve a problem.</p>
-        <ul>
-            <li><strong>Time Efficiency:</strong> Measured by how fast an algorithm runs as the input size grows. It is often expressed using Big O notation (e.g., O(n), O(n²)).</li>
-            <li><strong>Space Efficiency:</strong> Refers to the amount of memory the algorithm uses during its execution. Similarly, it is also expressed in Big O notation (e.g., O(1) for constant space, O(n) for linear space).</li>
-        </ul>
-        <p><strong>Class of Problems and Orders of Growth:</strong></p>
-        <ul>
-            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
-            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
-            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
-            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
-            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
-        </ul>
-
-        <h3>2.3 Design Principles from Chapter 2</h3>
-        <p>Key takeaways from design principles include:</p>
-        <ul>
-            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve each recursively, and combine the results.</li>
-            <li><strong>Greedy Algorithms:</strong> Make the locally optimal choice at each step, hoping it leads to a globally optimal solution.</li>
-            <li><strong>Dynamic Programming:</strong> Break problems into overlapping subproblems and store solutions to avoid redundant work.</li>
-        </ul>
-
-        <h3>2.4 Hierarchical Data and Tree Data Structures</h3>
-        <p>Tree data structures are excellent for modeling hierarchical data and optimizing search and insertion operations:</p>
-        <ul>
-            <li><strong>Binary Tree:</strong> Each node has at most two children, left and right.</li>
-            <li><strong>Binary Search Tree (BST):</strong> A binary tree where the left child is smaller and the right child is larger than the parent node.</li>
-            <li><strong>AVL Tree:</strong> A self-balancing BST with height difference at most 1, ensuring O(log n) operations.</li>
-            <li><strong>2-3 Tree:</strong> A tree where each node can have two or three children.</li>
-            <li><strong>Red-Black Tree:</strong> A self-balancing BST ensuring operations remain O(log n).</li>
-            <li><strong>Heap:</strong> A tree-based data structure useful for priority queues.</li>
-            <li><strong>Trie:</strong> A specialized tree for storing strings, used in dictionary and search applications.</li>
-        </ul>
-
-        <h3>2.5 Array Query Algorithms</h3>
-        <p>These algorithms help in efficiently retrieving or updating elements in an array:</p>
-        <ul>
-            <li><strong>Prefix Sum:</strong> Preprocesses an array so the sum of any subarray can be queried in constant time.</li>
-            <li><strong>Segment Tree:</strong> A tree-based data structure for efficiently answering range queries and updates.</li>
-        </ul>
-
-        <h3>2.6 Trees vs. Graphs</h3>
-        <p>Comparison of trees and graphs, their traversal techniques, and applications:</p>
-        <ul>
-            <li><strong>Tree:</strong> A hierarchical structure with a single root node. Traversals include pre-order, in-order, and post-order.</li>
-            <li><strong>Graph:</strong> A non-hierarchical structure with nodes and edges that can form cycles. Traversals include Depth-First Search (DFS) and Breadth-First Search (BFS).</li>
-        </ul>
-
-        <h3>2.7 Sorting and Searching Algorithms</h3>
-        <p>Deliberation on sorting and searching algorithms, their techniques, and real-world connections:</p>
-        <ul>
-            <li><strong>Sorting Algorithms:</strong> Bubble Sort, Merge Sort, Quick Sort.</li>
-            <li><strong>Searching Algorithms:</strong> Linear Search, Binary Search.</li>
-        </ul>
-      </div>
-
+    <h1>SDG 9: Industry, Innovation, and Infrastructure</h1>
+    <h2>Targets</h2>
+    <ul>
+        <li><strong>9.1:</strong> Develop quality, reliable, sustainable, and resilient infrastructure to support economic development and human well-being.</li>
+        <li><strong>9.2:</strong> Promote inclusive and sustainable industrialization.</li>
+        <li><strong>9.4:</strong> Upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and clean technologies.</li>
+    </ul>
+    
+    <h2>Indicators</h2>
+    <ul>
+        <li><strong>9.1.1:</strong> Proportion of the rural population who live within 2 km of an all-season road.</li>
+        <li><strong>9.1.2:</strong> Passenger and freight volumes by mode of transport.</li>
+        <li><strong>9.2.1:</strong> Manufacturing value added as a proportion of GDP and per capita.</li>
+        <li><strong>9.4.1:</strong> CO2 emissions per unit of value added.</li>
+    </ul>
 </body>
 </html>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -166,24 +56,16 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
         }
         h1 {
             color: #2c3e50;
-            text-align: center;
         }
         h2 {
-            color: #34495e;
-            margin-top: 20px;
-        }
-        h3 {
-            color: #5d6d7e;
-            margin-top: 15px;
+            color: #2980b9;
         }
         ul {
-            list-style-type: disc;
-            margin-left: 20px;
+            margin: 10px 0;
+            padding-left: 20px;
         }
         li {
             margin-bottom: 10px;
@@ -193,89 +75,130 @@
 <body>
     <h1>Course Learning Reflections</h1>
 
-    <h2>What are the kinds of problems we see in nature?</h2>
-    <p>We often encounter problems in the following categories:</p>
+    <h2>1. What are the kinds of problems we see in nature?</h2>
     <ul>
-        <li><strong>Iteration:</strong> Problems that require repeating a process until a condition is met. For example, traversing a list of items.</li>
-        <li><strong>Recursion:</strong> Problems that can be broken down into smaller sub-problems. For instance, computing factorials or solving Tower of Hanoi.</li>
-        <li><strong>Backtracking:</strong> Problems that involve exploring all possible solutions and abandoning paths that fail. Examples include solving mazes and the N-Queens problem.</li>
+        <li><strong>Iteration:</strong> Problems that require repetitive actions, like simulating natural processes (e.g., daily weather patterns or population growth modeling).</li>
+        <li><strong>Recursion:</strong> Problems like fractal generation, hierarchical organization (e.g., family trees), or solving complex puzzles like the Tower of Hanoi.</li>
+        <li><strong>Backtracking:</strong> Problems involving decision-making, such as solving mazes, finding paths in graphs, or placing queens on a chessboard without conflicts (N-Queens problem).</li>
     </ul>
 
-    <h2>What is space and time efficiency? Why are they important?</h2>
-    <p>Space and time efficiency are key concepts in algorithm design:</p>
+    <h2>2. What is space and time efficiency, and why are they important?</h2>
     <ul>
-        <li><strong>Space Efficiency:</strong> Refers to the amount of memory an algorithm uses. Optimizing space is critical for large-scale data processing or resource-constrained devices.</li>
-        <li><strong>Time Efficiency:</strong> Refers to the amount of time an algorithm takes to complete. Faster algorithms improve user experience and reduce computational costs.</li>
-    </ul>
-    <p>Classes of problems and orders of growth:</p>
-    <ul>
-        <li><strong>Constant Time (O(1)):</strong> Independent of input size. Example: Accessing an element in an array.</li>
-        <li><strong>Logarithmic Time (O(log n)):</strong> Reduces problem size at each step. Example: Binary search.</li>
-        <li><strong>Linear Time (O(n)):</strong> Grows linearly with input size. Example: Iterating over an array.</li>
-        <li><strong>Quadratic Time (O(n²)):</strong> Nested loops. Example: Bubble sort.</li>
-        <li><strong>Exponential Time (O(2ⁿ)):</strong> Grows exponentially. Example: Solving the Traveling Salesman problem.</li>
-    </ul>
-
-    <h2>Takeaways from Design Principles (Chapter 2)</h2>
-    <ul>
-        <li>Understand the problem before designing an algorithm.</li>
-        <li>Focus on modularity and simplicity in solutions.</li>
-        <li>Optimize for both time and space constraints.</li>
-        <li>Use abstraction to reduce complexity and improve clarity.</li>
+        <li><strong>Space Efficiency:</strong> Refers to the amount of memory a program uses. It’s crucial for solving large-scale problems or working in memory-constrained environments (e.g., embedded systems).</li>
+        <li><strong>Time Efficiency:</strong> Measures how quickly an algorithm executes. It ensures scalable solutions that remain feasible as problem sizes increase.</li>
+        <li><strong>Classes of Problems:</strong> Algorithms are often analyzed using <em>Big O notation</em> to classify their performance:
+            <ul>
+                <li><strong>Constant Time (O(1)):</strong> Direct access in arrays.</li>
+                <li><strong>Logarithmic Time (O(log n)):</strong> Binary search.</li>
+                <li><strong>Linear Time (O(n)):</strong> Single loop operations.</li>
+                <li><strong>Quadratic Time (O(n²)):</strong> Nested loops (e.g., bubble sort).</li>
+            </ul>
+        </li>
     </ul>
 
-    <h2>The Hierarchical Data and Tree Data Structures</h2>
-    <p>Hierarchical data structures like trees organize data in a parent-child relationship. Different tree types solve specific problems:</p>
+    <h2>3. Takeaways from different design principles (from Chapter 2):</h2>
     <ul>
-        <li><strong>Tree:</strong> General-purpose hierarchical structure. Example: File systems.</li>
-        <li><strong>Binary Search Tree (BST):</strong> Allows quick search, insert, and delete operations.</li>
-        <li><strong>AVL Tree:</strong> Self-balancing BST to maintain performance.</li>
-        <li><strong>2-3 Tree:</strong> Guarantees balanced structure, commonly used in databases.</li>
-        <li><strong>Red-Black Tree:</strong> Ensures balance with color-based rules, used in maps and sets.</li>
-        <li><strong>Heap:</strong> Used in priority queues and efficient sorting.</li>
-        <li><strong>Trie:</strong> Efficiently stores and retrieves strings, used in autocomplete features.</li>
+        <li><strong>Divide and Conquer:</strong> Breaking problems into smaller subproblems (e.g., Merge Sort, Quick Sort).</li>
+        <li><strong>Dynamic Programming:</strong> Solving overlapping subproblems and storing results (e.g., Fibonacci series).</li>
+        <li><strong>Greedy Algorithms:</strong> Making locally optimal choices at each stage (e.g., Dijkstra's shortest path).</li>
+        <li><strong>Backtracking:</strong> Exploring all possibilities while pruning non-feasible solutions (e.g., solving Sudoku).</li>
     </ul>
 
-    <h2>The Need for Array Query Algorithms</h2>
-    <p>Array query algorithms optimize tasks like searching, sorting, and range queries:</p>
+    <h2>4. The hierarchical data and tree structures</h2>
     <ul>
-        <li>Improves performance in data retrieval and updates.</li>
-        <li>Examples: Binary search, segment trees, and Fenwick trees.</li>
+        <li><strong>Tree Data Structures:</strong> Useful for representing hierarchical data, such as:
+            <ul>
+                <li><strong>Binary Search Tree (BST):</strong> Efficient searching and insertion.</li>
+                <li><strong>AVL Trees:</strong> Self-balancing for maintaining performance.</li>
+                <li><strong>Red-Black Trees:</strong> Balancing for databases.</li>
+                <li><strong>Heap Trees:</strong> Priority queues.</li>
+                <li><strong>Tries:</strong> Efficient prefix searches (e.g., autocomplete).</li>
+            </ul>
+        </li>
+        <li><strong>Real-world Applications:</strong>
+            <ul>
+                <li>Organizing file systems.</li>
+                <li>Decision-making in AI (e.g., game trees).</li>
+                <li>Representing and querying hierarchical relationships.</li>
+            </ul>
+        </li>
     </ul>
 
-    <h2>Trees vs. Graphs</h2>
-    <p>Key differences between trees and graphs:</p>
+    <h2>5. Need for array query algorithms</h2>
     <ul>
-        <li><strong>Trees:</strong> Connected and acyclic. Applications: Hierarchies, decision-making processes.</li>
-        <li><strong>Graphs:</strong> May have cycles and are more general. Applications: Social networks, transportation networks.</li>
-    </ul>
-    <p>Traversal techniques:</p>
-    <ul>
-        <li>Tree Traversal: Preorder, Inorder, Postorder.</li>
-        <li>Graph Traversal: Depth-First Search (DFS), Breadth-First Search (BFS).</li>
-    </ul>
-
-    <h2>Sorting and Searching Algorithms</h2>
-    <p>Sorting and searching algorithms are fundamental in data processing:</p>
-    <ul>
-        <li><strong>Sorting:</strong> Organizes data for efficient access. Examples: Merge sort, Quick sort.</li>
-        <li><strong>Searching:</strong> Finds data efficiently. Examples: Binary search.</li>
+        <li><strong>Applications:</strong>
+            <ul>
+                <li><strong>Range Queries:</strong> Used in database systems or financial analysis.</li>
+                <li><strong>Segment Trees:</strong> Efficient for range queries and updates.</li>
+                <li><strong>Fenwick Trees:</strong> Efficient cumulative frequency computations.</li>
+            </ul>
+        </li>
+        <li><strong>Implications:</strong> Improves performance of real-time analytics and data retrieval.</li>
     </ul>
 
-    <h2>Graph Algorithms</h2>
-    <p>Graph algorithms address connectivity and optimization problems:</p>
+    <h2>6. Differences between trees and graphs</h2>
     <ul>
-        <li><strong>Spanning Trees:</strong> Minimum spanning trees (e.g., Kruskal’s algorithm) optimize connectivity.</li>
-        <li><strong>Shortest Path Algorithms:</strong> Dijkstra’s and Bellman-Ford algorithms find optimal routes.</li>
+        <li><strong>Trees:</strong>
+            <ul>
+                <li>Hierarchical and acyclic.</li>
+                <li>Single unique path between any two nodes.</li>
+                <li>Used in data structures like heaps and tries.</li>
+            </ul>
+        </li>
+        <li><strong>Graphs:</strong>
+            <ul>
+                <li>Generalized structure with nodes and edges (can be cyclic).</li>
+                <li>Used for networks (social, transportation, communication).</li>
+            </ul>
+        </li>
+        <li><strong>Traversal:</strong>
+            <ul>
+                <li><strong>Trees:</strong> Depth-First Search (DFS), Breadth-First Search (BFS).</li>
+                <li><strong>Graphs:</strong> Additional considerations for cycles and disconnected components.</li>
+            </ul>
+        </li>
     </ul>
 
-    <h2>Algorithm Design Techniques</h2>
-    <p>Studied algorithm design techniques include:</p>
+    <h2>7. Sorting and searching algorithms</h2>
     <ul>
-        <li>Divide and Conquer.</li>
-        <li>Dynamic Programming.</li>
-        <li>Greedy Algorithms.</li>
-        <li>Backtracking and Branch-and-Bound.</li>
+        <li><strong>Sorting Algorithms:</strong>
+            <ul>
+                <li><strong>Quick Sort:</strong> Divide and conquer, efficient for large datasets.</li>
+                <li><strong>Merge Sort:</strong> Stable and predictable performance.</li>
+            </ul>
+        </li>
+        <li><strong>Searching Algorithms:</strong>
+            <ul>
+                <li><strong>Linear Search:</strong> Simple, checks elements one by one.</li>
+                <li><strong>Binary Search:</strong> Requires sorted data, faster for large datasets.</li>
+            </ul>
+        </li>
+        <li><strong>Real-world Applications:</strong>
+            <ul>
+                <li>Sorting datasets for analysis.</li>
+                <li>Searching in e-commerce platforms or search engines.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>8. Graph algorithms and shortest paths</h2>
+    <ul>
+        <li><strong>Spanning Trees:</strong> Minimal connections in a graph without cycles (e.g., Minimum Spanning Tree for network design).</li>
+        <li><strong>Shortest Paths:</strong>
+            <ul>
+                <li><strong>Dijkstra’s Algorithm:</strong> Finds shortest paths in weighted graphs.</li>
+                <li><strong>Bellman-Ford Algorithm:</strong> Works with graphs having negative weights.</li>
+            </ul>
+        </li>
+        <li><strong>Applications:</strong> Navigation systems, network routing.</li>
+    </ul>
+
+    <h2>9. Algorithm design techniques</h2>
+    <ul>
+        <li><strong>Brute Force:</strong> Simple but inefficient (e.g., generating all combinations).</li>
+        <li><strong>Dynamic Programming:</strong> Optimized for overlapping subproblems (e.g., knapsack problem).</li>
+        <li><strong>Greedy:</strong> Quick and intuitive solutions for optimization problems.</li>
+        <li><strong>Divide and Conquer:</strong> Foundational for efficient algorithms like mergesort and binary search.</li>
     </ul>
 </body>
 </html>
