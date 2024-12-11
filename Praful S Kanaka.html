@@ -122,7 +122,7 @@
     <!-- New SDG Section -->
     <div class="sdg-section">
         <h2>Business Cases and Relevant SDG Indicators</h2>
-        <p>My business cases focus on ENERGY and EDUCATION. Below are the SDG indicators and targets relevant to each case:</p>
+        <p>My business cases focus on energy and education. Below are the SDG indicators and targets relevant to each case:</p>
 
         <h3>Energy Business Case</h3>
         <p><strong>Relevant SDG Indicators and Targets:</strong></p>
@@ -187,4 +187,76 @@
         <h2>4. Hierarchical Data and Tree Data Structures</h2>
         <p>Tree data structures are excellent for modeling hierarchical data and optimizing search and insertion operations.</p>
         <ul>
-            <li><strong>Binary Tree:</strong> Each node has at most two children, left and
+            <li><strong>Binary Tree:</strong> Each node has at most two children, left and right.</li>
+            <li><strong>Binary Search Tree (BST):</strong> A binary tree where the left child is smaller and the right child is larger than the parent node.</li>
+            <li><strong>AVL Tree:</strong> A self-balancing BST with height difference at most 1, ensuring O(log n) operations.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Array Query Algorithms and Their Implications</h2>
+        <p>These algorithms help in efficiently retrieving or updating elements in an array:</p>
+        <ul>
+            <li><strong>Prefix Sum:</strong> Preprocesses an array so the sum of any subarray can be queried in constant time.</li>
+            <li><strong>Segment Tree:</strong> A tree-based data structure for efficiently answering range queries and updates.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Tree vs. Graphs and Their Traversals</h2>
+        <p>Both trees and graphs are used to represent hierarchical relationships, but they differ in structure and traversal strategies:</p>
+        <ul>
+            <li><strong>Tree:</strong> A hierarchical structure with a single root node. Traversals include:
+                <ul>
+                    <li><strong>Pre-order:</strong> Visit the root, then left subtree, then right subtree.</li>
+                    <li><strong>In-order:</strong> Visit the left subtree, then the root, then the right subtree.</li>
+                    <li><strong>Post-order:</strong> Visit the left subtree, then right subtree, then the root.</li>
+                </ul>
+            </li>
+            <li><strong>Graph:</strong> A non-hierarchical structure with nodes and edges that can form cycles. Traversals include:
+                <ul>
+                    <li><strong>Depth-First Search (DFS):</strong> Explore as far down a branch as possible before backtracking.</li>
+                    <li><strong>Breadth-First Search (BFS):</strong> Explore all neighbors at the present depth before moving on to nodes at the next depth level.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Sorting and Searching Algorithms</h2>
+        <p>Sorting and searching are fundamental operations in computer science. Common algorithms include:</p>
+        <ul>
+            <li><strong>Sorting Algorithms:</strong>
+                <ul>
+                    <li><strong>Bubble Sort:</strong> Repeatedly swap adjacent elements if they are in the wrong order.</li>
+                    <li><strong>Merge Sort:</strong> Divide the array into halves, sort each half, and merge them back together.</li>
+                    <li><strong>Quick Sort:</strong> Select a pivot, partition the array into elements less than and greater than the pivot, and recursively sort each partition.</li>
+                </ul>
+            </li>
+            <li><strong>Searching Algorithms:</strong>
+                <ul>
+                    <li><strong>Linear Search:</strong> Check each element sequentially.</li>
+                    <li><strong>Binary Search:</strong> Divide the search interval in half repeatedly (requires sorted array).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Importance of Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+        <h3>Spanning Trees</h3>
+        <p>A spanning tree of a connected graph is a tree that includes all the vertices of the graph, without any cycles.</p>
+        <ul>
+            <li><strong>Kruskal's Algorithm:</strong> Finds the minimum spanning tree by adding edges in increasing order of weight.</li>
+            <li><strong>Prim's Algorithm:</strong> Grows the minimum spanning tree by starting from an arbitrary node and adding the smallest edge that connects the tree to a new vertex.</li>
+        </ul>
+        <h3>Shortest Paths</h3>
+        <p>Algorithms to find the shortest paths between nodes in a graph:</p>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong> Computes the shortest paths from a source vertex to all other vertices in a weighted graph.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Handles graphs with negative weight edges but slower than Dijkstra's.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
