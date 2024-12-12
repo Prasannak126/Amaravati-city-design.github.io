@@ -99,6 +99,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 40px;
+            display: none; /* Initially hidden */
         }
 
         .sdg-section h2 {
@@ -130,11 +131,6 @@
 
         .business-case-button:hover {
             background-color: #e0b97a;
-        }
-
-        /* Hide the SDG section by default */
-        .sdg-section-content {
-            display: none;
         }
     </style>
 </head>
@@ -188,6 +184,22 @@
             <li><strong>Sorting Algorithms</strong> - Algorithms like **Quick Sort** or **Merge Sort** can be used to efficiently organize data, such as ranking schools by available resources, or sorting energy usage patterns to prioritize areas of high demand.</li>
         </ul>
     </div>
+
+    <script>
+        // Function to toggle the visibility of the Business Case section
+        function toggleSDGSection() {
+            var section = document.getElementById('sdg-section');
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';  // Show the section
+            } else {
+                section.style.display = 'none';   // Hide the section
+            }
+        }
+    </script>
+
+</body>
+</html>
+
 
     <div class="section">
         <h2>1. Types of Problems in Nature (Iteration, Recursion, Backtracking)</h2>
