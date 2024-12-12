@@ -110,7 +110,38 @@
         .sdg-section ul {
             margin-top: 10px;
         }
+
+        /* Button styling */
+        .btn {
+            padding: 10px 20px;
+            background-color: #f1c27d;
+            color: #121212;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #e0b97a;
+        }
+
+        /* Initially hide the SDG section */
+        #business-case-section {
+            display: none;
+        }
     </style>
+    <script>
+        function toggleBusinessCase() {
+            var section = document.getElementById('business-case-section');
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -119,8 +150,11 @@
         <p>Explore the world of algorithms and data structures with a deep dive into their various applications and principles.</p>
     </div>
 
-    <!-- New SDG Section -->
-    <div class="sdg-section">
+    <!-- Button to toggle Business Case and SDG section -->
+    <button class="btn" onclick="toggleBusinessCase()">Business Case</button>
+
+    <!-- Business Case and SDG Section -->
+    <div id="business-case-section" class="sdg-section">
         <h2>Business Cases and Relevant SDG Indicators</h2>
         <p>My business cases focus on energy and education. Below are the SDG indicators and targets relevant to each case:</p>
 
@@ -167,6 +201,18 @@
             <li><strong>Space Efficiency:</strong> Refers to the amount of memory the algorithm uses during its execution. Similarly, it is also expressed in Big O notation (e.g., O(1) for constant space, O(n) for linear space).</li>
         </ul>
         <h3>Importance</h3>
+        <p>Efficiency is crucial for handling large data sets or real-time systems where excessive resource consumption can lead to poor performance or failure to meet operational requirements.</p>
+        <h3>Class of Problems and Orders of Growth</h3>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
+            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
+            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
+        </ul>
+    </div>
+
+     <h3>Importance</h3>
         <p>Efficiency is crucial for handling large data sets or real-time systems where excessive resource consumption can lead to poor performance or failure to meet operational requirements.</p>
         <h3>Class of Problems and Orders of Growth</h3>
         <ul>
@@ -263,6 +309,7 @@
         </ul>
     </div>
 
+
+
 </body>
 </html>
-
