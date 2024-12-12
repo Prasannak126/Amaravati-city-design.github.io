@@ -111,41 +111,32 @@
             margin-top: 10px;
         }
 
-        /* Button styling */
-        .btn {
-            display: block;
-            margin: 40px auto; /* Center the button horizontally with auto margin */
-            padding: 20px 40px; /* Increase padding for larger button */
-            background-color: #f1c27d;
-            color: #121212;
-            font-size: 1.5em; /* Increase font size for larger text */
-            border: none;
-            border-radius: 10px; /* Make button corners rounded */
-            cursor: pointer;
-            width: auto;
+        /* Styling for the button */
+        .button-container {
             text-align: center;
-            box-sizing: border-box;
+            margin: 40px 0;
         }
 
-        .btn:hover {
+        .business-case-button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #f1c27d;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .business-case-button:hover {
             background-color: #e0b97a;
         }
 
-        /* Initially hide the SDG section */
-        #business-case-section {
+        /* Hide the SDG section by default */
+        .sdg-section-content {
             display: none;
         }
     </style>
-    <script>
-        function toggleBusinessCase() {
-            var section = document.getElementById('business-case-section');
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -154,11 +145,13 @@
         <p>Explore the world of algorithms and data structures with a deep dive into their various applications and principles.</p>
     </div>
 
-    <!-- Button to toggle Business Case and SDG section -->
-    <button class="btn" onclick="toggleBusinessCase()">Business Case</button>
+    <!-- Button to Show/Hide Business Case Section -->
+    <div class="button-container">
+        <button class="business-case-button" onclick="toggleSDGSection()">Business Case</button>
+    </div>
 
-    <!-- Business Case and SDG Section -->
-    <div id="business-case-section" class="sdg-section">
+    <!-- Business Case and Relevant SDG Section -->
+    <div id="sdg-section" class="sdg-section">
         <h2>Business Cases and Relevant SDG Indicators</h2>
         <p>My business cases focus on energy and education. Below are the SDG indicators and targets relevant to each case:</p>
 
@@ -180,12 +173,38 @@
             <li><strong>4.4.1</strong> - Proportion of youth and adults with information and communications technology (ICT) skills</li>
             <li><strong>4.A.1</strong> - Proportion of schools with access to basic services (electricity, internet, computers, etc.)</li>
         </ul>
+
         <h3>Key Takeaways</h3>
         <ul>
             <li><strong>Energy Business Case:</strong> Investment in renewable energy technologies and energy efficiency can not only create profitable business opportunities but also contribute significantly to combating climate change and providing access to clean energy worldwide.</li>
             <li><strong>Education Business Case:</strong> The rise of digital learning and upskilling programs presents an opportunity to bridge the education gap and empower individuals with the skills needed to thrive in the modern workforce, ultimately fostering social and economic equality.</li>
         </ul>
+
+        <h3>Relevant Algorithms</h3>
+        <p>Several algorithms can be applied to the business case problems in both energy and education sectors:</p>
+        <ul>
+            <li><strong>Kruskal's Algorithm</strong> - Used for **minimum spanning tree** problems, such as optimizing energy distribution networks or connecting educational facilities in a cost-effective manner. It helps to determine the least costly connections between various network nodes.</li>
+            <li><strong>Dijkstra's Algorithm</strong> - Useful for finding the **shortest paths** in a network. For example, it could be applied to find the most efficient routes for distributing energy or educational resources across multiple locations.</li>
+            <li><strong>Sorting Algorithms</strong> - Algorithms like **Quick Sort** or **Merge Sort** can be used to efficiently organize data, such as ranking schools by available resources, or sorting energy usage patterns to prioritize areas of high demand.</li>
+        </ul>
     </div>
+
+    <div class="section">
+        <h2>1. Types of Problems in Nature (Iteration, Recursion, Backtracking)</h2>
+        <p>Many computational problems can be categorized based on how they are solved, particularly using iterative, recursive, or backtracking approaches:</p>
+        <ul>
+            <li><strong>Iteration:</strong> Involves repeating a set of instructions until a condition is met. Common in problems where you know the number of iterations ahead of time.</li>
+            <li><strong>Recursion:</strong> Occurs when a function calls itself to solve a smaller version of the problem. It's useful when the problem can naturally be divided into subproblems.</li>
+            <li><strong>Backtracking:</strong> Used for problems involving choices, where you explore all possibilities and "backtrack" when a dead-end is reached (e.g., puzzles like Sudoku, N-Queens problem).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Space and Time Efficiency</h2>
+        <p>Space and time efficiency refer to how efficiently an algorithm uses computer resources (memory and time) to solve a problem.</p>
+        <ul>
+            <li><strong>Time Efficiency:</strong> Measured by how fast an algorithm runs as the input size grows. It is often expressed using Big O notation (
+
 
     <div class="section">
         <h2>1. Types of Problems in Nature (Iteration, Recursion, Backtracking)</h2>
