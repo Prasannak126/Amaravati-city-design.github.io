@@ -1,12 +1,13 @@
-
 #include <iostream>
 #include <vector>
 using namespace std;
 
-// Define a large number for infinity
 const int INF = 100000;
 
-// Graph structure for Dijkstra's algorithm
+struct Edge {
+    int src, dest, distance, sensitivity, weight;
+};
+
 class Graph {
     int V;
     vector<pair<int, int>>* adjList;
@@ -18,7 +19,6 @@ public:
 
     void addEdge(int u, int v, int weight) {
         adjList[u].push_back({v, weight});
-        adjList[v].push_back({u, weight}); // Because the graph is undirected
     }
 
     vector<int> dijkstra(int src) {
@@ -54,33 +54,31 @@ public:
 };
 
 int main() {
-    // Node definition
-    char nodes[] = {'E', 'A', 'B', 'C', 'D', 'F'};
-    int V = sizeof(nodes) / sizeof(nodes[0]);
+    vector<Edge> edges = {
+        {0, 1, 100, 1, 101}, // EA
+        {0, 2, 150, 2, 152}, // EB
+        {0, 3, 80,  1, 81},  // EC
+        {0, 4, 200, 3, 203}, // ED
+        {1, 2, 50,  1, 51},  // AB
+        {1, 3, 120, 2, 122}, // AC
+        {1, 4, 180, 3, 183}, // AD
+        {2, 3, 70,  1, 71},  // BC
+        {2, 4, 100, 2, 102}, // BD
+        {2, 5, 150, 1, 151}, // BE
+        {3, 6, 80,  1, 81},  // CF
+        {4, 6, 120, 2, 122}  // DF
+    };
 
-    // Create a graph
+    int V = 7; // Number of nodes: 0 (Entrance), 1 (A), 2 (B), 3 (C), 4 (D), 5 (E), 6 (F)
     Graph g(V);
 
-    // Edge creation and weighting
-    g.addEdge(0, 1, 101); // EA
-    g.addEdge(0, 2, 152); // EB
-    g.addEdge(0, 3, 81);  // EC
-    g.addEdge(0, 4, 203); // ED
-    g.addEdge(1, 2, 51);  // AB
-    g.addEdge(1, 3, 122); // AC
-    g.addEdge(1, 4, 183); // AD
-    g.addEdge(2, 3, 71);  // BC
-    g.addEdge(2, 4, 102); // BD
-    g.addEdge(2, 0, 151); // BE
-    g.addEdge(3, 5, 81);  // CF
-    g.addEdge(4, 5, 122); // DF
-
-    // Apply Dijkstra's algorithm from the Entrance ('E' or node 0)
+    for (const Edge& edge : edges) {
+        g.addEdge(edge.src, edge.dest, edge.weight);
+    }
     vector<int> distances = g.dijkstra(0);
-
-    // Output distances from the Entrance to all other nodes
+    char nodes[] = {'E', 'A', 'B', 'C', 'D', 'F'};
     cout << "Shortest paths from Entrance (Dijkstra's Algorithm):" << endl;
-    for (int i = 0; i < V; ++i) {
+    for (int i = 0; i < 6; ++i) {
         cout << "Distance to " << nodes[i] << ": " << distances[i] << endl;
     }
 
