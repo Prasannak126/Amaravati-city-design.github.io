@@ -131,7 +131,7 @@
     </div>
 </body>
 </html>
-        <!DOCTYPE html>
+       <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -168,130 +168,84 @@
     <h2>Nodes</h2>
     <table>
         <tr>
-            <th>Node Name</th>
-            <th>ID</th>
-        </tr>
-        <tr>
-            <td>Entrance</td>
-            <td>0</td>
+            <th>Node</th>
+            <th>Location</th>
         </tr>
         <tr>
             <td>A</td>
-            <td>1</td>
+            <td>Entrance</td>
         </tr>
         <tr>
             <td>B</td>
-            <td>2</        </tr>
+            <td>Butterfly Park</td>
+        </tr>
         <tr>
             <td>C</td>
-            <td>3</td>
+            <td>Rose Garden</td>
         </tr>
         <tr>
             <td>D</td>
-            <td>4</td>
+            <td>Viewing Point</td>
         </tr>
         <tr>
             <td>E</td>
-            <td>5</td>
+            <td>Picnic Area</td>
         </tr>
         <tr>
             <td>F</td>
-            <td>6</td>
+            <td>Exit</td>
         </tr>
     </table>
     
     <h2>Edges</h2>
     <table>
         <tr>
-            <th>Source Node ID</th>
-            <th>Destination Node ID</th>
+            <th>Edge</th>
             <th>Distance (m)</th>
             <th>Sensitivity</th>
-            <th>Weight</th>
+            <th>Weight (Distance + Sensitivity)</th>
         </tr>
         <tr>
-            <td>0</td>
-            <td>1</td>
+            <td>A-B</td>
+            <td>200</td>
+            <td>Low (1)</td>
+            <td>201</td>
+        </tr>
+        <tr>
+            <td>A-C</td>
+            <td>300</td>
+            <td>Medium (2)</td>
+            <td>302</td>
+        </tr>
+        <tr>
+            <td>B-D</td>
+            <td>150</td>
+            <td>High (3)</td>
+            <td>153</td>
+        </tr>
+        <tr>
+            <td>B-E</td>
+            <td>250</td>
+            <td>Medium (2)</td>
+            <td>252</td>
+        </tr>
+        <tr>
+            <td>C-D</td>
             <td>100</td>
-            <td>1</td>
+            <td>Low (1)</td>
             <td>101</td>
         </tr>
         <tr>
-            <td>0</td>
-            <td>2</td>
-            <td>150</td>
-            <td>2</td>
-            <td>152</td>
+            <td>C-F</td>
+            <td>400</td>
+            <td>Medium (2)</td>
+            <td>402</td>
         </tr>
         <tr>
-            <td>0</td>
-            <td>3</td>
-            <td>80</td>
-            <td>1</td>
-            <td>81</td>
-        </tr>
-        <tr>
-            <td>0</td>
-            <td>4</td>
-            <td>200</td>
-            <td>3</td>
-            <td>203</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>50</td>
-            <td>1</td>
-            <td>51</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>3</td>
-            <td>120</td>
-            <td>2</td>
-            <td>122</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>4</td>
-            <td>180</td>
-            <td>3</td>
-            <td>183</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>3</td>
-            <td>70</td>
-            <td>1</td>
-            <td>71</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>4</td>
-            <td>100</td>
-            <td>2</td>
-            <td>102</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>5</td>
-            <td>150</td>
-            <td>1</td>
-            <td>151</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>6</td>
-            <td>80</td>
-            <td>1</td>
-            <td>81</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>6</td>
-            <td>120</td>
-            <td>2</td>
-            <td>122</td>
+            <td>D-F</td>
+            <td>300</td>
+            <td>Low (1)</td>
+            <td>301</td>
         </tr>
     </table>
 </body>
