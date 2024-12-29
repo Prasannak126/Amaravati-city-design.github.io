@@ -785,10 +785,271 @@
             <th>Group Size</th>
             <th>Contact Information</th>
             <th>Time Slot</
+                <h4>Input file</h4>
                  <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Management.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues, BST and Skip liSt.cpp">Queues, BST and Skip liSt</a>
+            </head>
+<body>
 
+    <h3>Lake Management and Erosion Control</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>Excessive boating and water sports in lakes can disturb wildlife and lead to significant shoreline erosion. The constant disturbances and wave actions can damage ecosystems, displace aquatic species, and cause long-term degradation of the lake's natural environment. Addressing these issues requires analyzing the impact zones and identifying areas that need immediate action to protect both wildlife and the shoreline.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>To effectively manage the environmental impacts of boating and water sports, the following solutions are proposed:</p>
+        <ul>
+            <li><strong>Data Analysis</strong>: Using advanced algorithms to analyze the lake and surrounding areas, modeling zones affected by erosion and wildlife disturbances.</li>
+            <li><strong>Graph Algorithms (DFS/BFS)</strong>: Model the lake and its surroundings as a graph to analyze and identify zones most affected by erosion and disturbance, using **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** to explore the regions.</li>
+            <li><strong>Union-Find</strong>: Manage connected components of the lake to identify contiguous affected regions where the impact is most severe and needs attention.</li>
+            <li><strong>Segment Tree</strong>: Efficiently query and update information about erosion levels and wildlife activity, providing real-time data for decision-making and intervention.</li>
+            <li><strong>Heap</strong>: Prioritize areas for immediate action based on the severity of impact, ensuring that the most affected zones are addressed first.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Graph Algorithms (DFS/BFS)</h4>
+        <p>We will model the lake and its surrounding areas as a graph, where each region or zone is represented as a node and the connections between zones (e.g., adjacent shorelines) are represented as edges. **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** will be used to traverse the graph and analyze which zones are most impacted by erosion and wildlife disturbances. These algorithms will help to understand the extent of the affected areas and how disturbances propagate across the lake.</p>
+
+        <h4>Union-Find</h4>
+        <p>The **Union-Find** algorithm will be used to identify connected components within the graph. This helps to determine which regions of the lake are contiguous and most affected by the disturbances. If one area is disturbed, the Union-Find data structure will help us group all connected zones together to prioritize actions based on the level of impact.</p>
+
+        <h4>Segment Tree</h4>
+        <p>A **Segment Tree** will be implemented to efficiently query and update the erosion levels and wildlife activity in different sections of the lake. The segment tree will allow us to store information about different segments of the lake's shoreline and efficiently compute the current status of erosion and wildlife in each section. It will also help in updating the data as activities like boating or water sports take place.</p>
+
+        <h4>Heap</h4>
+        <p>A **Heap** will be used to prioritize areas for immediate action based on the severity of erosion and the impact on wildlife. Areas that show the most disturbance or are experiencing high levels of erosion will be given priority for intervention, ensuring that resources are used effectively to protect the environment.</p>
+
+        <h4>System Workflow</h4>
+        <p>The system will operate as follows:</p>
+        <ul>
+            <li>The lake and surrounding areas will be modeled as a **graph**, with regions as nodes and connections as edges.</li>
+            <li>**DFS/BFS** algorithms will be used to explore and identify the most affected regions based on observed disturbance and erosion data.</li>
+            <li>The **Union-Find** algorithm will group connected areas together, identifying contiguous impacted zones for intervention.</li>
+            <li>The **Segment Tree** will store real-time data on erosion levels and wildlife activity, allowing for quick querying and updates based on real-time data collection.</li>
+            <li>A **Heap** will prioritize areas that need the most immediate action, based on the severity of impact.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Lake management system simulation will be implemented here.')">Run Lake Management Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Collection for Tourism and Environmental Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Collection for Tourism and Environmental Management</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Entry Point A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>Main entry point</td>
+        </tr>
+        <tr>
+            <td>Tourist Attraction 1</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Historical monument</td>
+        </tr>
+        <tr>
+            <td>Water Sports Area 1</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Boating and jet skiing area</td>
+        </tr>
+        <tr>
+            <td>Hotel B</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>5-star hotel</td>
+        </tr>
+    </table>
+
+    <h2>Visitor Data</h2>
+    <table>
+        <tr>
+            <th>Age Group</th>
+            <th>Gender</th>
+            <th>Origin</th>
+            <th>Entry Point</th>
+            <th>Daily Count</th>
+            <th>Peak Hours</th>
+        </tr>
+        <tr>
+            <td>18-25</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>500</td>
+            <td>10 AM - 12 PM</td>
+        </tr>
+        <tr>
+            <td>25-40</td>
+            <td>Female</td>
+            <td>Tourist</td>
+            <td>Entry B</td>
+            <td>300</td>
+            <td>1 PM - 3 PM</td>
+        </tr>
+        <tr>
+            <td>40-60</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>200</td>
+            <td>4 PM - 6 PM</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Location</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>pH Level</td>
+            <td>Lake Monitoring Point 1</td>
+            <td>7.4</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Erosion Rate</td>
+            <td>Shoreline A</td>
+            <td>0.5 cm/yr</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Wildlife Sightings</td>
+            <td>Habitat A</td>
+            <td>15 sightings/day</td>
+            <td>Weekly</td>
+        </tr>
+        <tr>
+            <td>Water Usage</td>
+            <td>Tourism Zone A</td>
+            <td>1,000 liters/day</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Electricity Usage</td>
+            <td>Tourism Zone B</td>
+            <td>5,000 kWh/day</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Waste Generation</td>
+            <td>Tourism Zone C</td>
+            <td>2 tons/day</td>
+            <td>Daily</td>
+        </tr>
+    </table>
+
+    <h2>Erosion and Wildlife Impact Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Erosion Severity</th>
+            <th>Wildlife Disturbance</th>
+        </tr>
+        <tr>
+            <td>Shoreline A</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>High</td>
+            <td>Frequent</td>
+        </tr>
+        <tr>
+            <td>Shoreline B</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>Moderate</td>
+            <td>Occasional</td>
+        </tr>
+        <tr>
+            <td>Wildlife Habitat A</td>
+            <td>(34.0530, -118.2445)</td>
+            <td>Low</td>
+            <td>Rare</td>
+        </tr>
+    </table>
+
+    <h2>Infrastructure Data</h2>
+    <table>
+        <tr>
+            <th>Infrastructure Type</th>
+            <th>Location</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>Road</td>
+            <td>Entry Point A</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Railway</td>
+            <td>Near Tourist Attraction 1</td>
+            <td>Average</td>
+        </tr>
+        <tr>
+            <td>Public Transport</td>
+            <td>Commercial Zone A</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Utility Services</td>
+            <td>Various</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+ <h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Lake.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Graph, Union-find and Tree.cpp">Graph, Union-find and Tree</a>
 
         <h3>Agriculture</h3>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
