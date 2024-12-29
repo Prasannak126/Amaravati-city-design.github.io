@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City - Industry and Transportation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #f1c27d;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #f1c27d;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: #f1c27d;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+       a {
+    color: #007bff; /* Default color: Blue */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #dc3545; /* Hover color: Red */
+}
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #f1c27d;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #f1c27d;
+            background-color: #222222;
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amaravati Smart City Development</h1>
+         <h1>Welcome to Prateek Ariga's Webpage</h1>
+        <nav>
+            <a href="#reflections">Reflections</a>
+            <a href="#industry">Industry</a>
+            <a href="#transportation">Transportation</a>
+            <a href="#sdg">SDG</a>
+            <a href="kruskalbyprateek.cpp">Kruskal_code</a>
+            <a href="#simulation">Simulations</a>
+            <a href="#conclusion">Conclusion</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="reflections" class="section">
+            <h2>1. Reflections On Business Case Study</h2>
+            
+            <h3>1.1 Kind of Problems in Nature:</h3>
+            <p>A lot of computable problems can be solved, particularly using iterative, recursive, or backtracking approaches:</p>
+        <ul>
+            <li><strong>Iteration:</strong>Problems solved by repeatedly executing a set of instructions until a condition is met. Examples in nature include growth patterns (e.g., plant growth in steps), water flow cycles, and seasonal changes.</li>
+            <li><strong>Recursion:</strong>Problems that can be broken down into smaller instances of the same problem. Nature examples include fractals in snowflakes, tree branching, and animal food chain hierarchies.</li>
+            <li><strong>Backtracking:</strong>Problems that involve searching for a solution by trying possibilities and reverting when a path fails. Examples include the behavior of ants finding optimal paths or maze-solving patterns in animals.</li>
+        </ul>
+            
+         <h3>1.2 Space and Time Efficiency</h3>
+        <p>Space and time efficiency refer to how efficiently an algorithm uses computer resources (memory and time) to solve a problem.</p>
+        <ul>
+            <li><strong>Time Efficiency:</strong> Measured by how fast an algorithm runs as the input size grows. It is often expressed using Big O notation (e.g., O(n), O(n²)).</li>
+            <li><strong>Space Efficiency:</strong> Refers to the amount of memory the algorithm uses during its execution. Similarly, it is also expressed in Big O notation (e.g., O(1) for constant space, O(n) for linear space).</li>
+        </ul>
+        <p><strong>Class of Problems and Orders of Growth:</strong></p>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Operations that take the same amount of time regardless of input size.Example: Accessing an array element by index.</li>
+            <li><strong>Linear Time:</strong> O(n) -Operations that take time proportional to the input size.Example: Linear search.</li>
+            <li><strong>Quadratic Time:</strong> O(n²) -Performance quadratically increases with input size.Example: Nested loop algorithms</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Efficient for large datasets.Example: Binary search in sorted arrays.</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Computationally expensive.Example: Brute-force solutions to complex problems</li>
+        </ul>
+
+        <h3>1.3 Design Principles from Chapter 2</h3>
+        <p>Takeaways from Design Principles:</p>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve each recursively, and combine the results.</li>
+            <li><strong>Greedy Algorithms:</strong> Make the locally optimal choice at each step, hoping it leads to a globally optimal solution.</li>
+            <li><strong>Dynamic Programming:</strong> Break problems into overlapping subproblems and store solutions to avoid redundant work.</li>
+            <li><strong>Bubble Sort:</strong> Simple to understand and implement, best for small datasets.</li>
+            <li><strong>Selection Sort:</strong> Minimal swaps compared to bubble sort but not adaptive.</li>
+            <li><strong>Insertion Sort:</strong> Efficient for partially sorted datasets.</li>
+            <li><strong>Merge Sort:</strong> Stable and efficient for large dataset sorting.</li>
+            <li><strong>Quick Sort:</strong> In-place but not stable, efficient for large datasets.</li>
+            <li><strong>Heap Sort:</strong> In-place but not stable.</li>
+            <li><strong>Boyer More Algorithm:</strong> Effective for long texts and patterns. Utilizes pre-computation for optimal performance but requires extra space for preprocessing.</li>
+            <li><strong>Kruskal’s algorithm:</strong> Requires cycle detection, often implemented using union-find data structure. Suitable for sparse graphs.</li>
+            <li><strong>Dijkstra’s algorithm:</strong> Provides optimal solutions for single-source shortest paths in directed or undirected graphs.</li>
+            <li><strong>Floyd’s algorithm:</strong> Based on the principle of Kleene’s Theorem. All-pairs shortest path algorithm.</li>
+            <li><strong>Warshall’s algorithm:</strong> Based on the principle of Kleene’s theorem. Transitive closure algorithm. We can try to make the algorithm run faster by treating matrix as bit strings and employing bitwise operations.</li>
+            <li><strong>Prim’s Algorithm:</strong> Prim’s is based on the edge relaxation principle. Minimum spanning tree algorithm. Falls under the Greedy technique.</li>
+        </ul>
+
+        <h3>1.4 Hierarchical Data and Tree Data Structures</h3>
+        <p>Trees are used to represent hierarchical data. Different tree data structures have specific properties and optimizations:</p>
+        <ul>
+            <li><strong>Binary Tree:</strong> Each node has at most two children, left and right.</li>
+            <li><strong>Binary Search Tree (BST):</strong>  A binary tree where the left child is smaller and the right child is larger than the parent node.</li>
+            <li><strong>AVL Tree:</strong> A self-balancing BST with height difference at most 1, ensuring O(log n) operations.</li>
+            <li><strong>2-3 Tree:</strong> A tree where each node can have two or three children.</li>
+            <li><strong>Red-Black Tree:</strong> A self-balancing BST ensuring operations remain O(log n).</li>
+            <li><strong>Heap:</strong> A tree-based data structure useful for priority queues.</li>
+            <li><strong>Trie:</strong> A specialized tree for storing strings, used in dictionary and search applications.</li>
+        </ul>
+
+        <h3>1.5 Array Query Algorithms</h3>
+        <p>These algorithms help in efficiently retrieving or updating elements in an array and they include Fenwick Tree, Segment Tree, Lookup Table,Prefix sum.</p>
+        <ul>
+            <li><strong>Prefix Sum:</strong> Preprocesses an array so the sum of any subarray can be queried in constant time.</li>
+            <li><strong>Segment Tree:</strong> A tree-based data structure for efficiently answering range queries and updates.</li>
+            <li><strong>Fenwick Tree:</strong>
+                <ul>
+                    <li>Principle: Supports efficient range queries and point updates.</li>
+                    <li>Application: Cumulative frequency counts in online queries.</li>
+                </ul>
+            </li>
+            <li><strong>Lookup Table:</strong>
+                <ul>
+                    <li>Principle: Precomputes results for all possible inputs.</li>
+                    <li>Application: Collision detection, AI decision trees.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>1.6 Trees vs. Graphs</h3>
+        <p>Comparison of trees and graphs, their traversal techniques, and applications:</p>
+        <ul>
+            <li><strong>Tree:</strong> Hierarchical.Directed and acyclic.Applications: File systems, decision-making algorithms.</li>
+            <li><strong>Graph:</strong>General connections.Can be cyclic.Applications: Social networks, transportation networks.</li>
+            <li><strong>Traversals:</strong>Tree: Preorder, Inorder, Postorder.Graph: Depth-First Search (DFS), Breadth-First Search (BFS).</li>
+        </ul>
+
+        <h3>1.7 Sorting and Searching Algorithms</h3>
+        <p>Deliberation on sorting and searching algorithms, their techniques, and real-world connections:</p>
+        <ul>
+            <li><strong>Sorting Algorithms:</strong>*Bubble Sort: Compares adjacent elements and swaps them if they are in the wrong order.
+                                                    *Insertion Sort: Inserts elements into their correct position one by one.
+                                                    *Merge Sort: Divides the array into halves, sorts each half recursively, and merges them.
+                                                    *Quick Sort: Picks a pivot element, partitions the array, and recursively sorts the partitions.
+                                                    *Heap Sort: Uses a heap data structure to efficiently sort elements.</li>
+            <li><strong>Searching Algorithms:</strong>*Linear Search: Checks each element sequentially.
+                                                      *Binary Search: Divides the search space in half in each iteration.</li>
+        </ul>
+
+         <h3>1.8 Importance of Graph Algorithms</h3>
+        <ul>
+            <li><strong>Dijkstra’s Algorithm:</strong> Finds the shortest path from a single source to all other vertices in a weighted graph with non-negative weights. Applications: Roadmaps, telecommunications.</li>
+            <li><strong>Floyd’s Algorithm:</strong> Computes shortest paths between all pairs of vertices in a weighted graph. Applications: Urban transit planning.</li>
+            <li><strong>Warshall’s Algorithm:</strong> Determines transitive closure to verify connectivity before spanning tree construction.</li>
+            <li><strong>Kruskal’s Algorithm:</strong> Constructs a minimum spanning tree by sorting and adding edges in order of increasing weight. Applications: Power grids, telecommunication lines.</li>
+            <li><strong>Prim’s Algorithm:</strong> Builds a minimum spanning tree by growing one vertex at a time. Efficient for dense graphs.</li>
+        </ul>
+
+          <h3>1.9 Algorithm Design Techniques</h3>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> Split the problem into smaller subproblems, solve, and merge the solutions. Examples: Merge Sort, Quick Sort, Binary Search.</li>
+            <li><strong>Greedy Algorithm:</strong> Make locally optimal choices at each step. Examples: Prim’s and Kruskal’s Algorithms.</li>
+            <li><strong>Backtracking:</strong> Explore all possible solutions incrementally and abandon paths that fail constraints. Examples: Sudoku, N-Queens Problem.</li>
+            <li><strong>Recursion:</strong> Solve a problem by solving smaller instances of the same problem. Examples: Tower of Hanoi, Fibonacci numbers.</li>
+            <li><strong>Brute Force:</strong> Try all possible solutions and select the best one.</li>
+        </ul>
+        </section>
+
+
+        
+        <section id="industry" class="section">
+            <h2>Industry Innovations</h2>
+            <p>Incorporating cutting-edge industrial solutions to drive sustainability and economic growth:</p>
+            <ul>
+                <li><strong>Automation:</strong> Utilize robotics and AI for increased productivity.Automation involves the use of robotics, artificial intelligence (AI), and machine learning to streamline industrial processes. By automating repetitive and labor-intensive tasks, businesses can achieve:
+                *Increased productivity and efficiency.
+                *Reduced human error and enhanced product quality.
+                *Cost savings through optimized resource utilization.
+                *The ability to perform complex operations with precision and scalability.</li>
+                <li><strong>Green Technologies:</strong> Focus on renewable energy and waste management.</li>
+                <li><strong>Smart Manufacturing:</strong> IoT-enabled devices for real-time monitoring and optimization.</li>
+            </ul>
+        </section>
+
+        <section id="transportation" class="section">
+            <h2>Advanced Transportation Systems</h2>
+            <p>Designing smart transportation networks for better connectivity and reduced congestion:</p>
+            <ul>
+                <li><strong>Electric Vehicles:</strong> Promote EV adoption for eco-friendly urban mobility.</li>
+                <li><strong>Smart Traffic Management:</strong> Leverage AI to optimize traffic flow.</li>
+                <li><strong>Integrated Public Transit:</strong> Develop efficient and accessible transit systems.</li>
+            </ul>
+        </section>
+
+           <section id="sdg" class="section">
+           <h2>1.Suitable Targets and Indicator of SDG 11 consisting of Industry and Transportation</h2>
+        <p><strong>Target 9.2:</strong> Promote inclusive and sustainable industrialization.</p>
+        <p><strong>Indicator 9.2.1:</strong> Manufacturing value added as a proportion of GDP and per capita.</p>      
+        <p><strong>Target 11.2:</strong>By 2030, provide access to safe, affordable, accessible and sustainable transport systems for all, improving roadsafety, notably by expanding public transport, with special attention to the needs of those in vulnerable situations,women, children, persons with disabilities and older persons</p>
+        <p><strong>Indicator 11.2.1:</strong>Proportion of population that has convenient access to public transport, by sex, age and persons with disabilities.</p>
+        <p><strong>Target 11.6:</strong> By 2030, reduce the adverse per capita environmental impact of cities, including by paying special attention to air quality and municipal and other waste management.</p>
+        <p><strong>Indicator 11.6.1:</strong>Proportion of municipal solid waste collected and managed in controlled facilities out of total municipal waste generated, by cities</p>
+        </section>
+
+        <section id="simulation" class="section">
+            <h2>Simulations</h2>
+            <p>Run smart algorithms for optimizing industry and transportation:</p>
+            <button onclick="simulateDijkstra()">Run Dijkstra's Algorithm</button>
+            <button onclick="simulateKruskal()">Run Kruskal's Algorithm</button>
+            <button onclick="simulateSorting()">Run Sorting Algorithms</button>
+            <pre id="output"></pre>
+        </section>
+
+         <section id="conclusion" class="section">
+            <h2>Conculsion:</h2>
+            <p>Throughout this portfolio, we explored various applications of data structures and algorithms in designing an efficient and sustainable city plan.We as a team have developed a systematic approach to understand and implement business classes in our city plan which follows certain important SDGs'.I have included algorithm techniques like Djisktras, Kruskal in my approach to understanding how they play a crucial role in providing shortest path in terms of transportation.Algorithm techniques like Djisktras and Kruskal provide a minimum spanning tree and they can be implemented for this particular reason.I have used merge sort as my primary sorting method in my Kruskal code as it was more efficient and more reliable.I have attached my Kruskal code as follows  <a href="kruskalbyprateek.cpp">Kruskal_code</a> .This project mainly enhanced my understanding of algorithm techniques as well as sorting techniques and how they can be implemented in building a city which is sustainable as well.This project also helped me to work as a team and work as a professional in terms of work and application basis.I would like to thank my professor Mr.Prakash Hegde sir to give us a wonderful opportunity to build a city which is enitrely dependent on our course as well as implement it in a sustainable way making use of SDGs'.</p>
+            
+        </section>
+
+    </div>
+
+    <script>
+        function simulateDijkstra() {
+            const graph = {
+                A: { B: 2, C: 5 },
+                B: { A: 2, C: 1, D: 4 },
+                C: { A: 5, B: 1, D: 2 },
+                D: { B: 4, C: 2 }
+            };
+            const shortestPath = dijkstra(graph, "A");
+            document.getElementById("output").textContent = "Dijkstra's Algorithm Output:\n" + JSON.stringify(shortestPath, null, 2);
+        }
+
+        function dijkstra(graph, start) {
+            const distances = {};
+            const visited = new Set();
+            const priorityQueue = [[start, 0]];
+
+            for (let node in graph) distances[node] = Infinity;
+            distances[start] = 0;
+
+            while (priorityQueue.length > 0) {
+                const [current, dist] = priorityQueue.shift();
+                if (visited.has(current)) continue;
+                visited.add(current);
+
+                for (let neighbor in graph[current]) {
+                    let newDist = dist + graph[current][neighbor];
+                    if (newDist < distances[neighbor]) {
+                        distances[neighbor] = newDist;
+                        priorityQueue.push([neighbor, newDist]);
+                    }
+                }
+                priorityQueue.sort((a, b) => a[1] - b[1]); // Sort by distance
+            }
+
+            return distances;
+        }
+
+      function simulateKruskal() {
+    const edges = [
+        { from: 'A', to: 'B', weight: 1 },
+        { from: 'A', to: 'C', weight: 5 },
+        { from: 'B', to: 'C', weight: 2 },
+        { from: 'B', to: 'D', weight: 4 },
+        { from: 'C', to: 'D', weight: 3 },
+    ];
+    const nodes = ['A', 'B', 'C', 'D'];
+
+    const mst = kruskal(edges, nodes);
+    document.getElementById("output").textContent = 
+        "Kruskal's Algorithm Output:\n" + JSON.stringify(mst, null, 2);
+}
+
+function kruskal(edges, nodes) {
+    
+    edges.sort((a, b) => a.weight - b.weight);
+
+
+    const parent = new Map();
+    const rank = new Map();
+
+   
+    const find = (node) => {
+        if (parent.get(node) !== node) {
+            parent.set(node, find(parent.get(node))); // Path compression
+        }
+        return parent.get(node);
+    };
+
+    
+    const union = (node1, node2) => {
+        const root1 = find(node1);
+        const root2 = find(node2);
+
+        if (root1 !== root2) {
+            const rank1 = rank.get(root1);
+            const rank2 = rank.get(root2);
+
+           
+            if (rank1 > rank2) {
+                parent.set(root2, root1);
+            } else if (rank1 < rank2) {
+                parent.set(root1, root2);
+            } else {
+                parent.set(root2, root1);
+                rank.set(root1, rank1 + 1);
+            }
+        }
+    };
+
+    
+    for (const node of nodes) {
+        parent.set(node, node);
+        rank.set(node, 0);
+    }
+
+    const mst = []; 
+
+    
+    for (const edge of edges) {
+        const { from, to, weight } = edge;
+
+        if (find(from) !== find(to)) {
+            mst.push({ from, to, weight }); 
+            union(from, to); 
+        }
+    }
+
+   
+    return mst;
+}
+
+        function simulateSorting() {
+            const array = [7, 3, 5, 8, 2, 1];
+            const sorted = mergeSort(array);
+            document.getElementById("output").textContent = "Sorting Algorithm Output:\nOriginal: [" + array + "]\nSorted: [" + sorted + "]";
+        }
+
+        function mergeSort(array) {
+            if (array.length <= 1) return array;
+            const mid = Math.floor(array.length / 2);
+            const left = mergeSort(array.slice(0, mid));
+            const right = mergeSort(array.slice(mid));
+
+            return merge(left, right);
+        }
+
+        function merge(left, right) {
+            let result = [], i = 0, j = 0;
+            while (i < left.length && j < right.length) {
+                if (left[i] < right[j]) result.push(left[i++]);
+                else result.push(right[j++]);
+            }
+            return result.concat(left.slice(i)).concat(right.slice(j));
+        }
+    </script>
+</body>
+</html>
