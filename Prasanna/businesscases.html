@@ -632,6 +632,163 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Dijkstra's 2.cpp">Dijkstra's for resource allocation</a>
 
 
+            </head>
+<body>
+
+    <h1>Visitor Management and Regulation</h1>
+
+    <div class="section">
+        <h2>Problem</h2>
+        <p>In many high-impact areas, such as natural reserves, historical sites, or popular tourist destinations, it is crucial to limit the number of visitors to prevent overcrowding and minimize environmental degradation. Managing access and visitor flow efficiently requires a reservation system that regulates the number of visitors in real-time and ensures optimal resource usage and preservation.</p>
+    </div>
+
+    <div class="section">
+        <h2>Solution</h2>
+        <p>To effectively manage visitor access and reduce overcrowding in sensitive areas, the following solutions are proposed:</p>
+        <ul>
+            <li><strong>Queue</strong>: Implement a reservation system where visitors are queued for access, ensuring that only a certain number of people can enter at any given time.</li>
+            <li><strong>Binary Search Tree (BST)</strong>: Store and retrieve reservation data efficiently, ensuring quick access to reservation details and minimizing delays in booking.</li>
+            <li><strong>Skip List</strong>: Enable fast access to visitor data and regulations, helping staff and administrators quickly verify and manage reservations, ensuring smooth visitor flow and adherence to access regulations.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Implementation</h2>
+        <h3>Queue for Reservation System</h3>
+        <p>A **Queue** will be used to manage the reservation system. Visitors will be placed in the queue as they make reservations, and they will be given access based on their reservation times. This ensures that the visitor flow remains controlled and that the high-impact areas do not become overcrowded.</p>
+
+        <h3>Binary Search Tree (BST)</h3>
+        <p>The **Binary Search Tree** will store the reservation data. Each node will represent a reservation, containing details such as the visitor’s name, visit time, and the area they are accessing. The binary structure allows efficient searching, insertion, and deletion of reservations based on time or visitor details, enabling quick and easy management of the reservation system.</p>
+
+        <h3>Skip List</h3>
+        <p>A **Skip List** will be employed to quickly access visitor data and regulations. The skip list structure allows fast searching by skipping over multiple elements during traversal, providing rapid access to essential data, such as verifying whether a visitor has valid access to the high-impact area or checking their reservation status.</p>
+
+        <h3>System Workflow</h3>
+        <p>The system will operate as follows:</p>
+        <ul>
+            <li>Visitors make a reservation and are added to the **Queue**.</li>
+            <li>The reservation data is stored in a **Binary Search Tree**, allowing fast retrieval of reservation details based on time, visitor, or access area.</li>
+            <li>During check-in, the system uses the **Skip List** to quickly access visitor details and ensure they are following the rules (e.g., maximum number of visitors allowed, access times, etc.).</li>
+            <li>Access to high-impact areas is managed by enforcing the reservation limits, ensuring that overcrowding is avoided.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Visitor management system simulation will be implemented here.')">Run Visitor Management Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tourism Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Entry Point A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>Main entry point</td>
+        </tr>
+        <tr>
+            <td>Tourist Attraction 1</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Historical monument</td>
+        </tr>
+        <tr>
+            <td>Commercial Zone A</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Shopping area</td>
+        </tr>
+        <tr>
+            <td>Hotel B</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>5-star hotel</td>
+        </tr>
+    </table>
+
+    <h2>Visitor Data</h2>
+    <table>
+        <tr>
+            <th>Age Group</th>
+            <th>Gender</th>
+            <th>Origin</th>
+            <th>Entry Point</th>
+            <th>Daily Count</th>
+            <th>Peak Hours</th>
+        </tr>
+        <tr>
+            <td>18-25</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>500</td>
+            <td>10 AM - 12 PM</td>
+        </tr>
+        <tr>
+            <td>25-40</td>
+            <td>Female</td>
+            <td>Tourist</td>
+            <td>Entry B</td>
+            <td>300</td>
+            <td>1 PM - 3 PM</td>
+        </tr>
+        <tr>
+            <td>40-60</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>200</td>
+            <td>4 PM - 6 PM</td>
+        </tr>
+    </table>
+
+    <h2>Reservation Data</h2>
+    <table>
+        <tr>
+            <th>Visitor Name</th>
+            <th>Group Size</th>
+            <th>Contact Information</th>
+            <th>Time Slot</
+                 <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Management.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues, BST and Skip liSt.cpp">Queues, BST and Skip liSt</a>
+
 
         <h3>Agriculture</h3>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
