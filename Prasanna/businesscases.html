@@ -1531,6 +1531,267 @@ h4>Input file</h4>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims, Segment Tree, Heap and Union-find.cpp">Prims, Segment Tree, Heap and Union-find</a>
 
+   </head>
+<body>
+
+    <h3>Water Resource Management</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>The growing urban demand for water is increasingly competing with agricultural needs, leading to water scarcity. This conflict between urban and agricultural users causes tension, resource mismanagement, and inefficiencies in water distribution. Ensuring equitable and efficient water allocation is critical to meeting the needs of both urban areas and agricultural sectors while avoiding scarcity and potential conflicts among users.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>To address the problem of water scarcity and allocation conflicts, the following algorithmic solutions are proposed:</p>
+        <ul>
+            <li><strong>AVL Tree</strong>: Efficiently manage and balance water usage data across urban and agricultural sectors, ensuring quick retrieval and updates to water usage information.</li>
+            <li><strong>Fenwick Tree</strong>: Efficiently manage cumulative frequency tables for water usage data, allowing for rapid querying of water usage statistics over various time periods and regions.</li>
+            <li><strong>Floyd-Warshall Algorithm</strong>: Find the shortest paths in a graph to optimize water distribution routes and minimize conflicts over water allocation between different sectors.</li>
+            <li><strong>Heap Sort</strong>: Prioritize water allocation based on the severity of water scarcity, ensuring that resources are allocated first to the most critical areas.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>AVL Tree</h4>
+        <p>The **AVL Tree** will be used to efficiently manage water usage data. It ensures that data related to water consumption in both urban and agricultural sectors is kept balanced, enabling fast insertions, deletions, and lookups. The AVL Tree provides logarithmic time complexity for balancing and querying, making it ideal for managing dynamic water usage information.</p>
+
+        <h4>Fenwick Tree</h4>
+        <p>The **Fenwick Tree** (also known as a Binary Indexed Tree) is ideal for managing cumulative frequency tables. It will be used to track water usage over different time intervals or geographical regions. The Fenwick Tree allows for efficient querying of prefix sums, enabling us to determine the cumulative water consumption in various sectors, which is crucial for monitoring and regulating water usage in real-time.</p>
+
+        <h4>Floyd-Warshall Algorithm</h4>
+        <p>**Floyd-Warshall Algorithm** will be used to compute the shortest paths between all pairs of water distribution points (nodes) in a network. By modeling water sources, pipelines, and distribution centers as a graph, the Floyd-Warshall Algorithm can help optimize the routing of water and minimize transportation costs. This will help ensure that water reaches its destination in the most efficient way possible, reducing conflicts and ensuring equitable distribution.</p>
+
+        <h4>Heap Sort</h4>
+        <p>**Heap Sort** will be used to prioritize water allocation based on the severity of water scarcity. Regions or sectors with the most urgent need for water will be placed at the top of the heap, ensuring they receive water first. This approach enables the efficient distribution of limited resources, ensuring that water goes to the areas that need it most and minimizing potential conflicts over water access.</p>
+
+        <h4>System Workflow</h4>
+        <p>The system will function as follows:</p>
+        <ul>
+            <li>Water usage data will be stored in an **AVL Tree**, providing efficient retrieval and updates as water usage changes in urban and agricultural sectors.</li>
+            <li>**Fenwick Tree** will be used to track cumulative water usage over time or by geographical region, allowing for quick updates and queries about overall water consumption.</li>
+            <li>The **Floyd-Warshall Algorithm** will optimize water distribution by computing the shortest paths in the distribution network, ensuring that water reaches areas with the highest demand in the most efficient way.</li>
+            <li>**Heap Sort** will be used to prioritize water allocation based on the severity of water scarcity in different regions, ensuring that the areas most affected by water shortages receive their allocations first.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Water allocation simulation will be implemented here.')">Run Water Allocation Simulation</button>
+    </div>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Usage and Environmental Management Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Water Usage and Environmental Management Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Residential Area A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>High-density residential area</td>
+        </tr>
+        <tr>
+            <td>Industrial Zone B</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Major industrial zone</td>
+        </tr>
+        <tr>
+            <td>Agricultural Zone C</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Main agricultural area</td>
+        </tr>
+        <tr>
+            <td>Commercial Zone D</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>Central business district</td>
+        </tr>
+    </table>
+
+    <h2>Water Usage Data</h2>
+    <table>
+        <tr>
+            <th>Zone Type</th>
+            <th>Area (sq km)</th>
+            <th>Current Usage (m³/day)</th>
+            <th>Water Usage Change (%)</th>
+            <th>Water Sources</th>
+        </tr>
+        <tr>
+            <td>Residential</td>
+            <td>600</td>
+            <td>50,000</td>
+            <td>5% increase</td>
+            <td>Groundwater, municipal supply</td>
+        </tr>
+        <tr>
+            <td>Industrial</td>
+            <td>300</td>
+            <td>100,000</td>
+            <td>10% increase</td>
+            <td>Industrial wells, municipal supply</td>
+        </tr>
+        <tr>
+            <td>Agricultural</td>
+            <td>300</td>
+            <td>150,000</td>
+            <td>15% decrease</td>
+            <td>Irrigation canals, groundwater, rivers</td>
+        </tr>
+        <tr>
+            <td>Commercial</td>
+            <td>150</td>
+            <td>30,000</td>
+            <td>5% increase</td>
+            <td>Municipal supply</td>
+        </tr>
+        <tr>
+            <td>Infrastructure</td>
+            <td>150</td>
+            <td>20,000</td>
+            <td>0%</td>
+            <td>Reservoirs, treatment plants</td>
+        </tr>
+    </table>
+
+    <h2>Demographic Data</h2>
+    <table>
+        <tr>
+            <th>Zone Type</th>
+            <th>Population Density (per sq km)</th>
+            <th>Age Groups</th>
+            <th>Gender Distribution</th>
+            <th>Socio-Economic Status</th>
+        </tr>
+        <tr>
+            <td>Residential</td>
+            <td>10,000</td>
+            <td>0-18: 25%, 18-65: 60%, 65+: 15%</td>
+            <td>50% Male, 50% Female</td>
+            <td>Middle to upper class</td>
+        </tr>
+        <tr>
+            <td>Industrial</td>
+            <td>1,500</td>
+            <td>18-65: 90%, 65+: 10%</td>
+            <td>70% Male, 30% Female</td>
+            <td>Working class</td>
+        </tr>
+        <tr>
+            <td>Agricultural</td>
+            <td>500</td>
+            <td>0-18: 20%, 18-65: 70%, 65+: 10%</td>
+            <td>60% Male, 40% Female</td>
+            <td>Lower to middle class</td>
+        </tr>
+        <tr>
+            <td>Commercial</td>
+            <td>8,000</td>
+            <td>18-65: 85%, 65+: 15%</td>
+            <td>55% Male, 45% Female</td>
+            <td>Middle to upper class</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Zone Type</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Water Quality</td>
+            <td>Agricultural Zone</td>
+            <td>pH: 6.8, Turbidity: 5 NTU, Dissolved Oxygen: 6 mg/L, Pollutants: Low</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Soil Quality</td>
+            <td>Agricultural Zone</td>
+            <td>pH: 6.5, Nutrient levels: High</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Pollution Levels</td>
+            <td>Urban Area</td>
+            <td>Air: PM2.5: 70 µg/m³, CO2: 400 ppm</td>
+            <td>Daily</td>
+        </tr>
+    </table>
+
+    <h2>Infrastructure Data</h2>
+    <table>
+        <tr>
+            <th>Infrastructure Type</th>
+            <th>Location</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>Road</td>
+            <td>Residential Area A</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Railway</td>
+            <td>Industrial Zone B</td>
+            <td>Average</td>
+        </tr>
+        <tr>
+            <td>Public Transport</td>
+            <td>Commercial Zone D</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Utility Services</td>
+            <td>Various</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+    h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Water Management.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/AVL Tree, Fenvick Tree, Floyd-warshall, Heap-sort.cpp">AVL Tree, Fenvick Tree, Floyd-warshall, Heap-sort</a>
+
 
 </body>
 </html>
