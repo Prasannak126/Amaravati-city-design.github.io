@@ -785,9 +785,225 @@
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Heap.cpp">Heap for engaging visitors</a>
 
+ <h3>Optimizing Lake Resource Allocation for Boating and Water Sports</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>The overuse of lakes due to increased boating and water sports activities can lead to environmental degradation, reduced water quality, and overstrained resources. Managing this issue effectively requires optimizing the monitoring of lake activities and ensuring that resources such as access points, monitoring stations, and emergency response units are efficiently distributed across the lake.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>To optimize the monitoring and resource allocation network, **Kruskal's Algorithm** can be applied. This algorithm is designed to find the minimum spanning tree (MST) in a graph, which in this case can help identify the most efficient way to connect monitoring points across the lake. By minimizing the distance between monitoring stations, Kruskal's Algorithm helps optimize resource usage and improve the efficiency of monitoring efforts.</p>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Modeling the Lake and Monitoring Points as a Graph</h4>
+        <p>In this approach, we model the lake as a graph where each node represents a **monitoring point** (e.g., stations for collecting water quality data, emergency response units, or visitor entry points), and the edges represent the **distance** or **cost** between these points (e.g., travel distance, infrastructure costs, or response time). By applying Kruskal’s algorithm, we can find the most efficient way to connect these nodes while minimizing costs and ensuring adequate monitoring coverage across the lake.</p>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Kruskal’s algorithm simulation will be implemented here.')">Run Kruskal’s Algorithm Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lake and Park Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lake and Park Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Boating Ramp 1</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>Main boating ramp</td>
+        </tr>
+        <tr>
+            <td>Wildlife Habitat A</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Sensitive habitat for bird species</td>
+        </tr>
+        <tr>
+            <td>Monitoring Station 1</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Water quality monitoring station</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Location</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>pH Level</td>
+            <td>Monitoring Station 1</td>
+            <td>7.4</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Erosion Rate</td>
+            <td>Shoreline A</td>
+            <td>0.5 cm/yr</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Wildlife Sightings</td>
+            <td>Habitat A</td>
+            <td>15 sightings/day</td>
+            <td>Weekly</td>
+        </tr>
+    </table>
+
+    <h2>Usage Data</h2>
+    <table>
+        <tr>
+            <th>Activity Type</th>
+            <th>Location</th>
+            <th>Daily Usage</th>
+            <th>Peak Hours</th>
+        </tr>
+        <tr>
+            <td>Boating</td>
+            <td>Boating Ramp 1</td>
+            <td>200</td>
+            <td>9 AM - 11 AM</td>
+        </tr>
+        <tr>
+            <td>Jet Skiing</td>
+            <td>Water Sports Area</td>
+            <td>150</td>
+            <td>1 PM - 3 PM</td>
+        </tr>
+        <tr>
+            <td>Kayaking</td>
+            <td>Boating Ramp 2</td>
+            <td>100</td>
+            <td>3 PM - 5 PM</td>
+        </tr>
+    </table>
+
+    <h2>Visitor Demographics</h2>
+    <table>
+        <tr>
+            <th>Age Group</th>
+            <th>Group Size</th>
+            <th>Origin</th>
+        </tr>
+        <tr>
+            <td>18-25</td>
+            <td>Solo/Groups 2-4</td>
+            <td>Local</td>
+        </tr>
+        <tr>
+            <td>25-40</td>
+            <td>Families 3-5</td>
+            <td>Tourists</td>
+        </tr>
+        <tr>
+            <td>40-60</td>
+            <td>Couples</td>
+            <td>Local</td>
+        </tr>
+    </table>
+
+    <h2>Infrastructure Data</h2>
+    <table>
+        <tr>
+            <th>Facility Type</th>
+            <th>Location</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>Dock</td>
+            <td>Boating Ramp 1</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Parking Area</td>
+            <td>Near Boating Ramp 1</td>
+            <td>50 cars capacity</td>
+        </tr>
+        <tr>
+            <td>First-Aid Station</td>
+            <td>Near Water Sports Area</td>
+            <td>Equipped</td>
+        </tr>
+    </table>
+
+    <h2>Resource Allocation</h2>
+    <table>
+        <tr>
+            <th>Resource Type</th>
+            <th>Location</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <td>Patrol Boat</td>
+            <td>Boating Ramp 1</td>
+            <td>2 boats</td>
+        </tr>
+        <tr>
+            <td>Monitoring Station</td>
+            <td>Various</td>
+            <td>4 stations</td>
+        </tr>
+        <tr>
+            <td>Rescue Facilities</td>
+            <td>Near Boating Ramp 2</td>
+            <td>1 unit</td>
+        </tr>
+    </table>
+</body>
+</html>
+            <h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Boat.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Kruskal's.cpp">Kruskal's for Monitoring and Resource Allocation</a>
 
 
-        <h3>Agriculture</h3>
+
+        <h2>Agriculture</h2>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
 :</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In agriculture, it can help in:</p>
         <ul>
