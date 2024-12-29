@@ -1,0 +1,34 @@
+Geographical Data
+Location Type,Coordinates,Description
+Entry Point A,(34.0522, -118.2437),Main entry point
+Tourist Attraction 1,(34.0524, -118.2439),Historical monument
+Water Sports Area 1,(34.0526, -118.2441),Boating and jet skiing area
+Hotel B,(34.0528, -118.2443),5-star hotel
+
+Visitor Data
+Age Group,Gender,Origin,Entry Point,Daily Count,Peak Hours
+18-25,Male,Local,Entry A,500,10 AM - 12 PM
+25-40,Female,Tourist,Entry B,300,1 PM - 3 PM
+40-60,Male,Local,Entry A,200,4 PM - 6 PM
+
+Environmental Data
+Parameter,Location,Value,Frequency
+pH Level,Lake Monitoring Point 1,7.4,Daily
+Erosion Rate,Shoreline A,0.5 cm/yr,Monthly
+Wildlife Sightings,Habitat A,15 sightings/day,Weekly
+Water Usage,Tourism Zone A,1,000 liters/day,Daily
+Electricity Usage,Tourism Zone B,5,000 kWh/day,Daily
+Waste Generation,Tourism Zone C,2 tons/day,Daily
+
+Erosion and Wildlife Impact Data
+Location Type,Coordinates,Erosion Severity,Wildlife Disturbance
+Shoreline A,(34.0526, -118.2441),High,Frequent
+Shoreline B,(34.0528, -118.2443),Moderate,Occasional
+Wildlife Habitat A,(34.0530, -118.2445),Low,Rare
+
+Infrastructure Data
+Infrastructure Type,Location,Condition
+Road,Entry Point A,Good
+Railway,Near Tourist Attraction 1,Average
+Public Transport,Commercial Zone A,Excellent
+Utility Services,Various,Available
