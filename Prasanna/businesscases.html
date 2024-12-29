@@ -1052,12 +1052,261 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Graph, Union-find and Tree.cpp">Graph, Union-find and Tree</a>
 
         <h3>Agriculture</h3>
-        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
-:</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In agriculture, it can help in:</p>
+        </head>
+<body>
+
+    <h3>Urbanization and Agricultural Land Protection</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>Rapid urbanization has resulted in the encroachment of agricultural land for housing, industries, and infrastructure development. This process reduces the amount of fertile land available for food production, displaces farmers, and disrupts the food supply chain. These impacts have long-term effects on food security and the livelihoods of farmers, requiring urgent attention and effective resource allocation to mitigate the consequences of urban sprawl.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>To effectively address the challenges posed by urbanization and protect agricultural land, the following solutions are proposed:</p>
         <ul>
-            <li>Designing efficient irrigation networks to minimize water loss and maximize crop yield.</li>
-            <li>Planning the optimal layout of power lines to supply electricity to rural areas.</li>
+            <li><strong>Prim's Algorithm</strong>: Use Prim's algorithm to find the most efficient paths for deploying resources, ensuring the protection of valuable agricultural land and supporting displaced farmers by connecting them to available resources.</li>
+            <li><strong>Heap</strong>: Use a heap to prioritize resource allocation based on the severity of urban encroachment, ensuring that resources are distributed first to the areas that need them the most.</li>
         </ul>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Prim's Algorithm</h4>
+        <p>**Prim's Algorithm** will be applied to determine the most efficient way to deploy resources for the protection of agricultural land and the support of displaced farmers. By modeling the land and resources as a graph, where nodes represent regions and edges represent potential paths for resources, Prim's algorithm can help find the minimum-cost paths to ensure resources are deployed optimally. The algorithm will connect the agricultural areas most at risk to vital resources, such as water, infrastructure, or conservation support.</p>
+
+        <h4>Heap for Resource Allocation</h4>
+        <p>A **Heap** will be used to prioritize resource allocation based on the severity of urban encroachment. The heap will store regions that are impacted by urban sprawl, with higher-priority regions (those experiencing greater encroachment or environmental degradation) being given precedence for resource deployment. The heap ensures that the most urgent issues are addressed first, while efficiently managing the distribution of resources to affected areas.</p>
+
+        <h4>System Workflow</h4>
+        <p>The system will function as follows:</p>
+        <ul>
+            <li>Each agricultural region is modeled as a node in a graph, and the potential paths for deploying resources (such as roads or infrastructure) are represented as edges.</li>
+            <li>**Prim's Algorithm** identifies the minimum-cost paths to efficiently deploy resources across the most affected agricultural areas and support displaced farmers.</li>
+            <li>A **Heap** tracks the severity of urban encroachment in different regions, ensuring that resources are allocated first to those areas with the highest need.</li>
+            <li>Resources are deployed in a prioritized order, starting from the areas most affected by urban sprawl, ensuring that farmers and agricultural regions receive the necessary support.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Urbanization and resource allocation simulation will be implemented here.')">Run Resource Allocation Simulation</button>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanization and Agricultural Land Management Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Urbanization and Agricultural Land Management Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Residential Area A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>High-density residential area</td>
+        </tr>
+        <tr>
+            <td>Industrial Zone B</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Major industrial zone</td>
+        </tr>
+        <tr>
+            <td>Agricultural Zone C</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Main agricultural area</td>
+        </tr>
+        <tr>
+            <td>Commercial Zone D</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>Central business district</td>
+        </tr>
+    </table>
+
+    <h2>Land Usage Data</h2>
+    <table>
+        <tr>
+            <th>Zone Type</th>
+            <th>Area (sq km)</th>
+            <th>Current Usage (%)</th>
+            <th>Land Use Change (%)</th>
+            <th>Zoning Regulations</th>
+        </tr>
+        <tr>
+            <td>Residential</td>
+            <td>600</td>
+            <td>40%</td>
+            <td>5% increase</td>
+            <td>Residential buildings, parks, schools</td>
+        </tr>
+        <tr>
+            <td>Industrial</td>
+            <td>300</td>
+            <td>20%</td>
+            <td>10% increase</td>
+            <td>Factories, warehouses, industrial parks</td>
+        </tr>
+        <tr>
+            <td>Agricultural</td>
+            <td>300</td>
+            <td>20%</td>
+            <td>15% decrease</td>
+            <td>Farming, livestock, horticulture</td>
+        </tr>
+        <tr>
+            <td>Commercial</td>
+            <td>150</td>
+            <td>10%</td>
+            <td>5% increase</td>
+            <td>Offices, retail, services</td>
+        </tr>
+        <tr>
+            <td>Infrastructure</td>
+            <td>150</td>
+            <td>10%</td>
+            <td>0%</td>
+            <td>Roads, railways, utilities</td>
+        </tr>
+    </table>
+
+    <h2>Demographic Data</h2>
+    <table>
+        <tr>
+            <th>Zone Type</th>
+            <th>Population Density (per sq km)</th>
+            <th>Age Groups</th>
+            <th>Gender Distribution</th>
+            <th>Socio-Economic Status</th>
+        </tr>
+        <tr>
+            <td>Residential</td>
+            <td>10,000</td>
+            <td>0-18: 25%, 18-65: 60%, 65+: 15%</td>
+            <td>50% Male, 50% Female</td>
+            <td>Middle to upper class</td>
+        </tr>
+        <tr>
+            <td>Industrial</td>
+            <td>1,500</td>
+            <td>18-65: 90%, 65+: 10%</td>
+            <td>70% Male, 30% Female</td>
+            <td>Working class</td>
+        </tr>
+        <tr>
+            <td>Agricultural</td>
+            <td>500</td>
+            <td>0-18: 20%, 18-65: 70%, 65+: 10%</td>
+            <td>60% Male, 40% Female</td>
+            <td>Lower to middle class</td>
+        </tr>
+        <tr>
+            <td>Commercial</td>
+            <td>8,000</td>
+            <td>18-65: 85%, 65+: 15%</td>
+            <td>55% Male, 45% Female</td>
+            <td>Middle to upper class</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Zone Type</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Soil Quality</td>
+            <td>Agricultural Zone</td>
+            <td>pH: 6.5, Nutrient levels: High</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Water Resources</td>
+            <td>Agricultural Zone</td>
+            <td>Groundwater: 500 mm/year</td>
+            <td>Annually</td>
+        </tr>
+        <tr>
+            <td>Pollution Levels</td>
+            <td>Industrial Zone</td>
+            <td>Air: PM2.5: 70 µg/m³, Water: Contaminated</td>
+            <td>Monthly</td>
+        </tr>
+    </table>
+
+    <h2>Infrastructure Data</h2>
+    <table>
+        <tr>
+            <th>Infrastructure Type</th>
+            <th>Location</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>Road</td>
+            <td>Residential Area A</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Railway</td>
+            <td>Industrial Zone B</td>
+            <td>Average</td>
+        </tr>
+        <tr>
+            <td>Public Transport</td>
+            <td>Commercial Zone D</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Utility Services</td>
+            <td>Various</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</body>
+</html>
+    h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Urbanization.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims and Heap.cpp">Prims and Heap</a>
+
+
+
+</body>
+</html>
     </section>
 
 </body>
