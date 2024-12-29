@@ -1,0 +1,32 @@
+Geographical Data
+Location Type,Coordinates,Description
+Entry Point A,(34.0522, -118.2437),Main entry point
+Meditation Zone 1,(34.0524, -118.2439),Main meditation area
+Commercial Zone A,(34.0526, -118.2441),Vendor area for crafts and snacks
+Wildlife Habitat A,(34.0528, -118.2443),Sensitive habitat for birds
+
+Visitor Data
+Age Group,Gender,Origin,Entry Point,Daily Count,Peak Hours
+18-25,Male,Local,Entry A,500,10 AM - 12 PM
+25-40,Female,Tourist,Entry B,300,1 PM - 3 PM
+40-60,Male,Local,Entry A,200,4 PM - 6 PM
+
+Reservation Data
+Visitor Name,Group Size,Contact Information,Time Slot,Preferred Area,Activity
+John Doe,2,johndoe@example.com,10 AM - 11 AM,Meditation Zone 1,Yoga
+Jane Smith,4,janesmith@example.com,1 PM - 2 PM,Meditation Zone 2,Spiritual Counseling
+Alice Brown,3,alicebrown@example.com,3 PM - 4 PM,Meditation Zone 3,Meditation
+Charlie Green,1,charliegreen@example.com,4 PM - 5 PM,Meditation Zone 1,Yoga
+Diana White,2,dianawhite@example.com,2 PM - 3 PM,Meditation Zone 2,Meditation
+
+Commercial Activity Data
+Vendor Name,Product/Service,Location,Sales/Day,Revenue/Day
+Vendor A,Handmade Crafts,Commercial Zone A,100,$500
+Vendor B,Organic Snacks,Commercial Zone B,150,$750
+
+Environmental Data
+Parameter,Location,Value,Frequency
+Noise Level,Meditation Zone 1,50 dB,Hourly
+Foot Traffic,Wildlife Habitat A,200 people,Daily
+Wildlife Sightings,Habitat A,10 sightings/day,Weekly
+
