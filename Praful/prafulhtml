@@ -1,1 +1,340 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms and Data Structures Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            line-height: 1.6;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #f1c27d;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            color: #f1c27d;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        strong {
+            color: #f1c27d;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        a {
+            color: #f1c27d;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        blockquote {
+            font-size: 1.5em;
+            font-style: italic;
+            color: #f1c27d;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #f1c27d;
+            background-color: #222222;
+        }
+
+        .welcome-section {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome-section h1 {
+            font-size: 3em;
+            color: #f1c27d;
+            margin: 0;
+        }
+
+        .welcome-section p {
+            font-size: 1.2em;
+            color: #e0e0e0;
+        }
+
+        .sdg-section {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            display: none; /* Initially hidden */
+        }
+
+        .sdg-section h2 {
+            font-size: 2.5em;
+            color: #f1c27d;
+            margin-bottom: 20px;
+        }
+
+        .sdg-section ul {
+            margin-top: 10px;
+        }
+
+        /* Styling for the button */
+        .button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .business-case-button {
+            padding: 20px 40px;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #f1c27d;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .business-case-button:hover {
+            background-color: #e0b97a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-section">
+        <h1>Welcome to Praful's Webpage</h1>
+        <p>Explore the world of algorithms and data structures with a deep dive into their various applications and principles.</p>
+    </div>
+
+    <!-- Button to Show/Hide Business Case Section -->
+    <div class="button-container">
+        <button class="business-case-button" onclick="toggleSDGSection()">Business Case</button>
+    </div>
+
+    <!-- Business Case and Relevant SDG Section -->
+    <div id="sdg-section" class="sdg-section">
+        <h2>Business Cases and Relevant SDG Indicators</h2>
+        <p>My business cases focus on energy and education. Below are the SDG indicators and targets relevant to each case:</p>
+
+        <h3>Energy Business Case</h3>
+        <p><strong>Relevant SDG Indicators and Targets:</strong></p>
+        <ul>
+            <li><strong>7.1.1</strong> - Proportion of population with access to electricity</li>
+            <li><strong>7.2.1</strong> - Renewable energy share in the total energy mix</li>
+            <li><strong>7.3.1</strong> - Energy intensity measured in terms of primary energy and GDP</li>
+            <li><strong>7.A.1</strong> - International financial flows to developing countries in support of clean energy</li>
+        </ul>
+
+        <h3>Education Business Case</h3>
+        <p><strong>Relevant SDG Indicators and Targets:</strong></p>
+        <ul>
+            <li><strong>4.1.1</strong> - Proportion of children and young people achieving at least a minimum proficiency level in reading and mathematics</li>
+            <li><strong>4.2.1</strong> - Proportion of children under 5 years of age who are developmentally on track in health, learning, and psychosocial well-being</li>
+            <li><strong>4.3.1</strong> - Participation rate of youth and adults in formal and non-formal education and training</li>
+            <li><strong>4.4.1</strong> - Proportion of youth and adults with information and communications technology (ICT) skills</li>
+            <li><strong>4.A.1</strong> - Proportion of schools with access to basic services (electricity, internet, computers, etc.)</li>
+        </ul>
+
+        <h3>Key Takeaways</h3>
+        <ul>
+            <li><strong>Energy Business Case:</strong> Investment in renewable energy technologies and energy efficiency can not only create profitable business opportunities but also contribute significantly to combating climate change and providing access to clean energy worldwide.</li>
+            <li><strong>Education Business Case:</strong> The rise of digital learning and upskilling programs presents an opportunity to bridge the education gap and empower individuals with the skills needed to thrive in the modern workforce, ultimately fostering social and economic equality.</li>
+        </ul>
+
+        <h3>Relevant Algorithms</h3>
+        <p>Several algorithms can be applied to the business case problems in both energy and education sectors:</p>
+        <ul>
+            <li><strong>Kruskal's Algorithm</strong> - Used for **minimum spanning tree** problems, such as optimizing energy distribution networks or connecting educational facilities in a cost-effective manner. It helps to determine the least costly connections between various network nodes.</li>
+            <li><strong>Dijkstra's Algorithm</strong> - Useful for finding the **shortest paths** in a network. For example, it could be applied to find the most efficient routes for distributing energy or educational resources across multiple locations.</li>
+            <li><strong>Sorting Algorithms</strong> - Algorithms like **Quick Sort** or **Merge Sort** can be used to efficiently organize data, such as ranking schools by available resources, or sorting energy usage patterns to prioritize areas of high demand.</li>
+        </ul>
+    </div>
+
+    <script>
+        // Function to toggle the visibility of the Business Case section
+        function toggleSDGSection() {
+            var section = document.getElementById('sdg-section');
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';  // Show the section
+            } else {
+                section.style.display = 'none';   // Hide the section
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+    <div class="section">
+        <h2>1. Types of Problems in Nature (Iteration, Recursion, Backtracking)</h2>
+        <p>Many computational problems can be categorized based on how they are solved, particularly using iterative, recursive, or backtracking approaches:</p>
+        <ul>
+            <li><strong>Iteration:</strong> Involves repeating a set of instructions until a condition is met. Common in problems where you know the number of iterations ahead of time.</li>
+            <li><strong>Recursion:</strong> Occurs when a function calls itself to solve a smaller version of the problem. It's useful when the problem can naturally be divided into subproblems.</li>
+            <li><strong>Backtracking:</strong> Used for problems involving choices, where you explore all possibilities and "backtrack" when a dead-end is reached (e.g., puzzles like Sudoku, N-Queens problem).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>2. Space and Time Efficiency</h2>
+        <p>Space and time efficiency refer to how efficiently an algorithm uses computer resources (memory and time) to solve a problem.</p>
+        <ul>
+            <li><strong>Time Efficiency:</strong> Measured by how fast an algorithm runs as the input size grows. It is often expressed using Big O notation (e.g., O(n), O(n²)).</li>
+            <li><strong>Space Efficiency:</strong> Refers to the amount of memory the algorithm uses during its execution. Similarly, it is also expressed in Big O notation (e.g., O(1) for constant space, O(n) for linear space).</li>
+        </ul>
+        <h3>Importance</h3>
+        <p>Efficiency is crucial for handling large data sets or real-time systems where excessive resource consumption can lead to poor performance or failure to meet operational requirements.</p>
+        <h3>Class of Problems and Orders of Growth</h3>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
+            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
+            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+
+     <h3>Importance</h3>
+        <p>Efficiency is crucial for handling large data sets or real-time systems where excessive resource consumption can lead to poor performance or failure to meet operational requirements.</p>
+        <h3>Class of Problems and Orders of Growth</h3>
+        <ul>
+            <li><strong>Constant Time:</strong> O(1) - Algorithm takes the same amount of time regardless of the input size (e.g., accessing an array element).</li>
+            <li><strong>Linear Time:</strong> O(n) - Time grows linearly with the size of the input (e.g., linear search).</li>
+            <li><strong>Quadratic Time:</strong> O(n²) - Time grows quadratically (e.g., bubble sort, insertion sort).</li>
+            <li><strong>Logarithmic Time:</strong> O(log n) - Time grows logarithmically (e.g., binary search).</li>
+            <li><strong>Exponential Time:</strong> O(2ⁿ) - Time grows exponentially (e.g., brute force approaches to problems like traveling salesman).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Takeaways from Chapter 2: Design Principles</h2>
+        <p>Key takeaways might include:</p>
+        <ul>
+            <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve each recursively, and combine the results.</li>
+            <li><strong>Greedy Algorithms:</strong> Make the locally optimal choice at each step, hoping it leads to a globally optimal solution.</li>
+            <li><strong>Dynamic Programming:</strong> Break problems into overlapping subproblems and store solutions to avoid redundant work.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Hierarchical Data and Tree Data Structures</h2>
+        <p>Tree data structures are excellent for modeling hierarchical data and optimizing search and insertion operations.</p>
+        <ul>
+            <li><strong>Binary Tree:</strong> Each node has at most two children, left and right.</li>
+            <li><strong>Binary Search Tree (BST):</strong> A binary tree where the left child is smaller and the right child is larger than the parent node.</li>
+            <li><strong>AVL Tree:</strong> A self-balancing BST with height difference at most 1, ensuring O(log n) operations.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>5. Array Query Algorithms and Their Implications</h2>
+        <p>These algorithms help in efficiently retrieving or updating elements in an array:</p>
+        <ul>
+            <li><strong>Prefix Sum:</strong> Preprocesses an array so the sum of any subarray can be queried in constant time.</li>
+            <li><strong>Segment Tree:</strong> A tree-based data structure for efficiently answering range queries and updates.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>6. Tree vs. Graphs and Their Traversals</h2>
+        <p>Both trees and graphs are used to represent hierarchical relationships, but they differ in structure and traversal strategies:</p>
+        <ul>
+            <li><strong>Tree:</strong> A hierarchical structure with a single root node. Traversals include:
+                <ul>
+                    <li><strong>Pre-order:</strong> Visit the root, then left subtree, then right subtree.</li>
+                    <li><strong>In-order:</strong> Visit the left subtree, then the root, then the right subtree.</li>
+                    <li><strong>Post-order:</strong> Visit the left subtree, then right subtree, then the root.</li>
+                </ul>
+            </li>
+            <li><strong>Graph:</strong> A non-hierarchical structure with nodes and edges that can form cycles. Traversals include:
+                <ul>
+                    <li><strong>Depth-First Search (DFS):</strong> Explore as far down a branch as possible before backtracking.</li>
+                    <li><strong>Breadth-First Search (BFS):</strong> Explore all neighbors at the present depth before moving on to nodes at the next depth level.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>7. Sorting and Searching Algorithms</h2>
+        <p>Sorting and searching are fundamental operations in computer science. Common algorithms include:</p>
+        <ul>
+            <li><strong>Sorting Algorithms:</strong>
+                <ul>
+                    <li><strong>Bubble Sort:</strong> Repeatedly swap adjacent elements if they are in the wrong order.</li>
+                    <li><strong>Merge Sort:</strong> Divide the array into halves, sort each half, and merge them back together.</li>
+                    <li><strong>Quick Sort:</strong> Select a pivot, partition the array into elements less than and greater than the pivot, and recursively sort each partition.</li>
+                </ul>
+            </li>
+            <li><strong>Searching Algorithms:</strong>
+                <ul>
+                    <li><strong>Linear Search:</strong> Check each element sequentially.</li>
+                    <li><strong>Binary Search:</strong> Divide the search interval in half repeatedly (requires sorted array).</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. Importance of Graph Algorithms: Spanning Trees and Shortest Paths</h2>
+        <h3>Spanning Trees</h3>
+        <p>A spanning tree of a connected graph is a tree that includes all the vertices of the graph, without any cycles.</p>
+        <ul>
+            <li><strong>Kruskal's Algorithm:</strong> Finds the minimum spanning tree by adding edges in increasing order of weight.</li>
+            <li><strong>Prim's Algorithm:</strong> Grows the minimum spanning tree by starting from an arbitrary node and adding the smallest edge that connects the tree to a new vertex.</li>
+        </ul>
+        <h3>Shortest Paths</h3>
+        <p>Algorithms to find the shortest paths between nodes in a graph:</p>
+        <ul>
+            <li><strong>Dijkstra's Algorithm:</strong> Computes the shortest paths from a source vertex to all other vertices in a weighted graph.</li>
+            <li><strong>Bellman-Ford Algorithm:</strong> Handles graphs with negative weight edges but slower than Dijkstra's.</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
+
