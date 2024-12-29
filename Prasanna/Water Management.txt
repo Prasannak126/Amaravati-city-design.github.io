@@ -1,0 +1,34 @@
+Geographical Data
+Location Type,Coordinates,Description
+Residential Area A,(34.0522, -118.2437),High-density residential area
+Industrial Zone B,(34.0524, -118.2439),Major industrial zone
+Agricultural Zone C,(34.0526, -118.2441),Main agricultural area
+Commercial Zone D,(34.0528, -118.2443),Central business district
+
+Water Usage Data
+Zone Type,Area (sq km),Current Usage (m³/day),Water Usage Change (%),Water Sources
+Residential,600,50,000,5% increase,Groundwater, municipal supply
+Industrial,300,100,000,10% increase,Industrial wells, municipal supply
+Agricultural,300,150,000,15% decrease,Irrigation canals, groundwater, rivers
+Commercial,150,30,000,5% increase,Municipal supply
+Infrastructure,150,20,000,0%,Reservoirs, treatment plants
+
+Demographic Data
+Zone Type,Population Density (per sq km),Age Groups,Gender Distribution,Socio-Economic Status
+Residential,10,000,0-18: 25%, 18-65: 60%, 65+: 15%,50% Male, 50% Female,Middle to upper class
+Industrial,1,500,18-65: 90%, 65+: 10%,70% Male, 30% Female,Working class
+Agricultural,500,0-18: 20%, 18-65: 70%, 65+: 10%,60% Male, 40% Female,Lower to middle class
+Commercial,8,000,18-65: 85%, 65+: 15%,55% Male, 45% Female,Middle to upper class
+
+Environmental Data
+Parameter,Zone Type,Value,Frequency
+Water Quality,Agricultural Zone,pH: 6.8, Turbidity: 5 NTU, Dissolved Oxygen: 6 mg/L, Pollutants: Low,Monthly
+Soil Quality,Agricultural Zone,pH: 6.5, Nutrient levels: High,Monthly
+Pollution Levels,Urban Area,Air: PM2.5: 70 µg/m³, CO2: 400 ppm,Daily
+
+Infrastructure Data
+Infrastructure Type,Location,Condition
+Road,Residential Area A,Good
+Railway,Industrial Zone B,Average
+Public Transport,Commercial Zone D,Excellent
+Utility Services,Various,Available
