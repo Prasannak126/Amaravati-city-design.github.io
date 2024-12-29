@@ -1,92 +1,94 @@
+#include <iostream>
+#include <vector>
 
-#include <bits/stdc++.h>
 using namespace std;
 
 struct Edge {
-    int u, v, w;
+    int src, dest, weight;
+};
+struct Subset {
+    int parent;
+    int rank;
 };
 
-class kruskal {
-public:
-    int n, m, cnt = 0;
-    vector<Edge> temp, ans;
-    int *arr;
+int find(Subset subsets[], int i);
+void Union(Subset subsets[], int x, int y);
+void sortEdges(vector<Edge>& edges);
 
-    kruskal() {
-        cout << "Enter no of vertices: ";
-        cin >> n;
-        cout << "Enter no. of edges you are entering: ";
-        cin >> m;
+vector<Edge> kruskalMST(vector<Edge>& edges, int V) {
+    vector<Edge> ET;  
+    sortEdges(edges);  
 
-        temp.resize(m);
-        cout << "Enter values for u, v, w one by one:\n";
-        for (int i = 0; i < m; i++) {
-            cin >> temp[i].u >> temp[i].v >> temp[i].w;
-        }
+    Subset* subsets = new Subset[V];
+    for (int v = 0; v < V; ++v) {
+        subsets[v].parent = v;
+        subsets[v].rank = 0;
+    }
 
-        mergesort(temp);
+    int ecounter = 0;
+    int k = 0;
 
-        arr = (int *)malloc(sizeof(int) * n);
-        for (int i = 0; i < n; i++) {
-            arr[i] = i;
+    while (ecounter < V - 1 && k < edges.size()) {
+        k++;
+        Edge nextEdge = edges[k - 1];
+
+        int x = find(subsets, nextEdge.src);
+        int y = find(subsets, nextEdge.dest);
+
+        if (x != y) {
+            ET.push_back(nextEdge);
+            Union(subsets, x, y);
+            ecounter++;
         }
     }
 
-    void merge(vector<Edge> &b, vector<Edge> &c, vector<Edge> &a) {
-        int i = 0, j = 0, k = 0, p = b.size(), q = c.size();
-        while (i < p && j < q) {
-            if (b[i].w <= c[j].w) {
-                a[k++] = b[i++];
-            } else {
-                a[k++] = c[j++];
+    delete[] subsets;
+    return ET;
+}
+
+int find(Subset subsets[], int i) {
+    if (subsets[i].parent != i) {
+        subsets[i].parent = find(subsets, subsets[i].parent);
+    }
+    return subsets[i].parent;
+}
+
+void Union(Subset subsets[], int x, int y) {
+    int rootX = find(subsets, x);
+    int rootY = find(subsets, y);
+
+    if (subsets[rootX].rank < subsets[rootY].rank) {
+        subsets[rootX].parent = rootY;
+    } else if (subsets[rootX].rank > subsets[rootY].rank) {
+        subsets[rootY].parent = rootX;
+    } else {
+        subsets[rootY].parent = rootX;
+        subsets[rootX].rank++;
+    }
+}
+
+void sortEdges(vector<Edge>& edges) {
+    int n = edges.size();
+    for (int i = 0; i < n - 1; ++i) {
+        for (int j = 0; j < n - i - 1; ++j) {
+            if (edges[j].weight > edges[j + 1].weight) {
+                swap(edges[j], edges[j + 1]);
             }
         }
-        while (i < p) a[k++] = b[i++];
-        while (j < q) a[k++] = c[j++];
     }
-
-    void mergesort(vector<Edge> &a) {
-        int n = a.size();
-        if (n > 1) {
-            vector<Edge> b(a.begin(), a.begin() + n / 2);
-            vector<Edge> c(a.begin() + n / 2, a.end());
-            mergesort(b);
-            mergesort(c);
-            merge(b, c, a);
-        }
-    }
-
-    void Union(int u, int v) {
-        int temp1 = arr[u];
-        for (int i = 0; i < n; i++) {
-            if (arr[i] == temp1) arr[i] = arr[v];
-        }
-    }
-
-    int Find(int u, int v) {
-        return arr[u] == arr[v];
-    }
-
-    void ops() {
-        int i = 0;
-        while (cnt < n - 1 && i < m) { 
-            if (!Find(temp[i].u, temp[i].v)) {
-                Union(temp[i].u, temp[i].v);
-                ans.push_back(temp[i]);
-                cnt++;
-            }
-            i++;
-        }
-    }
-};
+}
 
 int main() {
-    kruskal k;
-    k.ops();
+    int V = 6; 
+    vector<Edge> edges = {
+        {0, 1, 2}, {0, 2, 3}, {1, 3, 1}, {2, 4, 4}, {3, 5, 5}, {4, 5, 6}, {2, 3, 2}
+    };
 
-    cout << "Edges in the Minimum Spanning Tree:\n";
-    for (auto edge : k.ans) {
-        cout << edge.u << " " << edge.v << " " << edge.w << endl;
+    vector<Edge> mst = kruskalMST(edges, V);
+
+    cout << "Edges in the Minimum Spanning Tree:" << endl;
+    for (Edge e : mst) {
+        cout << e.src << " -- " << e.dest << " == " << e.weight << endl;
     }
 
     return 0;
