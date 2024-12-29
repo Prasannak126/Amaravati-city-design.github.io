@@ -109,12 +109,77 @@
     <section>
         <h2>Relating Business Cases to Algorithms</h2>
         <h3>Tourism</h3>
-        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
-:</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In tourism, it can help in:</p>
-        <ul>
-            <li>Designing optimal networks for transportation, communication, or energy infrastructure in tourist destinations.</li>
-            <li>Allocating resources to different tourist attractions or regions based on connectivity and cost.</li>
-        </ul>
+        <h4>Sub-business cases in Tourism</h4>
+        <h5>1.Botanical Tourism</h5>
+         <!DOCTYPE html>
+<html>
+<head>
+    <title>Garden Path Optimization</title>
+    <script>
+        // Example JavaScript implementation of Dijkstra's algorithm
+        function dijkstra(graph, startNode) {
+            let distances = {};
+            let parents = {};
+            let visited = [];
+
+            // Initialize distances and parents
+            for (let node in graph) {
+                distances[node] = Infinity;
+                parents[node] = null;
+            }
+            distances[startNode] = 0;
+
+            let pq = [[startNode, 0]];
+
+            while (pq.length > 0) {
+                pq.sort((a, b) => a[1] - b[1]);
+                let [node, distance] = pq.shift();
+
+                if (!visited.includes(node)) {
+                    visited.push(node);
+
+                    for (let neighbor in graph[node]) {
+                        let newDistance = distance + graph[node][neighbor];
+                        if (newDistance < distances[neighbor]) {
+                            distances[neighbor] = newDistance;
+                            parents[neighbor] = node;
+                            pq.push([neighbor, newDistance]);
+                        }
+                    }
+                }
+            }
+
+            return { distances, parents };
+        }
+
+        function displayRoutes() {
+            // Example graph representation of the garden
+            const graph = {
+                A: { B: 1, C: 4 },
+                B: { A: 1, C: 2, D: 5 },
+                C: { A: 4, B: 2, D: 1 },
+                D: { B: 5, C: 1 }
+            };
+
+            // Find the optimal route from start node A
+            const result = dijkstra(graph, 'A');
+            console.log(result);
+
+            // Display the results
+            let output = `Distances: ${JSON.stringify(result.distances)}<br>`;
+            output += `Parents: ${JSON.stringify(result.parents)}<br>`;
+            document.getElementById('results').innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>Garden Path Optimization</h1>
+    <button onclick="displayRoutes()">Find Optimal Routes</button>
+    <div id="results"></div>
+</body>
+</html>
+
+        
         <h3>Agriculture</h3>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
 :</strong> Used to find a minimum spanning tree of a connected weighted undirected graph. In agriculture, it can help in:</p>
