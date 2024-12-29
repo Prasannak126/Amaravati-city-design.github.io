@@ -1,0 +1,24 @@
+Node Definition:
+
+Entrance: Main entrance gate
+A: Musical Fountain area
+B: Butterfly Park
+C: Hanging Gardens
+D: Viewing Point (for dam view)
+E: Rose Garden
+F: Exit near the dam
+2. Edge Creation and Weighting:
+
+Edge: Weight (Distance + Sensitivity)
+EA: 100m + Low (1) = 101
+EB: 150m + Medium (2) = 152
+EC: 80m + Low (1) = 81
+ED: 200m + High (3) = 203
+AB: 50m + Low (1) = 51
+AC: 120m + Medium (2) = 122
+AD: 180m + High (3) = 183
+BC: 70m + Low (1) = 71
+BD: 100m + Medium (2) = 102
+BE: 150m + Low (1) = 151
+CF: 80m + Low (1) = 81
+DF: 120m + Medium (2) = 122
