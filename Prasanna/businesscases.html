@@ -110,7 +110,7 @@
         <h2>Relating Business Cases to Algorithms</h2>
         <h3>Tourism</h3>
         <h3>Sub-business cases in Tourism</h3>
-        <h4>1.Botanical Tourism</h4>
+        <h3>1.Botanical Tourism</h3>
 </head>
 <body>
     <h4>Plant Damage and Solution</h4>
@@ -250,11 +250,215 @@
     </table>
 </body>
 </html>
-
         <h4>Input file</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Garden.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Dijkstra's.cpp">Dijkstra's Code to find park path optimization</a>
+ <h3>2.Recreational and Entertainment Visitor Flow Optimization</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>Overcrowding and noise disturbance are common issues faced by recreational and entertainment venues. These problems arise due to high visitor volumes, especially during peak hours, leading to long wait times, frustration, and negative experiences for visitors.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>By applying Queuing Theory, we can model visitor flow to optimize visitor experiences. Queuing models like M/M/1 and M/M/c can be used to predict wait times for amenities, determine optimal visitor capacity limits, and help mitigate overcrowding and noise disturbance.</p>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Data Collection</h4>
+        <p>Data collection is crucial for understanding visitor patterns. The following data will be gathered:</p>
+        <ul>
+            <li>Historical data on visitor numbers, arrival times, and peak hours.</li>
+            <li>Real-time visitor counts using sensors or cameras.</li>
+        </ul>
+
+        <h4>Modeling</h4>
+        <p>Queuing models like M/M/1 (single server) and M/M/c (multiple servers) will be used to simulate visitor flow and predict wait times for amenities.</p>
+
+        <h4>Capacity Planning</h4>
+        <p>With the queuing models, we can determine optimal visitor capacity limits. Additionally, dynamic pricing or timed entry systems will be implemented during peak hours to minimize overcrowding and noise levels.</p>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Simulation will be implemented here.')">Run Visitor Flow Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visitor Data</h1>
+    
+    <h2>Historical Visitor Data</h2>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Visitor Count</th>
+            <th>Peak Hours</th>
+            <th>Arrival Times Distribution</th>
+        </tr>
+        <tr>
+            <td>01-Jan-2023</td>
+            <td>25,000</td>
+            <td>10 AM - 2 PM</td>
+            <td>9 AM (10%), 10 AM (20%), 11 AM (30%), 12 PM (25%), 1 PM (10%), 2 PM (5%)</td>
+        </tr>
+        <tr>
+            <td>02-Jan-2023</td>
+            <td>30,000</td>
+            <td>11 AM - 3 PM</td>
+            <td>10 AM (15%), 11 AM (25%), 12 PM (30%), 1 PM (20%), 2 PM (10%)</td>
+        </tr>
+        <tr>
+            <td>03-Jan-2023</td>
+            <td>28,000</td>
+            <td>9 AM - 1 PM</td>
+            <td>8 AM (5%), 9 AM (20%), 10 AM (35%), 11 AM (25%), 12 PM (10%), 1 PM (5%)</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+        <tr>
+            <td>31-Dec-2023</td>
+            <td>22,000</td>
+            <td>10 AM - 4 PM</td>
+            <td>9 AM (5%), 10 AM (20%), 11 AM (25%), 12 PM (25%), 1 PM (15%), 2 PM (10%)</td>
+        </tr>
+    </table>
+    
+    <h2>Real-Time Visitor Monitoring</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Visitor Count (Park A)</th>
+            <th>Visitor Count (Park B)</th>
+            <th>Visitor Count (Park C)</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>9:00 AM</td>
+            <td>1,500</td>
+            <td>2,000</td>
+            <td>1,800</td>
+            <td>Morning rush</td>
+        </tr>
+        <tr>
+            <td>10:00 AM</td>
+            <td>3,000</td>
+            <td>3,500</td>
+            <td>2,500</td>
+            <td>Peak arrival time</td>
+        </tr>
+        <tr>
+            <td>11:00 AM</td>
+            <td>4,500</td>
+            <td>4,000</td>
+            <td>3,000</td>
+            <td>Increased crowding, noise levels rising</td>
+        </tr>
+        <tr>
+            <td>12:00 PM</td>
+            <td>5,000</td>
+            <td>5,500</td>
+            <td>4,000</td>
+            <td>High density, potential for overcrowding</td>
+        </tr>
+        <tr>
+            <td>1:00 PM</td>
+            <td>4,500</td>
+            <td>5,000</td>
+            <td>3,500</td>
+            <td>Crowds starting to disperse</td>
+        </tr>
+        <tr>
+            <td>2:00 PM</td>
+            <td>3,500</td>
+            <td>4,000</td>
+            <td>3,000</td>
+            <td>Afternoon decline in visitor numbers</td>
+        </tr>
+        <tr>
+            <td>3:00 PM</td>
+            <td>2,500</td>
+            <td>3,500</td>
+            <td>2,800</td>
+            <td>Further decline</td>
+        </tr>
+        <tr>
+            <td>4:00 PM</td>
+            <td>1,500</td>
+            <td>2,000</td>
+            <td>2,000</td>
+            <td>Evening calm</td>
+        </tr>
+    </table>
+    
+    <h2>Visitor Survey Responses</h2>
+    <table>
+        <tr>
+            <th>Question</th>
+            <th>Percentage of Positive Responses</th>
+        </tr>
+        <tr>
+            <td>Were you satisfied with the crowd management?</td>
+            <td>75%</td>
+        </tr>
+        <tr>
+            <td>Did you experience long wait times at amenities?</td>
+            <td>55%</td>
+        </tr>
+        <tr>
+            <td>Was noise disturbance a problem during your visit?</td>
+            <td>60%</td>
+        </tr>
+        <tr>
+            <td>Would you visit the park again based on this visit?</td>
+            <td>80%</td>
+        </tr>
+    </table>
+</body>
+</html>
+            <h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Visitors.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues.cpp">Queuing for controlling overcrowding</a>
+
 
         <h3>Agriculture</h3>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/kruskal's.cpp">Kruskal's Algorithm</a>
