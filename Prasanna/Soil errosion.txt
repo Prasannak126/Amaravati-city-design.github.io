@@ -1,0 +1,31 @@
+Geographical Data
+Location Type,Coordinates,Description
+Residential Area A,(34.0522, -118.2437),High-density residential area
+Industrial Zone B,(34.0524, -118.2439),Major industrial zone
+Agricultural Zone C,(34.0526, -118.2441),Main agricultural area
+Commercial Zone D,(34.0528, -118.2443),Central business district
+
+Soil Quality Data
+Parameter,Zone Type,Value,Frequency
+pH Level,Agricultural Zone,pH: 6.5,Monthly
+Nutrient Level,Agricultural Zone,Nitrogen: High, Phosphorus: Medium, Potassium: Low,Monthly
+Soil Moisture,Agricultural Zone,30%,Weekly
+
+Erosion and Pollution Data
+Parameter,Zone Type,Value,Frequency
+Erosion Rate,Agricultural Zone,0.5 cm/year,Monthly
+Salinity Level,Agricultural Zone,3 dS/m,Monthly
+Pollution Level,Industrial Zone,Heavy Metals: High, Pesticides: Medium, Industrial Runoff: High,Monthly
+
+Environmental Data
+Parameter,Zone Type,Value,Frequency
+Air Quality,Urban Area,PM2.5: 70 µg/m³, CO2: 400 ppm,Daily
+Water Quality,Agricultural Zone,pH: 6.8, Turbidity: 5 NTU, Dissolved Oxygen: 6 mg/L, Pollutants: Low,Monthly
+
+Infrastructure Data
+Infrastructure Type,Location,Condition
+Road,Residential Area A,Good
+Railway,Industrial Zone B,Average
+Public Transport,Commercial Zone D,Excellent
+Utility Services,Various,Available
+
