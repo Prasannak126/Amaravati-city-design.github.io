@@ -254,8 +254,9 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Garden.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Dijkstra's.cpp">Dijkstra's Code to find park path optimization</a>
- <h3>2.Recreational and Entertainment Visitor Flow Optimization</h3>
 
+            <h3>2.Recreational and Entertainment Visitor Flow Optimization</h3>
+            
     <div class="section">
         <h4>Problem</h4>
         <p>Overcrowding and noise disturbance are common issues faced by recreational and entertainment venues. These problems arise due to high visitor volumes, especially during peak hours, leading to long wait times, frustration, and negative experiences for visitors.</p>
@@ -281,9 +282,6 @@
         <h4>Capacity Planning</h4>
         <p>With the queuing models, we can determine optimal visitor capacity limits. Additionally, dynamic pricing or timed entry systems will be implemented during peak hours to minimize overcrowding and noise levels.</p>
     </div>
-
-    <div class="button-container">
-        <button onclick="alert('Simulation will be implemented here.')">Run Visitor Flow Simulation</button>
     </div>
 
 </body>
@@ -347,12 +345,6 @@
             <td>28,000</td>
             <td>9 AM - 1 PM</td>
             <td>8 AM (5%), 9 AM (20%), 10 AM (35%), 11 AM (25%), 12 PM (10%), 1 PM (5%)</td>
-        </tr>
-        <tr>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
         </tr>
         <tr>
             <td>31-Dec-2023</td>
@@ -458,8 +450,11 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Visitors.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues.cpp">Queuing for controlling overcrowding</a>
-            <h4>Resource Allocation Optimization (Restrooms, Benches)</h4>
 
+
+
+
+            
     <div class="section">
         <h4>Problem</h4>
         <p>In recreational and entertainment venues, efficiently allocating resources such as restrooms and benches can greatly enhance the visitor experience. Poor placement can lead to overcrowding, long waiting times, and discomfort. The goal is to optimize the placement of these amenities to improve accessibility and minimize wait times.</p>
@@ -492,11 +487,6 @@
         <h4>Optimization</h4>
         <p>Once the Dijkstra’s algorithm provides a baseline for resource placement, genetic algorithms or other optimization techniques can be used to refine and improve the placement over time. These algorithms will help ensure that resources are dynamically adjusted based on visitor patterns and usage data.</p>
     </div>
-
-    <div class="button-container">
-        <button onclick="alert('Optimization algorithm will be implemented here.')">Run Resource Allocation Simulation</button>
-    </div>
-
 </body>
 </html>
             <!DOCTYPE html>
@@ -632,8 +622,6 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Dijkstra's 2.cpp">Dijkstra's for resource allocation</a>
 
 
-            </head>
-<body>
 
     <h1>Visitor Management and Regulation</h1>
 
@@ -655,13 +643,13 @@
     <div class="section">
         <h2>Implementation</h2>
         <h3>Queue for Reservation System</h3>
-        <p>A **Queue** will be used to manage the reservation system. Visitors will be placed in the queue as they make reservations, and they will be given access based on their reservation times. This ensures that the visitor flow remains controlled and that the high-impact areas do not become overcrowded.</p>
+        <p>A "Queue" will be used to manage the reservation system. Visitors will be placed in the queue as they make reservations, and they will be given access based on their reservation times. This ensures that the visitor flow remains controlled and that the high-impact areas do not become overcrowded.</p>
 
         <h3>Binary Search Tree (BST)</h3>
-        <p>The **Binary Search Tree** will store the reservation data. Each node will represent a reservation, containing details such as the visitor’s name, visit time, and the area they are accessing. The binary structure allows efficient searching, insertion, and deletion of reservations based on time or visitor details, enabling quick and easy management of the reservation system.</p>
+        <p>The "Binary Search Tree" will store the reservation data. Each node will represent a reservation, containing details such as the visitor’s name, visit time, and the area they are accessing. The binary structure allows efficient searching, insertion, and deletion of reservations based on time or visitor details, enabling quick and easy management of the reservation system.</p>
 
         <h3>Skip List</h3>
-        <p>A **Skip List** will be employed to quickly access visitor data and regulations. The skip list structure allows fast searching by skipping over multiple elements during traversal, providing rapid access to essential data, such as verifying whether a visitor has valid access to the high-impact area or checking their reservation status.</p>
+        <p>A "Skip List" will be employed to quickly access visitor data and regulations. The skip list structure allows fast searching by skipping over multiple elements during traversal, providing rapid access to essential data, such as verifying whether a visitor has valid access to the high-impact area or checking their reservation status.</p>
 
         <h3>System Workflow</h3>
         <p>The system will operate as follows:</p>
@@ -671,10 +659,6 @@
             <li>During check-in, the system uses the **Skip List** to quickly access visitor details and ensure they are following the rules (e.g., maximum number of visitors allowed, access times, etc.).</li>
             <li>Access to high-impact areas is managed by enforcing the reservation limits, ensuring that overcrowding is avoided.</li>
         </ul>
-    </div>
-
-    <div class="button-container">
-        <button onclick="alert('Visitor management system simulation will be implemented here.')">Run Visitor Management Simulation</button>
     </div>
 
 </body>
@@ -789,8 +773,7 @@
                  <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Management.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues, BST and Skip liSt.cpp">Queues, BST and Skip liSt</a>
-            </head>
-<body>
+            
 
     <h3>Lake Management and Erosion Control</h3>
 
@@ -817,27 +800,23 @@
         <p>We will model the lake and its surrounding areas as a graph, where each region or zone is represented as a node and the connections between zones (e.g., adjacent shorelines) are represented as edges. **Depth-First Search (DFS)** and **Breadth-First Search (BFS)** will be used to traverse the graph and analyze which zones are most impacted by erosion and wildlife disturbances. These algorithms will help to understand the extent of the affected areas and how disturbances propagate across the lake.</p>
 
         <h4>Union-Find</h4>
-        <p>The **Union-Find** algorithm will be used to identify connected components within the graph. This helps to determine which regions of the lake are contiguous and most affected by the disturbances. If one area is disturbed, the Union-Find data structure will help us group all connected zones together to prioritize actions based on the level of impact.</p>
+        <p>The "Union-Find" algorithm will be used to identify connected components within the graph. This helps to determine which regions of the lake are contiguous and most affected by the disturbances. If one area is disturbed, the Union-Find data structure will help us group all connected zones together to prioritize actions based on the level of impact.</p>
 
         <h4>Segment Tree</h4>
-        <p>A **Segment Tree** will be implemented to efficiently query and update the erosion levels and wildlife activity in different sections of the lake. The segment tree will allow us to store information about different segments of the lake's shoreline and efficiently compute the current status of erosion and wildlife in each section. It will also help in updating the data as activities like boating or water sports take place.</p>
+        <p>A "Segment Tree" will be implemented to efficiently query and update the erosion levels and wildlife activity in different sections of the lake. The segment tree will allow us to store information about different segments of the lake's shoreline and efficiently compute the current status of erosion and wildlife in each section. It will also help in updating the data as activities like boating or water sports take place.</p>
 
         <h4>Heap</h4>
-        <p>A **Heap** will be used to prioritize areas for immediate action based on the severity of erosion and the impact on wildlife. Areas that show the most disturbance or are experiencing high levels of erosion will be given priority for intervention, ensuring that resources are used effectively to protect the environment.</p>
+        <p>A "Heap" will be used to prioritize areas for immediate action based on the severity of erosion and the impact on wildlife. Areas that show the most disturbance or are experiencing high levels of erosion will be given priority for intervention, ensuring that resources are used effectively to protect the environment.</p>
 
         <h4>System Workflow</h4>
         <p>The system will operate as follows:</p>
         <ul>
             <li>The lake and surrounding areas will be modeled as a **graph**, with regions as nodes and connections as edges.</li>
-            <li>**DFS/BFS** algorithms will be used to explore and identify the most affected regions based on observed disturbance and erosion data.</li>
-            <li>The **Union-Find** algorithm will group connected areas together, identifying contiguous impacted zones for intervention.</li>
-            <li>The **Segment Tree** will store real-time data on erosion levels and wildlife activity, allowing for quick querying and updates based on real-time data collection.</li>
-            <li>A **Heap** will prioritize areas that need the most immediate action, based on the severity of impact.</li>
+            <li>"DFS/BFS" algorithms will be used to explore and identify the most affected regions based on observed disturbance and erosion data.</li>
+            <li>The "Union-Find" algorithm will group connected areas together, identifying contiguous impacted zones for intervention.</li>
+            <li>The "Segment Tree" will store real-time data on erosion levels and wildlife activity, allowing for quick querying and updates based on real-time data collection.</li>
+            <li>A "Heap" will prioritize areas that need the most immediate action, based on the severity of impact.</li>
         </ul>
-    </div>
-
-    <div class="button-container">
-        <button onclick="alert('Lake management system simulation will be implemented here.')">Run Lake Management Simulation</button>
     </div>
 
 </body>
@@ -1052,9 +1031,6 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Graph, Union-find and Tree.cpp">Graph, Union-find and Tree</a>
 
         <h3>Agriculture</h3>
-        </head>
-<body>
-
     <h3>Urbanization and Agricultural Land Protection</h3>
 
     <div class="section">
@@ -1074,24 +1050,21 @@
     <div class="section">
         <h4>Implementation</h4>
         <h4>Prim's Algorithm</h4>
-        <p>**Prim's Algorithm** will be applied to determine the most efficient way to deploy resources for the protection of agricultural land and the support of displaced farmers. By modeling the land and resources as a graph, where nodes represent regions and edges represent potential paths for resources, Prim's algorithm can help find the minimum-cost paths to ensure resources are deployed optimally. The algorithm will connect the agricultural areas most at risk to vital resources, such as water, infrastructure, or conservation support.</p>
+        <p>"Prim's Algorithm" will be applied to determine the most efficient way to deploy resources for the protection of agricultural land and the support of displaced farmers. By modeling the land and resources as a graph, where nodes represent regions and edges represent potential paths for resources, Prim's algorithm can help find the minimum-cost paths to ensure resources are deployed optimally. The algorithm will connect the agricultural areas most at risk to vital resources, such as water, infrastructure, or conservation support.</p>
 
         <h4>Heap for Resource Allocation</h4>
-        <p>A **Heap** will be used to prioritize resource allocation based on the severity of urban encroachment. The heap will store regions that are impacted by urban sprawl, with higher-priority regions (those experiencing greater encroachment or environmental degradation) being given precedence for resource deployment. The heap ensures that the most urgent issues are addressed first, while efficiently managing the distribution of resources to affected areas.</p>
+        <p>A "Heap" will be used to prioritize resource allocation based on the severity of urban encroachment. The heap will store regions that are impacted by urban sprawl, with higher-priority regions (those experiencing greater encroachment or environmental degradation) being given precedence for resource deployment. The heap ensures that the most urgent issues are addressed first, while efficiently managing the distribution of resources to affected areas.</p>
 
         <h4>System Workflow</h4>
         <p>The system will function as follows:</p>
         <ul>
             <li>Each agricultural region is modeled as a node in a graph, and the potential paths for deploying resources (such as roads or infrastructure) are represented as edges.</li>
-            <li>**Prim's Algorithm** identifies the minimum-cost paths to efficiently deploy resources across the most affected agricultural areas and support displaced farmers.</li>
-            <li>A **Heap** tracks the severity of urban encroachment in different regions, ensuring that resources are allocated first to those areas with the highest need.</li>
+            <li>"Prim's Algorithm" identifies the minimum-cost paths to efficiently deploy resources across the most affected agricultural areas and support displaced farmers.</li>
+            <li>A "Heap" tracks the severity of urban encroachment in different regions, ensuring that resources are allocated first to those areas with the highest need.</li>
             <li>Resources are deployed in a prioritized order, starting from the areas most affected by urban sprawl, ensuring that farmers and agricultural regions receive the necessary support.</li>
         </ul>
     </div>
 
-    <div class="button-container">
-        <button onclick="alert('Urbanization and resource allocation simulation will be implemented here.')">Run Resource Allocation Simulation</button>
-    </div>
     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1303,9 +1276,6 @@
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims and Heap.cpp">Prims and Heap</a>
 
-</head>
-<body>
-
     <h1>Soil Degradation and Resource Management</h1>
 
     <div class="section">
@@ -1347,10 +1317,6 @@
             <li>A **Heap** will be used to prioritize regions for resource allocation, ensuring that the areas with the most severe degradation are addressed first.</li>
             <li>**Union-Find** will manage connected components of affected regions, ensuring that resources are deployed to contiguous areas in need of restoration.</li>
         </ul>
-    </div>
-
-    <div class="button-container">
-        <button onclick="alert('Soil degradation management simulation will be implemented here.')">Run Soil Degradation Management Simulation</button>
     </div>
 
 </body>
@@ -1531,8 +1497,8 @@ h4>Input file</h4>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims, Segment Tree, Heap and Union-find.cpp">Prims, Segment Tree, Heap and Union-find</a>
 
-   </head>
-<body>
+            
+  
 
     <h3>Water Resource Management</h3>
 
@@ -1793,9 +1759,3 @@ h4>Input file</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/AVL Tree, Fenvick Tree, Floyd-warshall, Heap-sort.cpp">AVL Tree, Fenvick Tree, Floyd-warshall, Heap-sort</a>
 
 
-</body>
-</html>
-    </section>
-
-</body>
-</html>
