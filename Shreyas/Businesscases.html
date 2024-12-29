@@ -123,7 +123,14 @@
             <li><strong>Solution:</strong> Invest in EV charging infrastructure, and expand public transportation networks to reduce traffic congestion and air pollution.</li>
             <li><strong>Example:</strong> Develop bicycle-sharing systems, electric buses, and pedestrian-friendly walkways to encourage environmentally friendly transport choices.</li>
         </ul>
-
+        <section id="simulation" class="section">
+            <h2>Simulations</h2>
+            <p>Run smart algorithms for optimizing industry and transportation:</p>
+            <button onclick="simulateDijkstra()">Run Dijkstra's Algorithm</button>
+            <button onclick="simulateKruskal()">Run Kruskal's Algorithm</button>
+            <button onclick="simulateSorting()">Run Sorting Algorithms</button>
+            <pre id="output"></pre>
+        </section>
         <h2>Smart Cities: SDG Sub-Part</h2>
 
         <h3>Targets</h3>
@@ -294,5 +301,141 @@
             <p>Throughout this portfolio, we explored various applications of data structures and algorithms in designing an efficient and sustainable city plan.We as a team have developed a systematic approach to understand and implement business classes in our city plan which follows certain important SDGs'.I have included algorithm techniques like Djisktras, Kruskal in my approach to understanding how they play a crucial role in providing shortest path in terms of transportation.Algorithm techniques like Djisktras and Kruskal provide a minimum spanning tree and they can be implemented for this particular reason.I have used merge sort as my primary sorting method in my Kruskal code as it was more efficient and more reliable.I have attached my Kruskal code as follows  <a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prateek/kruskalbyprateek.cpp">Kruskal_code</a> .This project mainly enhanced my understanding of algorithm techniques as well as sorting techniques and how they can be implemented in building a city which is sustainable as well.This project also helped me to work as a team and work as a professional in terms of work and application basis.I would like to thank my professor Mr.Prakash Hegde sir to give us a wonderful opportunity to build a city which is enitrely dependent on our course as well as implement it in a sustainable way making use of SDGs'.</p>
         </section>     
     </div>
+    <script>
+        function simulateDijkstra() {
+            const graph = {
+                A: { B: 2, C: 5 },
+                B: { A: 2, C: 1, D: 4 },
+                C: { A: 5, B: 1, D: 2 },
+                D: { B: 4, C: 2 }
+            };
+            const shortestPath = dijkstra(graph, "A");
+            document.getElementById("output").textContent = "Dijkstra's Algorithm Output:\n" + JSON.stringify(shortestPath, null, 2);
+        }
+
+        function dijkstra(graph, start) {
+            const distances = {};
+            const visited = new Set();
+            const priorityQueue = [[start, 0]];
+
+            for (let node in graph) distances[node] = Infinity;
+            distances[start] = 0;
+
+            while (priorityQueue.length > 0) {
+                const [current, dist] = priorityQueue.shift();
+                if (visited.has(current)) continue;
+                visited.add(current);
+
+                for (let neighbor in graph[current]) {
+                    let newDist = dist + graph[current][neighbor];
+                    if (newDist < distances[neighbor]) {
+                        distances[neighbor] = newDist;
+                        priorityQueue.push([neighbor, newDist]);
+                    }
+                }
+                priorityQueue.sort((a, b) => a[1] - b[1]); // Sort by distance
+            }
+
+            return distances;
+        }
+
+      function simulateKruskal() {
+    const edges = [
+        { from: 'A', to: 'B', weight: 1 },
+        { from: 'A', to: 'C', weight: 5 },
+        { from: 'B', to: 'C', weight: 2 },
+        { from: 'B', to: 'D', weight: 4 },
+        { from: 'C', to: 'D', weight: 3 },
+    ];
+    const nodes = ['A', 'B', 'C', 'D'];
+
+    const mst = kruskal(edges, nodes);
+    document.getElementById("output").textContent = 
+        "Kruskal's Algorithm Output:\n" + JSON.stringify(mst, null, 2);
+}
+
+function kruskal(edges, nodes) {
+    
+    edges.sort((a, b) => a.weight - b.weight);
+
+
+    const parent = new Map();
+    const rank = new Map();
+
+   
+    const find = (node) => {
+        if (parent.get(node) !== node) {
+            parent.set(node, find(parent.get(node))); // Path compression
+        }
+        return parent.get(node);
+    };
+
+    
+    const union = (node1, node2) => {
+        const root1 = find(node1);
+        const root2 = find(node2);
+
+        if (root1 !== root2) {
+            const rank1 = rank.get(root1);
+            const rank2 = rank.get(root2);
+
+           
+            if (rank1 > rank2) {
+                parent.set(root2, root1);
+            } else if (rank1 < rank2) {
+                parent.set(root1, root2);
+            } else {
+                parent.set(root2, root1);
+                rank.set(root1, rank1 + 1);
+            }
+        }
+    };
+
+    
+    for (const node of nodes) {
+        parent.set(node, node);
+        rank.set(node, 0);
+    }
+
+    const mst = []; 
+
+    
+    for (const edge of edges) {
+        const { from, to, weight } = edge;
+
+        if (find(from) !== find(to)) {
+            mst.push({ from, to, weight }); 
+            union(from, to); 
+        }
+    }
+
+   
+    return mst;
+}
+
+        function simulateSorting() {
+            const array = [7, 3, 5, 8, 2, 1];
+            const sorted = mergeSort(array);
+            document.getElementById("output").textContent = "Sorting Algorithm Output:\nOriginal: [" + array + "]\nSorted: [" + sorted + "]";
+        }
+
+        function mergeSort(array) {
+            if (array.length <= 1) return array;
+            const mid = Math.floor(array.length / 2);
+            const left = mergeSort(array.slice(0, mid));
+            const right = mergeSort(array.slice(mid));
+
+            return merge(left, right);
+        }
+
+        function merge(left, right) {
+            let result = [], i = 0, j = 0;
+            while (i < left.length && j < right.length) {
+                if (left[i] < right[j]) result.push(left[i++]);
+                else result.push(right[j++]);
+            }
+            return result.concat(left.slice(i)).concat(right.slice(j));
+        }
+    </script>
 </body>
 </html>
