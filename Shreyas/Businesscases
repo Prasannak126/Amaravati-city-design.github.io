@@ -3,287 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Cases for Infrastructure and SDG Mapping</title>
+    <title>Business Cases for Infrastructure (Mapping to SDG 9.1 and 9.4)</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 20px;
-            background-color: #f4f7f6;
-            color: #2e2e2e;
-        }
-
-        h1 {
-            text-align: center;
-            color: #4CAF50;
-            font-family: 'Arial Black', sans-serif;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            color: #2196F3;
-            font-size: 1.8em;
-            font-family: 'Verdana', sans-serif;
-            margin-top: 20px;
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        h3 {
-            color: #FF5722;
-            font-size: 1.6em;
-            margin-top: 15px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section ul {
-            list-style-type: square;
-            padding-left: 40px;
-            font-size: 1.2em;
-        }
-
-        .case {
-            background-color: #E3F2FD;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .case h4 {
-            font-size: 1.4em;
-            color: #3F51B5;
-            font-weight: bold;
-        }
-
-        .case p {
-            margin: 10px 0;
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        .benefits ul {
-            list-style-type: circle;
-            padding-left: 40px;
-            font-size: 1.1em;
-            color: #673AB7;
-        }
-
-        .algorithms {
-            background-color: #F3E5F5;
-            padding: 20px;
-            margin-top: 15px;
-            border-radius: 8px;
-        }
-
-        .algorithms h4 {
-            color: #9C27B0;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-top: 0;
-        }
-
-        .algorithms p {
-            font-size: 1.1em;
+            line-height: 1.6;
+            background-color: #f9f9f9;
             color: #333;
         }
-
-        .highlight {
-            color: #FF9800;
-            font-weight: bold;
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
         }
-
-        .note {
-            background-color: #FFF3E0;
-            border-left: 5px solid #FF9800;
-            padding: 10px;
-            font-size: 1.1em;
-            color: #FF5722;
+        h2 {
+            font-size: 2em;
+            color: #2980b9;
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
-
-        .sub-section {
-            background-color: #F5F5F5;
-            padding: 15px;
+        h3 {
+            font-size: 1.5em;
+            color: #27ae60;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        h4 {
+            font-size: 1.2em;
+            color: #8e44ad;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p {
             margin: 10px 0;
-            border-radius: 5px;
         }
-
-        .sub-section h4 {
-            color: #607D8B;
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        strong {
+            color: #c0392b;
+        }
+        /* Add some padding and a border to the body for better aesthetics */
+        .container {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>Business Cases for Infrastructure (Mapping to SDG 9.1 and 9.4)</h1>
 
-    <h1>Business Cases for Infrastructure (Mapping to SDG 9.1 and 9.4)</h1>
-
-    <div class="section">
-        <h2>Targets</h2>
+        <h2>Targets:</h2>
         <ul>
             <li>Develop resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.</li>
             <li>Upgrade infrastructure and retrofit industries to make them sustainable, with increased resource-use efficiency and greater adoption of clean technologies and industrial processes.</li>
         </ul>
-    </div>
 
-    <div class="section">
-        <h2>Indicators</h2>
+        <h2>Indicators:</h2>
         <ul>
             <li>Proportion of the population with access to reliable infrastructure services (e.g., electricity, transportation).</li>
             <li>Adoption of technologies aimed at improving resource efficiency and reducing emissions in infrastructure sectors.</li>
         </ul>
-    </div>
 
-    <div class="section">
         <h2>Benefits</h2>
-        <div class="benefits">
-            <h3>Social Benefits:</h3>
-            <ul>
-                <li><strong>Community Connectivity:</strong> Improved infrastructure like roads, bridges, and communication networks can connect remote communities, reducing isolation and increasing access to essential services.</li>
-                <li><strong>Enhanced Quality of Life:</strong> Better infrastructure can provide communities with safer, more reliable access to water, electricity, transportation, and healthcare, improving living standards.</li>
-                <li><strong>Job Creation:</strong> The development and maintenance of infrastructure generate employment opportunities in both construction and operational sectors, benefiting local communities.</li>
-            </ul>
-        </div>
 
-        <div class="benefits">
-            <h3>Economic Benefits:</h3>
-            <ul>
-                <li><strong>Economic Growth:</strong> Infrastructure investment is closely linked to economic growth, as it enhances productivity, reduces transaction costs, and facilitates trade.</li>
-                <li><strong>Industry Boost:</strong> Improved infrastructure supports industries by providing reliable transportation, electricity, and digital connectivity, which reduces operational costs and enhances competitiveness.</li>
-                <li><strong>Investment Attraction:</strong> Quality infrastructure attracts both domestic and international investment by providing a stable environment for business operations.</li>
-            </ul>
-        </div>
+        <h3>Social Benefits:</h3>
+        <ul>
+            <li>Community Connectivity: Improved infrastructure like roads, bridges, and communication networks can connect remote communities, reducing isolation and increasing access to essential services.</li>
+            <li>Enhanced Quality of Life: Better infrastructure can provide communities with safer, more reliable access to water, electricity, transportation, and healthcare, improving living standards.</li>
+            <li>Job Creation: The development and maintenance of infrastructure generate employment opportunities in both construction and operational sectors, benefiting local communities.</li>
+        </ul>
 
-        <div class="benefits">
-            <h3>Environmental Benefits:</h3>
-            <ul>
-                <li><strong>Sustainable Infrastructure:</strong> Developing infrastructure with sustainability in mind (e.g., green buildings, renewable energy installations) can reduce long-term environmental impacts.</li>
-                <li><strong>Resource Efficiency:</strong> Using advanced technologies to monitor and optimize infrastructure usage (such as smart grids or water management systems) can reduce waste and enhance efficiency.</li>
-                <li><strong>Climate Resilience:</strong> Climate-adaptive infrastructure ensures communities and industries are better prepared for extreme weather events and environmental changes.</li>
-            </ul>
-        </div>
-    </div>
+        <h3>Economic Benefits:</h3>
+        <ul>
+            <li>Economic Growth: Infrastructure investment is closely linked to economic growth, as it enhances productivity, reduces transaction costs, and facilitates trade.</li>
+            <li>Industry Boost: Improved infrastructure supports industries by providing reliable transportation, electricity, and digital connectivity, which reduces operational costs and enhances competitiveness.</li>
+            <li>Investment Attraction: Quality infrastructure attracts both domestic and international investment by providing a stable environment for business operations.</li>
+        </ul>
 
-    <div class="section">
+        <h3>Environmental Benefits:</h3>
+        <ul>
+            <li>Sustainable Infrastructure: Developing infrastructure with sustainability in mind (e.g., green buildings, renewable energy installations) can reduce long-term environmental impacts.</li>
+            <li>Resource Efficiency: Using advanced technologies to monitor and optimize infrastructure usage (such as smart grids or water management systems) can reduce waste and enhance efficiency.</li>
+            <li>Climate Resilience: Climate-adaptive infrastructure ensures communities and industries are better prepared for extreme weather events and environmental changes.</li>
+        </ul>
+
         <h2>Refining Business Cases on SDGs</h2>
-        <div class="case">
-            <h4>Smart Cities</h4>
-            <p><strong>Objective:</strong> Promote the development of smart cities that leverage technology to improve urban services such as transportation, waste management, water distribution, and energy usage.</p>
-            <p><strong>Solution:</strong> Use advanced sensors, data analytics, and machine learning algorithms to optimize resource distribution, reduce energy consumption, and ensure sustainability.</p>
-            <p><strong>Example:</strong> Implement smart traffic management systems to reduce congestion and energy use, and apply AI for optimizing waste collection routes to reduce fuel consumption.</p>
-        </div>
 
-        <div class="case">
-            <h4>Green Infrastructure</h4>
-            <p><strong>Objective:</strong> Develop green infrastructure such as parks, green roofs, and permeable pavements that can absorb rainwater, reduce urban heat islands, and enhance biodiversity.</p>
-            <p><strong>Solution:</strong> Design and build infrastructure projects that incorporate natural elements to reduce environmental impact while promoting ecological sustainability.</p>
-            <p><strong>Example:</strong> Implement green roofing on buildings to manage stormwater and reduce air conditioning needs, or create urban forests to provide recreational spaces and improve air quality.</p>
-        </div>
+        <h3>Infrastructure</h3>
 
-        <div class="case">
-            <h4>Sustainable Transport Networks</h4>
-            <p><strong>Objective:</strong> Design transport systems that minimize energy consumption, reduce emissions, and promote sustainable mobility, such as electric vehicles (EVs) and mass transit.</p>
-            <p><strong>Solution:</strong> Invest in EV charging infrastructure, and expand public transportation networks to reduce traffic congestion and air pollution.</p>
-            <p><strong>Example:</strong> Develop bicycle-sharing systems, electric buses, and pedestrian-friendly walkways to encourage environmentally friendly transport choices.</p>
-        </div>
+        <h4>Smart Cities:</h4>
+        <ul>
+            <li><strong>Objective :</strong> Promote the development of smart cities that leverage technology to improve urban services such as transportation, waste management, water distribution, and energy usage.</li>
+            <li><strong>Solution:</strong> Use advanced sensors, data analytics, and machine learning algorithms to optimize resource distribution, reduce energy consumption, and ensure sustainability.</li>
+            <li><strong>Example:</strong> Implement smart traffic management systems to reduce congestion and energy use, and apply AI for optimizing waste collection routes to reduce fuel consumption.</li>
+        </ul>
+
+        <h4>Green Infrastructure:</h4>
+        <ul>
+            <li><strong>Objective:</strong> Develop green infrastructure such as parks, green roofs, and permeable pavements that can absorb rainwater, reduce urban heat islands, and enhance biodiversity.</li>
+            <li><strong>Solution:</strong> Design and build infrastructure projects that incorporate natural elements to reduce environmental impact while promoting ecological sustainability.</li>
+            <li><strong>Example:</strong> Implement green roofing on buildings to manage stormwater and reduce air conditioning needs, or create urban forests to provide recreational spaces and improve air quality.</li>
+        </ul>
+
+        <h4>Sustainable Transport Networks:</h4>
+        <ul>
+            <li><strong>Objective:</strong> Design transport systems that minimize energy consumption, reduce emissions, and promote sustainable mobility, such as electric vehicles (EVs) and mass transit.</li>
+            <li><strong>Solution:</strong> Invest in EV charging infrastructure, and expand public transportation networks to reduce traffic congestion and air pollution.</li>
+            <li><strong>Example:</strong> Develop bicycle-sharing systems, electric buses, and pedestrian-friendly walkways to encourage environmentally friendly transport choices.</li>
+        </ul>
+
+        <h2>Smart Cities: SDG Sub-Part</h2>
+
+        <h3>Targets</h3>
+        <ul>
+            <li>Develop innovative urban infrastructure using technology to enhance sustainability, resilience, and efficiency.</li>
+            <li>Improve urban living conditions by optimizing services like transport, energy, water, and waste management.</li>
+            <li>Promote the use of digital technology to improve governance and decision-making in cities.</li>
+            <li>Foster public-private partnerships for smart city projects and ensure inclusivity in urban development.</li>
+        </ul>
+
+        <h3>Indicators</h3>
+        <ul>
+            <li>Smart Service Coverage: Percentage of the city population covered by smart services (e.g., waste management, traffic monitoring).</li>
+            <li>Energy Efficiency: Reduction in energy consumption through smart grid systems.</li>
+            <li>Digital Infrastructure Penetration: Percentage of urban areas with access to high-speed internet.</li>
+            <li>Citizen Participation: Level of engagement in city governance via digital platforms.</li>
+        </ul>
+
+        <h3>Social Benefits</h3>
+        <ul>
+            <li>Enhanced Quality of Life: Smart technologies improve access to essential services such as healthcare, education, and mobility.</li>
+            <li>Community Engagement: Digital platforms enable better communication between governments and citizens.</li>
+            <li>Safety and Security: Surveillance systems and emergency response technologies enhance urban safety.</li>
+        </ul>
+
+        <h3>Economic Benefits</h3>
+        <ul>
+            <li>Cost Savings: Optimized resource use through smart systems reduces operational costs for cities.</li>
+            <li>Job Creation: Development and maintenance of smart technologies create jobs in tech and construction.</li>
+            <li>Business Opportunities: Smart city ecosystems attract investment in innovative urban solutions.</li>
+        </ul>
+
+        <h3>Environmental Benefits</h3>
+        <ul>
+            <li>Reduced Carbon Footprint: Smart grids and energy management systems lower greenhouse gas emissions.</li>
+            <li>Resource Optimization: Smart water and waste systems minimize wastage and promote recycling.</li>
+            <li>Urban Green Spaces: Technology supports better planning and monitoring of urban greenery.</li>
+        </ul>
+
+        <h3>Relating Business Cases to Algorithms</h3>
+        <ul>
+            <li><strong>Smart Waste Collection</strong> - Algorithm: BFS (Breadth-First Search) - Application: Plan efficient waste collection routes and prioritize high-traffic or urgent areas for waste pickup.</li>
+            <li><strong>Urban Mobility Analytics</strong> - Algorithm: AVL Tree - Application: Maintain balanced and fast access to mobility data, optimizing resource allocation for peak urban traffic.</li>
+            <li><strong>Air Quality Monitoring</strong> - Algorithm: Fenwick Tree - Application: Perform real-time updates and queries on air quality data to predict pollution trends and alert authorities.</li>
+            <li><strong>Digital Governance Platforms</strong> - Algorithm: Hashing - Application: Efficiently store and retrieve citizen feedback and queries for urban planning and decision-making.</li>
+        </ul>
+
+        <h2>Green Infrastructure: SDG Sub-Part</h2>
+
+        <h3>Targets</h3>
+        <ul>
+            <li>Develop green infrastructure such as parks, green roofs, and permeable pavements to enhance urban sustainability.</li>
+            <li>Incorporate natural elements into urban design to reduce environmental impact and promote ecological sustainability.</li>
+        </ul>
+
+        <h3>Indicators</h3>
+        <ul>
+            <li>Urban Green Cover: Percentage of urban areas covered by green infrastructure.</li>
+            <li>Stormwater Management: Volume of stormwater managed using green infrastructure.</li>
+            <li>Temperature Regulation: Decrease in urban heat island effects.</li>
+        </ul>
+
+        <h3>Social Benefits</h3>
+        <ul>
+            <li>Improved Health and Well-being: Green spaces provide recreational areas that enhance mental and physical health.</li>
+            <li>Community Engagement: Green infrastructure fosters stronger community connections through shared spaces.</li>
+            <li>Aesthetic Value: Green roofs and parks improve the visual appeal of urban areas.</li>
+        </ul>
+
+        <h3>Economic Benefits</h3>
+        <ul>
+            <li>Reduced Energy Costs: Green roofs and trees lower cooling costs by regulating temperatures.</li>
+            <li>Increased Property Value: Proximity to green infrastructure enhances real estate value.</li>
+            <li>Cost-effective Stormwater Management: Green solutions reduce infrastructure expenses for stormwater control.</li>
+        </ul>
+
+        <h3>Environmental Benefits</h3>
+        <ul>
+            <li>Biodiversity Enhancement: Parks and green spaces support diverse ecosystems in urban areas.</li>
+            <li>Stormwater Absorption: Permeable surfaces reduce water runoff and prevent urban flooding.</li>
+            <li>Carbon Sequestration: Vegetation in green infrastructure helps capture and store carbon.</li>
+            <li>Air Quality Improvement: Trees and plants reduce air pollution by absorbing harmful particulates.</li>
+        </ul>
+
+        <h3>Relating Business Cases to Algorithms</h3>
+        <ul>
+            <li><strong>Urban Forest Placement</strong> - Algorithm: Prim's Algorithm - Application: Optimize the placement of urban green spaces like forests and parks by connecting regions with minimal distance and cost.</li>
+            <li><strong>Sustainable Urban Cooling</strong> - Algorithm: AVL Tree - Application: Balance temperature data across multiple city zones to optimize cooling solutions like reflective roofs and green covers.</li>
+            <li><strong>Renewable Energy Grid Placement</strong> - Algorithm: Binary Search Tree - Application: Optimize solar panel and wind turbine placement to maximize energy generation and minimize resource overlap.</li>
+            <li><strong>Natural Disaster Mitigation</strong> - Algorithm: DFS (Depth-First Search) - Application: Identify critical areas in green infrastructure that need reinforcement against natural disasters like floods and storms.</li>
+        </ul>
+
+        <h2>Sustainable Transport Networks: SDG Sub-Part</h2>
+
+        <h3>Targets</h3>
+        <ul>
+            <li>Develop inclusive and sustainable transport systems that reduce greenhouse gas emissions.</li>
+            <li>Increase the accessibility of public transport for all, including vulnerable groups.</li>
+            <li>Promote the use of clean energy vehicles and active transportation (e.g., cycling and walking).</li>
+            <li>Expand infrastructure for electric vehicles (EVs) and low-emission public transport.</li>
+        </ul>
+
+        <h3>Indicators</h3>
+        <ul>
+            <li>Public Transport Usage: Percentage of the population using public transportation.</li>
+            <li>Transport Emissions: Reduction in carbon emissions from transport systems.</li>
+            <li>Clean Vehicle Adoption: Number of electric or hybrid vehicles on the road.</li>
+            <li>Infrastructure Expansion: Length of bike lanes, pedestrian pathways, and EV charging stations added annually.</li>
+        </ul>
+
+        <h3>Social Benefits</h3>
+        <ul>
+            <li>Improved Accessibility: Affordable public transport increases mobility for all, including marginalized communities.</li>
+            <li>Health Benefits: Active transportation like walking and cycling reduces sedentary lifestyles and improves public health.</li>
+            <li>Reduced Traffic Congestion: Efficient transport networks lower commute times and improve quality of life.</li>
+        </ul>
+
+        <h3>Economic Benefits</h3>
+        <ul>
+            <li>Fuel Cost Savings: Transition to EVs reduces reliance on fossil fuels and associated costs.</li>
+            <li>Boosted Local Economies: Public transport infrastructure fosters economic activity around transit hubs.</li>
+            <li>Job Creation: Investments in public transport and EV infrastructure create employment in construction and maintenance.</li>
+        </ul>
+
+        <h3>Environmental Benefits</h3>
+        <ul>
+            <li>Lower Carbon Emissions: Shift to sustainable transport reduces greenhouse gas emissions.</li>
+            <li>Improved Air Quality: Reduced vehicle emissions lead to healthier urban environments.</li>
+            <li>Decreased Noise Pollution: Electric vehicles and public transport systems produce less noise.</li>
+            <li>Resource Efficiency: Shared transportation reduces the number of vehicles and optimizes resource use.</li>
+        </ul>
+
+        <h3>Relating Business Cases to Algorithms</h3>
+        <ul>
+            <li><strong>EV Charging Station Placement</strong> - Algorithm: K-Means Clustering - Application: Determine the optimal locations for charging stations based on traffic and demand.</li>
+            <li><strong>Traffic Flow Management</strong> - Algorithm: Dijkstra’s Algorithm - Application: Optimize road usage and minimize congestion by dynamically adjusting traffic signals.</li>
+            <li><strong>Railway Scheduling</strong> - Algorithm: Heap Sort - Application: Optimize train schedules to reduce delays and maximize efficiency.</li>
+            <li><strong>Active Transport Promotion</strong> - Algorithm: Greedy Algorithm - Application: Prioritize construction of pedestrian-friendly pathways and bike lanes in high-demand areas.</li>
+            <li><strong>Fuel-Efficient Route Planning</strong> - Algorithm: Floyd-Warshall Algorithm - Application: Plan routes for fuel efficiency and reduced emissions for commercial fleets.</li>
+        </ul>
     </div>
-
-    <div class="section">
-        <h2>Relating Business Cases to Algorithms</h2>
-        <div class="algorithms">
-            <h4>Smart City Traffic Management</h4>
-            <p><strong>Algorithm Used:</strong> Dijkstra's Algorithm</p>
-            <p><strong>Application:</strong> Improve traffic flow and reduce congestion in urban areas by optimizing traffic light systems, roadways, and pedestrian flows.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Public Transport Optimization</h4>
-            <p><strong>Algorithm Used:</strong> BFS</p>
-            <p><strong>Application:</strong> Improve efficiency and reduce overcrowding in public transportation systems (e.g., buses, trains).</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Smart Waste Management</h4>
-            <p><strong>Algorithm Used:</strong> Dijkstra's Algorithm</p>
-            <p><strong>Application:</strong> Optimize waste collection routes and schedules to reduce fuel consumption and improve efficiency.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Energy Grid Optimization</h4>
-            <p><strong>Algorithm Used:</strong> Kruskal’s Algorithm</p>
-            <p><strong>Application:</strong> Minimize energy loss and ensure reliable power distribution across the grid.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Road Network Maintenance</h4>
-            <p><strong>Algorithm Used:</strong> Prim's Algorithm</p>
-            <p><strong>Application:</strong> Ensure roads are maintained efficiently by prioritizing repairs based on traffic patterns and wear.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Water Distribution System Optimization</h4>
-            <p><strong>Algorithm Used:</strong> Heap, Segment Tree</p>
-            <p><strong>Application:</strong> Optimize the placement and size of pipes to reduce water loss and ensure equal distribution.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Urban Mobility Planning</h4>
-            <p><strong>Algorithm Used:</strong> AVL Tree</p>
-            <p><strong>Application:</strong> Optimize the placement of bike-sharing stations and electric vehicle charging points based on traffic data.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Telecommunication Network Optimization</h4>
-            <p><strong>Algorithm Used:</strong> Binary Search Tree</p>
-            <p><strong>Application:</strong> Improve the quality and coverage of the telecommunication network by optimizing the placement of towers.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Disaster Response Infrastructure</h4>
-            <p><strong>Algorithm Used:</strong> DFS, Union-Find</p>
-            <p><strong>Application:</strong> Optimize the allocation of emergency resources during a natural disaster.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Airport Runway Scheduling</h4>
-            <p><strong>Algorithm Used:</strong> Heap Sort</p>
-            <p><strong>Application:</strong> Minimize delays and improve airport operations by optimizing runway usage.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Construction Material Supply Chain</h4>
-            <p><strong>Algorithm Used:</strong> Knuth-Morris-Pratt (KMP), Lookup Table</p>
-            <p><strong>Application:</strong> Optimize the supply chain for construction materials, ensuring timely deliveries while minimizing costs.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Smart Parking Management</h4>
-            <p><strong>Algorithm Used:</strong> Binary Tree, BFS</p>
-            <p><strong>Application:</strong> Optimize parking availability and space utilization in urban areas.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Smart Lighting Systems</h4>
-            <p><strong>Algorithm Used:</strong> Selection Sort</p>
-            <p><strong>Application:</strong> Reduce energy consumption by optimizing street lighting systems based on traffic and environmental data.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Flood Risk Management</h4>
-            <p><strong>Algorithm Used:</strong> Segment Tree</p>
-            <p><strong>Application:</strong> Optimize flood risk management by modeling flood-prone areas and prioritizing interventions.</p>
-        </div>
-
-        <div class="algorithms">
-            <h4>Smart Grid Load Balancing</h4>
-            <p><strong>Algorithm Used:</strong> Floyd-Warshall Algorithm</p>
-            <p><strong>Application:</strong> Optimize power distribution and balance the load between different parts of the grid.</p>
-        </div>
-    </div>
-
 </body>
 </html>
