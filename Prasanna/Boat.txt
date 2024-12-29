@@ -1,0 +1,35 @@
+Geographical Data
+Location Type,Coordinates,Description
+Boating Ramp 1,(34.0522, -118.2437),Main boating ramp
+Wildlife Habitat A,(34.0524, -118.2439),Sensitive habitat for bird species
+Monitoring Station 1,(34.0526, -118.2441),Water quality monitoring station
+
+Environmental Data
+Parameter,Location,Value,Frequency
+pH Level,Monitoring Station 1,7.4,Daily
+Erosion Rate,Shoreline A,0.5 cm/yr,Monthly
+Wildlife Sightings,Habitat A,15 sightings/day,Weekly
+
+Usage Data
+Activity Type,Location,Daily Usage,Peak Hours
+Boating,Boating Ramp 1,200,9 AM - 11 AM
+Jet Skiing,Water Sports Area,150,1 PM - 3 PM
+Kayaking,Boating Ramp 2,100,3 PM - 5 PM
+
+Visitor Demographics
+Age Group,Group Size,Origin
+18-25,Solo/Groups 2-4,Local
+25-40,Families 3-5,Tourists
+40-60,Couples,Local
+
+Infrastructure Data
+Facility Type,Location,Condition
+Dock,Boating Ramp 1,Good
+Parking Area,Near Boating Ramp 1,50 cars capacity
+First-Aid Station,Near Water Sports Area,Equipped
+
+Resource Allocation
+Resource Type,Location,Availability
+Patrol Boat,Boating Ramp 1,2 boats
+Monitoring Station,Various,4 stations
+Rescue Facilities,Near Boating Ramp 2,1 unit
