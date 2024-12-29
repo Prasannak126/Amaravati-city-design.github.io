@@ -1,85 +1,147 @@
 #include <iostream>
 #include <vector>
+#include <string>
+#include <cstdlib>
 
 using namespace std;
 
-// Define a large value for infinity (INT_MAX equivalent)
-const int INF = 1000000; 
+struct Reservation {
+    int priority;
+    string visitorName;
+    int groupSize;
+    string contactInfo;
+    string timeSlot;
+    string preferredArea;
+    string activity;
 
-// Graph class to represent visitor flow and resources
-class Graph {
-    int V;
-    vector<vector<pair<int, int>>> adj; // Pair of node and weight
-
-public:
-    Graph(int V) {
-        this->V = V;
-        adj.resize(V);
-    }
-
-    void addEdge(int v, int w, int weight) {
-        adj[v].push_back({w, weight});
-        adj[w].push_back({v, weight});
-    }
-
-    void dijkstra(int src, vector<int>& dist) {
-        vector<bool> visited(V, false);
-        dist[src] = 0;
-
-        for (int i = 0; i < V - 1; ++i) {
-            int u = findMinDistance(dist, visited);
-            visited[u] = true;
-
-            for (auto& neighbor : adj[u]) {
-                int v = neighbor.first;
-                int weight = neighbor.second;
-
-                if (!visited[v] && dist[u] != INF && dist[u] + weight < dist[v]) {
-                    dist[v] = dist[u] + weight;
-                }
-            }
-        }
-    }
-
-private:
-    int findMinDistance(const vector<int>& dist, const vector<bool>& visited) {
-        int min = INF, min_index;
-
-        for (int v = 0; v < V; ++v) {
-            if (!visited[v] && dist[v] <= min) {
-                min = dist[v];
-                min_index = v;
-            }
-        }
-
-        return min_index;
+    bool operator<(const Reservation& other) const {
+        return priority < other.priority;
     }
 };
 
-int main() {
-    int V = 6;  // Number of vertices (zones)
-    Graph g(V);
+struct TreeNode {
+    Reservation reservation;
+    TreeNode* left;
+    TreeNode* right;
 
-    // Adding edges to the graph
-    g.addEdge(0, 1, 2);
-    g.addEdge(0, 2, 3);
-    g.addEdge(1, 3, 1);
-    g.addEdge(2, 4, 4);
-    g.addEdge(3, 5, 5);
-    g.addEdge(4, 5, 6);
-    g.addEdge(2, 3, 2);
+    TreeNode(Reservation res) : reservation(res), left(nullptr), right(nullptr) {}
+};
 
-    // Distance vector to store the shortest paths from source
-    vector<int> dist(V, INF);
+struct SkipNode {
+    string visitorName;
+    string regulation;
+    vector<SkipNode*> forward;
 
-    // Run Dijkstra's algorithm from source zone 0
-    g.dijkstra(0, dist);
+    SkipNode(int level, string visitorName, string regulation) : visitorName(visitorName), regulation(regulation), forward(level + 1, nullptr) {}
+};
 
-    // Display shortest paths from source zone 0
-    cout << "Shortest paths from source zone 0:" << endl;
-    for (int i = 0; i < V; ++i) {
-        cout << "Zone " << i << " : " << dist[i] << endl;
+class SkipList {
+private:
+    int maxLevel;
+    float probability;
+    SkipNode* header;
+    int currentLevel;
+
+public:
+    SkipList(int maxLevel, float probability) : maxLevel(maxLevel), probability(probability) {
+        currentLevel = 0;
+        header = new SkipNode(maxLevel, "", "");
+        srand(42); 
     }
+
+    int randomLevel() {
+        int level = 0;
+        while (level < maxLevel && ((float) rand() / RAND_MAX) < probability) {
+            level++;
+        }
+        return level;
+    }
+
+    void insert(string visitorName, string regulation) {
+        vector<SkipNode*> update(maxLevel + 1);
+        SkipNode* current = header;
+
+        for (int i = currentLevel; i >= 0; i--) {
+            while (current->forward[i] && current->forward[i]->visitorName < visitorName) {
+                current = current->forward[i];
+            }
+            update[i] = current;
+        }
+
+        current = current->forward[0];
+        if (current == nullptr || current->visitorName != visitorName) {
+            int newLevel = randomLevel();
+            if (newLevel > currentLevel) {
+                for (int i = currentLevel + 1; i <= newLevel; i++) {
+                    update[i] = header;
+                }
+                currentLevel = newLevel;
+            }
+            SkipNode* newNode = new SkipNode(newLevel, visitorName, regulation);
+            for (int i = 0; i <= newLevel; i++) {
+                newNode->forward[i] = update[i]->forward[i];
+                update[i]->forward[i] = newNode;
+            }
+        }
+    }
+
+    string search(string visitorName) {
+        SkipNode* current = header;
+        for (int i = currentLevel; i >= 0; i--) {
+            while (current->forward[i] && current->forward[i]->visitorName < visitorName) {
+                current = current->forward[i];
+            }
+        }
+        current = current->forward[0];
+        if (current && current->visitorName == visitorName) {
+            return current->regulation;
+        }
+        return "Regulation not found";
+    }
+};
+
+TreeNode* insert(TreeNode* root, Reservation res);
+void inorder(TreeNode* root);
+
+TreeNode* insert(TreeNode* root, Reservation res) {
+    if (!root) return new TreeNode(res);
+    if (res.visitorName < root->reservation.visitorName) {
+        root->left = insert(root->left, res);
+    } else {
+        root->right = insert(root->right, res);
+    }
+    return root;
+}
+
+void inorder(TreeNode* root) {
+    if (!root) return;
+    inorder(root->left);
+    cout << "Visitor: " << root->reservation.visitorName << " | Activity: " << root->reservation.activity << endl;
+    inorder(root->right);
+}
+
+int main() {
+    
+    vector<Reservation> reservations = {
+        {10, "John Doe", 2, "johndoe@example.com", "10 AM - 11 AM", "Tourist Attraction 1", "Sightseeing"},
+        {20, "Jane Smith", 4, "janesmith@example.com", "1 PM - 2 PM", "Tourist Attraction 2", "Cultural Event"}
+    };
+
+    TreeNode* root = nullptr;
+    for (const auto& res : reservations) {
+        root = insert(root, res);
+    }
+
+    cout << "Reservations in BST:" << endl;
+    inorder(root);
+
+    SkipList skipList(4, 0.5);
+    skipList.insert("John Doe", "No photography allowed.");
+    skipList.insert("Jane Smith", "Follow the tour guide.");
+
+    cout << "\nVisitor Regulations:" << endl;
+    cout << "John Doe: " << skipList.search("John Doe") << endl;
+    cout << "Jane Smith: " << skipList.search("Jane Smith") << endl;
 
     return 0;
 }
