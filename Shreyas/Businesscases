@@ -6,47 +6,115 @@
     <title>Business Cases for Infrastructure and SDG Mapping</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
+            background-color: #f4f7f6;
+            color: #2e2e2e;
         }
-        h1, h2 {
-            color: #333;
-        }
-        h3 {
-            color: #007bff;
-        }
-        .section {
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 2.5em;
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
-        .section h3 {
-            margin-top: 10px;
+
+        h2 {
+            color: #2196F3;
+            font-size: 1.8em;
+            font-family: 'Verdana', sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: underline;
         }
+
+        h3 {
+            color: #FF5722;
+            font-size: 1.6em;
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
         .section ul {
             list-style-type: square;
-            padding-left: 20px;
-        }
-        .case {
-            margin-bottom: 15px;
-        }
-        .case h4 {
-            margin-bottom: 5px;
+            padding-left: 40px;
             font-size: 1.2em;
         }
-        .case p {
-            margin: 5px 0;
+
+        .case {
+            background-color: #E3F2FD;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
+
+        .case h4 {
+            font-size: 1.4em;
+            color: #3F51B5;
+            font-weight: bold;
+        }
+
+        .case p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+
         .benefits ul {
             list-style-type: circle;
-            padding-left: 30px;
+            padding-left: 40px;
+            font-size: 1.1em;
+            color: #673AB7;
         }
+
         .algorithms {
-            background-color: #e9ecef;
-            padding: 15px;
-            margin-top: 10px;
+            background-color: #F3E5F5;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 8px;
         }
+
         .algorithms h4 {
+            color: #9C27B0;
+            font-size: 1.3em;
+            font-weight: bold;
             margin-top: 0;
+        }
+
+        .algorithms p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .highlight {
+            color: #FF9800;
+            font-weight: bold;
+        }
+
+        .note {
+            background-color: #FFF3E0;
+            border-left: 5px solid #FF9800;
+            padding: 10px;
+            font-size: 1.1em;
+            color: #FF5722;
+        }
+
+        .sub-section {
+            background-color: #F5F5F5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        .sub-section h4 {
+            color: #607D8B;
         }
     </style>
 </head>
