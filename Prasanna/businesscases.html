@@ -458,6 +458,179 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Visitors.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues.cpp">Queuing for controlling overcrowding</a>
+            <h4>Resource Allocation Optimization (Restrooms, Benches)</h4>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>In recreational and entertainment venues, efficiently allocating resources such as restrooms and benches can greatly enhance the visitor experience. Poor placement can lead to overcrowding, long waiting times, and discomfort. The goal is to optimize the placement of these amenities to improve accessibility and minimize wait times.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>The solution involves applying Dijkstra's Algorithm to determine the optimal placement of resources like restrooms and benches. The key factors to consider are:</p>
+        <ul>
+            <li>Distance to visitors (minimizing walking time).</li>
+            <li>Accessibility of resources (ensuring easy access for all visitors).</li>
+            <li>Proximity to high-traffic areas (placing resources where they are needed the most).</li>
+        </ul>
+        <p>In addition to Dijkstra's Algorithm, optimization techniques like Genetic Algorithms can be used to further improve the placement of amenities and achieve better outcomes in terms of visitor satisfaction and resource usage.</p>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Data Collection</h4>
+        <p>Data collection is essential to understanding visitor flow and needs. The following data will be collected:</p>
+        <ul>
+            <li>Visitor usage patterns, including areas of high concentration and popular pathways.</li>
+            <li>Visitor feedback on amenities (e.g., how often restrooms or benches are used).</li>
+            <li>Real-time data on the number of visitors and their movement within the venue.</li>
+        </ul>
+
+        <h4>Modeling</h4>
+        <p>Dijkstra's Algorithm will be applied to model the optimal placement of resources. Factors like distance, accessibility, and proximity to high-traffic areas will be taken into account. This approach helps ensure that restrooms and benches are placed efficiently across the venue.</p>
+
+        <h4>Optimization</h4>
+        <p>Once the Dijkstra’s algorithm provides a baseline for resource placement, genetic algorithms or other optimization techniques can be used to refine and improve the placement over time. These algorithms will help ensure that resources are dynamically adjusted based on visitor patterns and usage data.</p>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Optimization algorithm will be implemented here.')">Run Resource Allocation Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visitor Data</h1>
+
+    <h2>Visitor Usage Patterns</h2>
+    <table>
+        <tr>
+            <th>Entry/Exit Point</th>
+            <th>Visitor Count (Daily)</th>
+            <th>Peak Hours</th>
+            <th>Pathways</th>
+            <th>Demographics (Age, Group Size)</th>
+        </tr>
+        <tr>
+            <td>Entrance A</td>
+            <td>10,000</td>
+            <td>9 AM - 11 AM</td>
+            <td>Path 1, Path 2</td>
+            <td>25-40, Families (3-5)</td>
+        </tr>
+        <tr>
+            <td>Entrance B</td>
+            <td>8,000</td>
+            <td>10 AM - 1 PM</td>
+            <td>Path 3, Path 4</td>
+            <td>18-25, Solo travelers</td>
+        </tr>
+        <tr>
+            <td>Entrance C</td>
+            <td>12,000</td>
+            <td>11 AM - 2 PM</td>
+            <td>Path 5, Path 6</td>
+            <td>30-50, Tour groups (10-15)</td>
+        </tr>
+    </table>
+
+    <h2>Amenities and Infrastructure</h2>
+    <table>
+        <tr>
+            <th>Amenity</th>
+            <th>Location (Coordinates)</th>
+            <th>Usage Count</th>
+            <th>Average Wait Time</th>
+            <th>Maintenance Frequency</th>
+        </tr>
+        <tr>
+            <td>Restroom 1</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>1,500</td>
+            <td>5 minutes</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Bench 1</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>2,000</td>
+            <td>N/A</td>
+            <td>Weekly</td>
+        </tr>
+        <tr>
+            <td>Restroom 2</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>2,000</td>
+            <td>10 minutes</td>
+            <td>Bi-weekly</td>
+        </tr>
+    </table>
+
+    <h2>Environmental and Maintenance Data</h2>
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Type</th>
+            <th>Sensitivity</th>
+            <th>Impact Notes</th>
+        </tr>
+        <tr>
+            <td>Green Zone</td>
+            <td>Park</td>
+            <td>High</td>
+            <td>No new construction allowed</td>
+        </tr>
+        <tr>
+            <td>Path 3</td>
+            <td>Pathway</td>
+            <td>Medium</td>
+            <td>Limited to pedestrian use</td>
+        </tr>
+        <tr>
+            <td>Restroom 1</td>
+            <td>Amenity</td>
+            <td>Low</td>
+            <td>Routine cleaning required</td>
+        </tr>
+    </table>
+</body>
+</html>
+                <h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Visitors 2.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Dijkstra's 2.cpp">Dijkstra's for resource allocation</a>
+
 
 
         <h3>Agriculture</h3>
