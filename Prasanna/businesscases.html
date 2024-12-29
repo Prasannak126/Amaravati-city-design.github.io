@@ -1303,6 +1303,233 @@
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims and Heap.cpp">Prims and Heap</a>
 
+</head>
+<body>
+
+    <h1>Soil Degradation and Resource Management</h1>
+
+    <div class="section">
+        <h2>Problem</h2>
+        <p>Soil erosion, salinization, and pollution from industrial and urban runoff are major environmental issues that degrade soil quality. These factors significantly reduce agricultural productivity, harm ecosystems, and disrupt local food production. Addressing these problems requires a comprehensive approach to monitor soil quality, manage pollution, and deploy resources efficiently to mitigate further damage and restore soil health.</p>
+    </div>
+
+    <div class="section">
+        <h2>Solution</h2>
+        <p>To address the challenges of soil degradation, the following algorithmic solutions are proposed:</p>
+        <ul>
+            <li><strong>Segment Tree</strong>: Efficiently query and update information about soil quality, erosion levels, and pollution across various regions. This will allow real-time monitoring and responsive action to changes in soil health.</li>
+            <li><strong>Prim’s Algorithm</strong>: Identify the most efficient paths for deploying resources to mitigate soil erosion and pollution, ensuring that resources are allocated where they are needed most and in the most cost-effective way.</li>
+            <li><strong>Heap</strong>: Prioritize resource allocation based on the severity of soil degradation. Areas with the most severe damage will receive resources first, ensuring that the worst-hit regions are restored promptly.</li>
+            <li><strong>Union-Find</strong>: Manage connected components of affected regions. This will help identify contiguous areas that are impacted by soil degradation, enabling targeted resource deployment to large, connected regions rather than isolated areas.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Implementation</h2>
+        <h3>Segment Tree</h3>
+        <p>The **Segment Tree** is used to efficiently manage and query soil data across multiple regions. Each region's soil quality, erosion, and pollution level can be represented as a segment, and the segment tree will allow us to quickly query the status of a particular region or update the data when soil quality improves or worsens. This allows for real-time monitoring and management of affected areas.</p>
+
+        <h3>Prim's Algorithm</h3>
+        <p>**Prim’s Algorithm** will be applied to find the most efficient way to deploy resources to affected regions. By treating the soil degradation areas as nodes in a graph and considering the connections between them (such as transport routes for resources), Prim’s algorithm can determine the minimum-cost paths for delivering resources like water, soil amendments, or infrastructure repairs. This ensures that the deployment of resources is optimized for cost-effectiveness and efficiency.</p>
+
+        <h3>Heap for Resource Allocation</h3>
+        <p>A **Heap** data structure will be employed to prioritize areas based on the severity of soil degradation. Regions suffering the most from erosion, salinization, or pollution will be given higher priority for resource allocation, ensuring that the most critical areas are addressed first. The heap ensures that resources are deployed in the order of urgency, preventing delays in the restoration of badly affected regions.</p>
+
+        <h3>Union-Find</h3>
+        <p>**Union-Find** will be used to manage connected components of affected regions. The algorithm helps identify contiguous regions where soil degradation is widespread. By connecting affected zones into larger components, Union-Find ensures that resources are not wasted on isolated pockets of degradation but are instead deployed to contiguous areas that will benefit the most from coordinated intervention.</p>
+
+        <h3>System Workflow</h3>
+        <p>The system will operate as follows:</p>
+        <ul>
+            <li>The affected regions are represented as a graph, where each node represents a region and edges represent potential paths for resource deployment.</li>
+            <li>**Prim’s Algorithm** will be used to find the minimum-cost paths for deploying resources to the most critical areas based on soil quality and erosion data.</li>
+            <li>A **Segment Tree** will store and update data about soil quality, erosion, and pollution in real-time, allowing efficient querying and management of soil health across multiple regions.</li>
+            <li>A **Heap** will be used to prioritize regions for resource allocation, ensuring that the areas with the most severe degradation are addressed first.</li>
+            <li>**Union-Find** will manage connected components of affected regions, ensuring that resources are deployed to contiguous areas in need of restoration.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Soil degradation management simulation will be implemented here.')">Run Soil Degradation Management Simulation</button>
+    </div>
+
+</body>
+</html>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Quality and Environmental Management Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soil Quality and Environmental Management Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Residential Area A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>High-density residential area</td>
+        </tr>
+        <tr>
+            <td>Industrial Zone B</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Major industrial zone</td>
+        </tr>
+        <tr>
+            <td>Agricultural Zone C</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Main agricultural area</td>
+        </tr>
+        <tr>
+            <td>Commercial Zone D</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>Central business district</td>
+        </tr>
+    </table>
+
+    <h2>Soil Quality Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Zone Type</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>pH Level</td>
+            <td>Agricultural Zone</td>
+            <td>pH: 6.5</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Nutrient Level</td>
+            <td>Agricultural Zone</td>
+            <td>Nitrogen: High, Phosphorus: Medium, Potassium: Low</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Soil Moisture</td>
+            <td>Agricultural Zone</td>
+            <td>30%</td>
+            <td>Weekly</td>
+        </tr>
+    </table>
+
+    <h2>Erosion and Pollution Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Zone Type</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Erosion Rate</td>
+            <td>Agricultural Zone</td>
+            <td>0.5 cm/year</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Salinity Level</td>
+            <td>Agricultural Zone</td>
+            <td>3 dS/m</td>
+            <td>Monthly</td>
+        </tr>
+        <tr>
+            <td>Pollution Level</td>
+            <td>Industrial Zone</td>
+            <td>Heavy Metals: High, Pesticides: Medium, Industrial Runoff: High</td>
+            <td>Monthly</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Zone Type</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Air Quality</td>
+            <td>Urban Area</td>
+            <td>PM2.5: 70 µg/m³, CO2: 400 ppm</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Water Quality</td>
+            <td>Agricultural Zone</td>
+            <td>pH: 6.8, Turbidity: 5 NTU, Dissolved Oxygen: 6 mg/L, Pollutants: Low</td>
+            <td>Monthly</td>
+        </tr>
+    </table>
+
+    <h2>Infrastructure Data</h2>
+    <table>
+        <tr>
+            <th>Infrastructure Type</th>
+            <th>Location</th>
+            <th>Condition</th>
+        </tr>
+        <tr>
+            <td>Road</td>
+            <td>Residential Area A</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Railway</td>
+            <td>Industrial Zone B</td>
+            <td>Average</td>
+        </tr>
+        <tr>
+            <td>Public Transport</td>
+            <td>Commercial Zone D</td>
+            <td>Excellent</td>
+        </tr>
+        <tr>
+            <td>Utility Services</td>
+            <td>Various</td>
+            <td>Available</td>
+        </tr>
+    </table>
+</body>
+</html>
+h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Soil errosion.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Prims, Segment Tree, Heap and Union-find.cpp">Prims, Segment Tree, Heap and Union-find</a>
 
 
 </body>
