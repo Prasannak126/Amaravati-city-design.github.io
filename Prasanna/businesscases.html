@@ -1000,7 +1000,241 @@
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Boat.txt">Data file</a>
         <h4>Code</h4>
         <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Kruskal's.cpp">Kruskal's for Monitoring and Resource Allocation</a>
+        </head>
+<body>
 
+    <h3>Visitor Management and Regulation</h3>
+
+    <div class="section">
+        <h4>Problem</h4>
+        <p>To ensure fair access to certain areas and limit commercialization activities, an effective visitor management system is essential. Overcrowding or uncontrolled access can harm the experience, natural resources, and spiritual significance of certain spaces. Thus, controlling visitor access through an efficient reservation system becomes crucial.</p>
+    </div>
+
+    <div class="section">
+        <h4>Solution</h4>
+        <p>Implementing a **reservation system** will help regulate access to certain areas, ensuring that commercialization activities are limited and visitors' needs are met. To manage the reservations efficiently, we will use:</p>
+        <ul>
+            <li><strong>Binary Search Tree (BST)</strong> to store and retrieve reservation data quickly.</li>
+            <li><strong>Heap</strong> to prioritize reservations based on spiritual importance and visitor needs.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h4>Implementation</h4>
+        <h4>Reservation System</h4>
+        <p>The reservation system will allow visitors to reserve access to certain areas of interest. This ensures controlled visitor flow and preserves the space's spiritual and environmental integrity.</p>
+
+        <h4>Binary Search Tree (BST)</h4>
+        <p>The reservation data will be stored in a **Binary Search Tree**. The tree will allow for fast insertion, deletion, and searching of reservations based on visitor details, such as reservation date or area. This ensures efficient access to data as reservations grow.</p>
+
+        <h4>Heap</h4>
+        <p>To prioritize certain reservations (e.g., for spiritually significant events, important visitors, or based on urgency), we will use a **Heap**. The Heap will ensure that higher-priority reservations are processed first, ensuring fair and necessary access.</p>
+
+        <h4>System Workflow</h4>
+        <p>The system will use the following approach:</p>
+        <ul>
+            <li>Visitors submit reservation requests, including details such as their visit date, preferred area, and needs.</li>
+            <li>Reservations are stored in the Binary Search Tree for efficient retrieval and management.</li>
+            <li>Reservations are then processed and prioritized using the Heap based on factors like spiritual importance and visitor needs.</li>
+            <li>The reservation system will allow monitoring of access, ensuring that the areas are not overcrowded and that commercialization activities are kept in check.</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <button onclick="alert('Reservation system simulation will be implemented here.')">Run Reservation System Simulation</button>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Center Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meditation Center Data</h1>
+
+    <h2>Geographical Data</h2>
+    <table>
+        <tr>
+            <th>Location Type</th>
+            <th>Coordinates</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Entry Point A</td>
+            <td>(34.0522, -118.2437)</td>
+            <td>Main entry point</td>
+        </tr>
+        <tr>
+            <td>Meditation Zone 1</td>
+            <td>(34.0524, -118.2439)</td>
+            <td>Main meditation area</td>
+        </tr>
+        <tr>
+            <td>Commercial Zone A</td>
+            <td>(34.0526, -118.2441)</td>
+            <td>Vendor area for crafts and snacks</td>
+        </tr>
+        <tr>
+            <td>Wildlife Habitat A</td>
+            <td>(34.0528, -118.2443)</td>
+            <td>Sensitive habitat for birds</td>
+        </tr>
+    </table>
+
+    <h2>Visitor Data</h2>
+    <table>
+        <tr>
+            <th>Age Group</th>
+            <th>Gender</th>
+            <th>Origin</th>
+            <th>Entry Point</th>
+            <th>Daily Count</th>
+            <th>Peak Hours</th>
+        </tr>
+        <tr>
+            <td>18-25</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>500</td>
+            <td>10 AM - 12 PM</td>
+        </tr>
+        <tr>
+            <td>25-40</td>
+            <td>Female</td>
+            <td>Tourist</td>
+            <td>Entry B</td>
+            <td>300</td>
+            <td>1 PM - 3 PM</td>
+        </tr>
+        <tr>
+            <td>40-60</td>
+            <td>Male</td>
+            <td>Local</td>
+            <td>Entry A</td>
+            <td>200</td>
+            <td>4 PM - 6 PM</td>
+        </tr>
+    </table>
+
+    <h2>Reservation Data</h2>
+    <table>
+        <tr>
+            <th>Visitor Name</th>
+            <th>Group Size</th>
+            <th>Contact Information</th>
+            <th>Time Slot</th>
+            <th>Preferred Area</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>2</td>
+            <td>johndoe@example.com</td>
+            <td>10 AM - 11 AM</td>
+            <td>Meditation Zone 1</td>
+            <td>Yoga</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>4</td>
+            <td>janesmith@example.com</td>
+            <td>1 PM - 2 PM</td>
+            <td>Meditation Zone 2</td>
+            <td>Spiritual Counseling</td>
+        </tr>
+    </table>
+
+    <h2>Commercial Activity Data</h2>
+    <table>
+        <tr>
+            <th>Vendor Name</th>
+            <th>Product/Service</th>
+            <th>Location</th>
+            <th>Sales/Day</th>
+            <th>Revenue/Day</th>
+        </tr>
+        <tr>
+            <td>Vendor A</td>
+            <td>Handmade Crafts</td>
+            <td>Commercial Zone A</td>
+            <td>100</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Vendor B</td>
+            <td>Organic Snacks</td>
+            <td>Commercial Zone B</td>
+            <td>150</td>
+            <td>$750</td>
+        </tr>
+    </table>
+
+    <h2>Environmental Data</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Location</th>
+            <th>Value</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Noise Level</td>
+            <td>Meditation Zone 1</td>
+            <td>50 dB</td>
+            <td>Hourly</td>
+        </tr>
+        <tr>
+            <td>Foot Traffic</td>
+            <td>Wildlife Habitat A</td>
+            <td>200 people</td>
+            <td>Daily</td>
+        </tr>
+        <tr>
+            <td>Wildlife Sightings</td>
+            <td>Habitat A</td>
+            <td>10 sightings/day</td>
+            <td>Weekly</td>
+        </tr>
+    </table>
+</body>
+</html>
+             <h4>Input file</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Management.txt">Data file</a>
+        <h4>Code</h4>
+        <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Queues 2.cpp">Queue</a>
+            <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/BST.cpp">BST</a>
+                <p><strong><a href="https://prasannak126.github.io/Amaravati-city-design.github.io/Prasanna/Codes/Heap 2.cpp">Heap</a>
+            
+       
 
 
         <h2>Agriculture</h2>
