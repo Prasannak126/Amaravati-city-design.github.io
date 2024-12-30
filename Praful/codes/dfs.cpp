@@ -1,59 +1,54 @@
 #include <iostream>
 #include <vector>
 #include <stack>
-#include <unordered_map>
 
 using namespace std;
 
-// Graph representation
-class Graph {
-public:
-    unordered_map<string, vector<string>> adjList; // Adjacency list
+void dfs(int V, vector<vector<int>>& graph, int start, vector<bool>& visited) {
+    stack<int> s;
+    s.push(start);
+    visited[start] = true;
 
-    void addEdge(const string& u, const string& v) {
-        adjList[u].push_back(v);
-        adjList[v].push_back(u); // Assuming an undirected graph
-    }
+    while (!s.empty()) {
+        int node = s.top();
+        s.pop();
+        cout << "Visiting node: " << node << endl;
 
-    void dfs(const string& startNode) {
-        unordered_map<string, bool> visited;
-        stack<string> stack;
-
-        stack.push(startNode);
-        cout << "DFS Traversal from " << startNode << ":" << endl;
-
-        while (!stack.empty()) {
-            string node = stack.top();
-            stack.pop();
-
-            if (!visited[node]) {
-                visited[node] = true;
-                cout << node << " ";
-
-                for (const auto& neighbor : adjList[node]) {
-                    if (!visited[neighbor]) {
-                        stack.push(neighbor);
-                    }
-                }
+        for (int i = 0; i < V; ++i) {
+            if (graph[node][i] != 0 && !visited[i]) {
+                visited[i] = true;
+                s.push(i);
             }
         }
-        cout << endl;
     }
-};
+}
+
+void detectFaults(int V, vector<vector<int>>& graph) {
+    vector<bool> visited(V, false);
+    int startNode = 0; // Starting node for DFS (root node of the connected component)
+
+    cout << "Performing DFS to detect network faults...\n";
+    dfs(V, graph, startNode, visited);
+
+    // Detect disconnected nodes (faults)
+    cout << "\nUnreachable nodes (network faults detected):\n";
+    for (int i = 0; i < V; ++i) {
+        if (!visited[i]) {
+            cout << "Node " << i << " is disconnected (fault)\n";
+        }
+    }
+}
 
 int main() {
-    Graph cityGraph;
+    int V = 5;
+    vector<vector<int>> graph = {
+        {0, 10, 0, 0, 0},
+        {10, 0, 5, 0, 0},
+        {0, 5, 0, 10, 0},
+        {0, 0, 10, 0, 20},
+        {0, 0, 0, 20, 0}
+    };
 
-    // Example: Adding energy plants and educational institutions
-    cityGraph.addEdge("EnergyPlant1", "EducationCenter1");
-    cityGraph.addEdge("EducationCenter1", "Library");
-    cityGraph.addEdge("Library", "EnergyPlant2");
-    cityGraph.addEdge("EnergyPlant2", "School");
-    cityGraph.addEdge("School", "EnergyPlant1");
-    cityGraph.addEdge("EducationCenter1", "School");
-
-    // Start DFS from a node (e.g., "EnergyPlant1")
-    cityGraph.dfs("EnergyPlant1");
-
+    detectFaults(V, graph);
     return 0;
 }
